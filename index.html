@@ -2,8 +2,8 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>공조냉동기계기사 실기 연습 사이트 | 모의고사 · 계산문제 · 습공기선도</title>
-<meta name="description" content="공조냉동기계기사 실기시험을 준비하는 수험생을 위한 학습 사이트입니다. 실제 시험과 유사한 환경에서 모의고사, 빠른문제풀이, 계산메모장, 습공기선도, 학습자료를 이용할 수 있습니다.">
+<title>공조냉동기계기사 실기 무료 연습 사이트 | GongjoOne</title>
+<meta name="description" content="공조냉동기계기사 실기 모의고사와 계산문제, 빠른 문제풀이, 습공기선도 및 학습자료를 무료로 이용할 수 있는 연습 사이트입니다.">
 <meta name="keywords" content="공조냉동기계기사, 공조냉동기사, 실기, 모의고사, 계산문제, 습공기선도, 냉동공학, 공기조화">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#2f86e8">
@@ -137,25 +137,26 @@ textarea{min-height:92px;resize:vertical;line-height:1.55} .desc{margin-top:10px
 #floatingAnnotTools{
   position:fixed;
   left:100px;
-  top:50%;
-  transform:translateY(-50%);
+  top:var(--exam-tools-top,144px);
+  transform:none;
   z-index:999;
   display:flex;
   flex-direction:column;
-  gap:7px;
+  gap:2px;
   background:rgba(255,255,255,.97);
   border:1px solid #cfd5dc;
   border-radius:12px;
-  padding:8px;
+  padding:6px;
   box-shadow:0 8px 28px rgba(0,0,0,.16);
-  max-height:94vh;
-  overflow-y:auto;
+  max-height:calc(100vh - var(--exam-tools-top,144px) - 10px);
+  box-sizing:border-box;
+  overflow:hidden;
 }
 #floatingAnnotTools button{
   width:44px;
-  min-height:40px;
-  padding:6px 4px;
-  font-size:12px;
+  min-height:30px;
+  padding:3px 4px;
+  font-size:11px;
 }
 #floatingAnnotTools button.active{
   border:2px solid #1468d4 !important;
@@ -171,31 +172,31 @@ textarea{min-height:92px;resize:vertical;line-height:1.55} .desc{margin-top:10px
   background:#f5f0ff !important;
 }
 #floatingAnnotTools .tool-label{
-  font-size:10px;
+  font-size:9px;
   color:#5f6772;
   text-align:center;
-  line-height:1.2;
+  line-height:1.05;
 }
 #floatingAnnotTools .target-label{
   max-width:64px;
-  padding:5px 2px 7px;
+  padding:3px 2px 5px;
   border-bottom:1px solid #e2e6ea;
   color:#334155;
-  font-size:10px;
+  font-size:11px;
   font-weight:800;
   line-height:1.25;
   text-align:center;
   word-break:keep-all;
 }
 @media(max-width:900px){
-  #floatingAnnotTools{left:92px;transform:translateY(-50%) scale(.9);transform-origin:left center}
+  #floatingAnnotTools{left:92px;transform:scale(.9);transform-origin:left top}
 }
 
 /* v138 layout preview: left writing tools + right sticky calculation memo */
 body.has-calc-memo #examTop{
   max-width:none;
   margin-left:164px;
-  margin-right:486px;
+  margin-right:504px;
   padding-left:14px;
   padding-right:14px;
 }
@@ -203,8 +204,8 @@ body.has-calc-memo #examTop{
   position:fixed;
   z-index:120;
   right:18px;
-  top:50%;
-  transform:translateY(-50%);
+  top:var(--exam-tools-top,144px);
+  transform:none;
   width:450px;
   max-height:calc(100vh - 92px);
   display:flex;
@@ -237,17 +238,18 @@ body.has-calc-memo #examTop{
 .calc-memo-panel .hint{flex:0 0 auto;margin:0 0 8px;font-size:11px}
 .calc-memo-panel .memo{
   flex:1 1 auto;
-  min-height:420px;
-  height:62vh;
-  max-height:650px;
+  min-height:280px;
+  height:41vh;
+  max-height:433px;
+  font-size:16px;
   overflow:auto;
   background:#fffefb;
   box-shadow:inset 0 1px 3px rgba(15,23,42,.05);
 }
 @media(max-width:1380px){
-  body.has-calc-memo #examTop{margin-left:156px;margin-right:406px}
-  .calc-memo-panel{right:12px;width:382px}
-  .calc-memo-panel .memo{font-size:17px}
+  body.has-calc-memo #examTop{margin-left:156px;margin-right:450px}
+  .calc-memo-panel{right:12px;width:405px}
+  .calc-memo-panel .memo{font-size:16px}
 }
 @media(max-width:1050px){
   body.has-calc-memo #examTop{margin:0 auto;padding-left:164px;padding-right:12px;max-width:100%}
@@ -261,11 +263,11 @@ body.has-calc-memo #examTop{
     margin:10px 0 16px;
     box-shadow:0 5px 18px rgba(30,41,59,.10);
   }
-  .calc-memo-panel .memo{height:390px;min-height:390px;max-height:none}
+  .calc-memo-panel .memo{height:280px;min-height:280px;max-height:none}
 }
 @media(max-width:700px){
   body.has-calc-memo #examTop{padding-left:74px}
-  #floatingAnnotTools{top:auto;bottom:8px;left:50%;transform:translateX(-50%);transform-origin:center;flex-direction:row;max-width:96vw;max-height:none;overflow-x:auto;overflow-y:hidden}
+  #floatingAnnotTools{top:auto;bottom:8px;left:50%;height:auto!important;transform:translateX(-50%);transform-origin:center;flex-direction:row;max-width:96vw;max-height:none;overflow-x:auto;overflow-y:hidden}
   #floatingAnnotTools .tool-label,#floatingAnnotTools .target-label{display:none}
 }
 
@@ -324,11 +326,11 @@ body.has-calc-memo #examTop{
 #questionNavigator{
   position:fixed;
   left:12px;
-  top:50%;
-  transform:translateY(-50%);
+  top:var(--exam-tools-top,144px);
+  transform:none;
   z-index:998;
   width:76px;
-  max-height:92vh;
+  max-height:calc(100vh - var(--exam-tools-top,144px) - 10px);
   overflow-y:auto;
   padding:8px 7px;
   border:1px solid #cfd5dc;
@@ -707,7 +709,7 @@ body.view-practice .learning-page{display:none!important}
     <div class="home-main-grid">
       <div class="home-content-stack">
         <section class="site-intro-card" aria-labelledby="site-intro-title">
-          <h2 id="site-intro-title">공조냉동기계기사 실기 연습 사이트</h2>
+          <h2 id="site-intro-title">공조냉동기계기사 실기 무료 연습 사이트</h2>
           <div class="site-intro-horizontal">
             <section class="site-intro-copy" aria-label="사이트 소개">
               <p>공조냉동기계기사 실기시험은 단순히 정답을 암기하는 것보다 <strong>계산과정, 도면 작성, 문제 해결 능력</strong>을 반복해서 연습하는 것이 중요합니다.</p>
@@ -2231,7 +2233,7 @@ body.view-practice .learning-page{display:none!important}
 </style>
 
 <div id="floatingAnnotTools" aria-label="통합 그리기 도구">
-  <div id="drawTargetLabel" class="target-label">대상: 문제 이미지</div>
+  <div id="drawTargetLabel" class="target-label">그리기 도구</div>
   <button data-annot="select" onclick="setUnifiedTool('select')" title="선택/이동">☝️</button>
   <div class="tool-label">선택/이동</div>
   <button data-annot="highlighter" onclick="setUnifiedTool('highlighter')" title="형광펜">🖍️</button>
@@ -2258,7 +2260,7 @@ body.view-practice .learning-page{display:none!important}
 
 <div class="wrap" id="examTop">
  <div class="top">
-  <h1 id="examTitle">2025년 1회차 · 실기 1~14번 테스트 · 통합 그리기 도구</h1>
+  <h1 id="examTitle">실전 모의고사 1</h1>
   <div class="timer">전체 시간 <span id="timer">00:00:00</span> · <span id="prog">1 / 14</span></div>
  </div>
  <div class="card">
@@ -2887,9 +2889,12 @@ function trackVirtualPage(path,title){
     page_location:new URL(path,window.location.origin).href
   });
 }
+function isQuickSessionTitle(title){
+  return typeof title==='string' && (title.includes('빠른문제 ')||title.includes('빠른 문제풀이'));
+}
 function sessionAnalyticsPath(title){
-  const mock=title.match(/제(\d+)회 모의고사/);
-  if(mock)return '/exam/mock-'+mock[1];
+  const mock=title.match(/(?:제(\d+)회 모의고사|실전 모의고사\s*(\d+))/);
+  if(mock)return '/exam/mock-'+(mock[1]||mock[2]);
   const quickMap={
     '냉동':'refrigeration',
     '공기조화':'air-conditioning',
@@ -2897,7 +2902,7 @@ function sessionAnalyticsPath(title){
     '덕트·송풍기':'duct-blower',
     '서술형':'descriptive'
   };
-  const quick=Object.keys(quickMap).find(name=>title.includes('빠른 문제풀이 · '+name));
+  const quick=Object.keys(quickMap).find(name=>title.includes('빠른문제 '+name)||title.includes('빠른 문제풀이 · '+name));
   if(quick)return '/practice/'+quickMap[quick];
   return '/exam/session';
 }
@@ -3183,7 +3188,7 @@ function finish(){
  const isFull=Q.length===14;
  const r=document.getElementById('result');r.className='result show';r.innerHTML=`<div class="score">${total} / ${maxTotal}점</div><b>${isFull?(rate>=60?'합격':'불합격'):'정답률 '+rate+'%'}</b><div style="margin-top:7px">총 소요시간 ${fmt(elapsed)}</div><table><tr><th>문제</th><th>유형</th><th>득점</th></tr>${rows}</table><div class="hint">${isFull?'실전 모의고사 합격 기준은 60점입니다.':'빠른 문제풀이는 연습용이며 합격·불합격을 표시하지 않습니다.'}</div>`;
  if(!sessionCompletionTracked){
-  const isQuick=currentSessionTitle.includes('빠른 문제풀이');
+  const isQuick=isQuickSessionTitle(currentSessionTitle);
   sendAnalyticsEvent(isQuick?'quick_practice_complete':'exam_complete',{
    session_name:currentSessionTitle,
    question_count:Q.length,
@@ -3488,9 +3493,10 @@ function setActiveDrawSurface(type,imgIndex=0){
   const label=document.getElementById('drawTargetLabel');
   if(label){
     const q=Q[idx];
-    label.textContent=type==='chart'
-      ?`대상: ${q?.chart==='psych'?'습공기선도':'덕트선도'}`
-      :`대상: 문제 이미지${(q?.images||[]).length>1?' '+(imgIndex+1):''}`;
+    label.textContent='그리기 도구';
+    label.title=type==='chart'
+      ?`작업 대상: ${q?.chart==='psych'?'습공기선도':'덕트선도'}`
+      :`작업 대상: 문제 이미지${(q?.images||[]).length>1?' '+(imgIndex+1):''}`;
   }
 }
 
@@ -3726,7 +3732,10 @@ function undoUnifiedDraw(){
 }
 
 function clearUnifiedDraw(){
-  const target=document.getElementById('drawTargetLabel')?.textContent?.replace('대상: ','')||'선택 영역';
+  const q=Q[idx];
+  const target=activeDrawSurface.type==='chart'
+    ?(q?.chart==='psych'?'습공기선도':'덕트선도')
+    :`문제 이미지${(q?.images||[]).length>1?' '+(activeDrawSurface.imgIndex+1):''}`;
   if(!confirm(`${target}에 그린 내용을 모두 지울까요?`))return;
   if(activeDrawSurface.type==='chart')clearChartDraw();
   else clearAnnot(activeDrawSurface.imgIndex);
@@ -4402,6 +4411,13 @@ render();
 
 <script id="v36-question-navigator">
 (function(){
+  function alignExamSidePanels(){
+    const topBar=document.querySelector('#examTop .top');
+    if(!topBar)return;
+    const alignedTop=Math.max(8,Math.round(topBar.getBoundingClientRect().bottom));
+    document.documentElement.style.setProperty('--exam-tools-top',alignedTop+'px');
+  }
+
   function questionStatus(i){
     if(!details[i]) return {kind:'ungraded',mark:'△',label:'아직 채점하지 않음'};
     const items=details[i]||[];
@@ -4415,14 +4431,30 @@ render();
   }
 
   window.renderQuestionNavigator=function(){
+    alignExamSidePanels();
+    const navigator=document.getElementById('questionNavigator');
     const list=document.getElementById('questionNavList');
-    if(!list || typeof Q==='undefined') return;
+    if(!list || !navigator || typeof Q==='undefined') return;
+    const isQuickPractice=isQuickSessionTitle(currentSessionTitle);
+    navigator.style.display=isQuickPractice?'none':'';
+    document.body.classList.toggle('quick-practice-session',isQuickPractice);
+    if(isQuickPractice){
+      list.innerHTML='';
+      const tools=document.getElementById('floatingAnnotTools');
+      if(tools)tools.style.height='';
+      return;
+    }
     list.innerHTML=Q.map((q,i)=>{
       const s=questionStatus(i);
       const current=i===idx?' current':'';
       const aria=i===idx?' aria-current="page"':'';
       return `<button type="button" class="${s.kind}${current}" onclick="jumpToQuestion(${i})" title="${q.id}번 · ${s.label}"${aria}><span>${q.id}번</span><span class="nav-status" aria-label="${s.label}">${s.mark}</span></button>`;
     }).join('');
+    requestAnimationFrame(()=>{
+      alignExamSidePanels();
+      const tools=document.getElementById('floatingAnnotTools');
+      if(tools&&navigator.offsetHeight)tools.style.height=navigator.offsetHeight+'px';
+    });
   };
 
   window.jumpToQuestion=function(i){
@@ -4446,6 +4478,9 @@ render();
     renderQuestionNavigator();
     return result;
   };
+
+  window.addEventListener('resize',alignExamSidePanels);
+  window.addEventListener('scroll',alignExamSidePanels,{passive:true});
 
   renderQuestionNavigator();
 })();
@@ -4542,7 +4577,7 @@ function resetQuestionSession(selected,title){
   const heading=document.getElementById('examTitle');if(heading)heading.textContent=title;
   currentSessionTitle=title;
   sessionCompletionTracked=false;
-  const isQuick=title.includes('빠른 문제풀이');
+  const isQuick=isQuickSessionTitle(title);
   trackVirtualPage(sessionAnalyticsPath(title),title);
   sendAnalyticsEvent(isQuick?'quick_practice_start':'exam_start',{
     session_name:title,
@@ -6539,7 +6574,7 @@ const mock4Questions=[
 function startMock4Exam(event){
   if(event)event.preventDefault();
   const selected=mock4Questions.map((q,i)=>({...q,id:i+1}));
-  resetQuestionSession(selected,'제4회 모의고사 · 14문제');
+  resetQuestionSession(selected,'실전 모의고사 4');
   showSiteView(null,'exam');
 }
 
@@ -8851,33 +8886,33 @@ Object.entries(mockDuctBlowerSelections).forEach(([mockNo, questionIds]) => {
 function startMock6Exam(event){
   if(event)event.preventDefault();
   const selected=mock6Questions.map((q,i)=>({...q,id:i+1}));
-  resetQuestionSession(selected,'제6회 모의고사 · 14문제');
+  resetQuestionSession(selected,'실전 모의고사 6');
   showSiteView(null,'exam');
 }
 
 function startMock5Exam(event){
   if(event)event.preventDefault();
   const selected=mock5Questions.map((q,i)=>({...q,id:i+1}));
-  resetQuestionSession(selected,'제5회 모의고사 · 14문제');
+  resetQuestionSession(selected,'실전 모의고사 5');
   showSiteView(null,'exam');
 }
 
 function startMock3Exam(event){
   if(event)event.preventDefault();
   const selected=mock3Questions.map((q,i)=>({...q,id:i+1}));
-  resetQuestionSession(selected,'제3회 모의고사 · 9문제 · 완성본');
+  resetQuestionSession(selected,'실전 모의고사 3');
   showSiteView(null,'exam');
 }
 function startMock2Exam(event){
   if(event)event.preventDefault();
   const selected=shuffledQuestions(mock2Questions).map((q,i)=>({...q,id:i+1}));
-  resetQuestionSession(selected,'제2회 모의고사 · 14문제 완성 · 14문제 무작위 · 통합 그리기 도구');
+  resetQuestionSession(selected,'실전 모의고사 2');
   showSiteView(null,'exam');
 }
 function startFullExam(event){
   if(event)event.preventDefault();
   const selected=shuffledQuestions(fullExamQuestions).map((q,i)=>({...q,sourceId:q.sourceId||`2025-1-${String(q.id).padStart(2,'0')}`,id:i+1}));
-  resetQuestionSession(selected,'제1회 모의고사 · 14문제 무작위 순서 · 통합 그리기 도구');
+  resetQuestionSession(selected,'실전 모의고사 1');
   showSiteView(null,'exam');
 }
 function shuffledQuestions(items){
@@ -8897,7 +8932,7 @@ function startRefrigerationPractice(event){
     return;
   }
 
-  resetQuestionSession(selected,'빠른 문제풀이 · 냉동 27문제 · 순서대로');
+  resetQuestionSession(selected,'빠른문제 냉동');
   showSiteView(null,'exam');
 }
 function startSingleQuickPractice(event,sourceId,title){
@@ -8919,7 +8954,7 @@ function startSingleQuickPractice(event,sourceId,title){
   }
 
   const selected=[{...source,id:1}];
-  resetQuestionSession(selected,'빠른 문제풀이 · '+title+' · 1문제');
+  resetQuestionSession(selected,'빠른문제 '+title);
   showSiteView(null,'exam');
 }
 
@@ -8932,7 +8967,7 @@ function startAirConditioningPractice(event){
     return;
   }
 
-  resetQuestionSession(selected,'빠른 문제풀이 · 공기조화 10문제 · 순서대로');
+  resetQuestionSession(selected,'빠른문제 공기조화');
   showSiteView(null,'exam');
 }
 
@@ -8945,7 +8980,7 @@ function startCoolingHeatingLoadPractice(event){
     return;
   }
 
-  resetQuestionSession(selected,'빠른 문제풀이 · 냉난방부하 16문제 · 순서대로');
+  resetQuestionSession(selected,'빠른문제 냉난방부하');
   showSiteView(null,'exam');
 }
 
@@ -8958,7 +8993,7 @@ function startDuctBlowerPractice(event){
     return;
   }
 
-  resetQuestionSession(selected,'빠른 문제풀이 · 덕트·송풍기 7문제 · 순서대로');
+  resetQuestionSession(selected,'빠른문제 덕트·송풍기');
   showSiteView(null,'exam');
 }
 
@@ -8973,7 +9008,7 @@ function startDescriptivePractice(event){
     return;
   }
 
-  resetQuestionSession(selected,'빠른 문제풀이 · 서술형 20문제 · 순서대로');
+  resetQuestionSession(selected,'빠른문제 서술형');
   showSiteView(null,'exam');
 }
 function showPracticeCategory(event,name){
