@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>냉동기의 기본 원리 | 공조냉동 기초 | GongjoOne</title>
+<meta name="description" content="냉동사이클은 증발기에서 열을 받는 과정과 응축기에서 열을 내보내는 과정을 연결합니다. 압축기는 저압 증기를 고압으로 올려 주고, 팽창밸브는 고압 액체를 저압으로 낮춥니다. 두 기기는 압력 차이를 유지하지만 에너지 교환 방식은 다릅니다. 압축기에는 일이 공급되고 팽창밸브의 교축은 보통 등">
+<meta name="keywords" content="공조냉동기계기사, 공조냉동기사, 실기, 모의고사, 계산문제, 습공기선도, 냉동공학, 공기조화">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#2f86e8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5763TMT4M"></script>
+<script src="assets/original-00.js"></script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1619455180227291" crossorigin="anonymous"></script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%232f86e8'/%3E%3Cg%20stroke='white'%20stroke-width='5'%20stroke-linecap='round'%3E%3Cpath%20d='M32%2010v44M13%2021l38%2022M51%2021L13%2043'/%3E%3C/g%3E%3Ccircle%20cx='32'%20cy='32'%20r='5'%20fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/articles.css"></head>
+<body class="article-view"><header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="index.html" aria-label="공조실기 홈">
+      <span class="site-brand-mark" aria-hidden="true">
+        <svg viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 4v24M5.6 10l20.8 12M26.4 10L5.6 22" stroke="#fff" stroke-width="3" stroke-linecap="round"></path>
+          <circle cx="16" cy="16" r="3.2" fill="#fff"></circle>
+          <path d="m16 4-2.3 3.2M16 4l2.3 3.2M16 28l-2.3-3.2M16 28l2.3-3.2M5.6 10l3.9.4M5.6 10l1.6 3.6M26.4 22l-3.9-.4M26.4 22l-1.6-3.6M26.4 10l-3.9.4M26.4 10l-1.6 3.6M5.6 22l3.9-.4M5.6 22l1.6-3.6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </span>
+      <span><span class="site-brand-name">공조실기</span><span class="site-brand-sub">공조냉동기계기사 실기 연습실</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="전체 메뉴 열기" aria-expanded="false" aria-controls="siteMenu" onclick="toggleSiteMenu(this)">☰</button>
+    <nav class="site-menu" id="siteMenu" aria-label="주요 메뉴">
+      <a data-view-link="home" href="index.html">홈</a>
+      <div class="nav-group">
+        <button class="nav-trigger" data-view-link="exam" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">실전 모의고사 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="exam-1.html"><span>모의고사 1</span></a>
+          <a href="exam-2.html"><span>모의고사 2</span></a>
+          <a href="exam-3.html"><span>모의고사 3</span></a>
+          <a href="exam-4.html"><span>모의고사 4</span></a>
+          <a href="exam-5.html"><span>모의고사 5</span></a>
+          <a href="exam-6.html"><span>모의고사 6</span></a>
+          <a href="exam-7.html"><span>모의고사 7</span></a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" data-view-link="practice" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">빠른 문제풀이 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="index.html#quick-refrigeration">냉동</a><a href="index.html#quick-airconditioning">공기조화</a><a href="index.html#quick-load">냉난방부하</a><a href="index.html#quick-duct">덕트·송풍기</a><a href="index.html#quick-descriptive">서술형</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">학습자료 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="learning-fundamentals.html">공조 기초</a>
+          <a href="learning-terms.html">용어 및 단위</a>
+          <a href="learning-refrigeration.html">냉동공학</a>
+          <a href="learning-equipment.html">냉동장치</a>
+          <a href="learning-load.html">공조부하</a>
+          <a href="learning-airconditioning.html">공기조화</a>
+          <a href="learning-heat.html">열전달</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">이용안내 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="index.html#guide">사이트 이용방법</a><a href="index.html#grading">채점 기준</a><a href="index.html#updates">업데이트 내역</a><a href="index.html#faq">자주 묻는 질문</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>냉동기의 기본 원리</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>냉동사이클은 증발기에서 열을 받는 과정과 응축기에서 열을 내보내는 과정을 연결합니다. 압축기는 저압 증기를 고압으로 올려 주고, 팽창밸브는 고압 액체를 저압으로 낮춥니다. 두 기기는 압력 차이를 유지하지만 에너지 교환 방식은 다릅니다. 압축기에는 일이 공급되고 팽창밸브의 교축은 보통 등엔탈피로 모델링합니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+          <p>냉동기는 냉매의 압력과 상태를 변화시키면서 냉각 대상의 열을 실외로 이동시킵니다. 냉매가 증발할 때 열을 흡수하고, 응축할 때 열을 방출하는 성질을 이용합니다.</p>
+
+          <div class="principle-concept" id="principleConcept" data-cue="intro" aria-label="냉매가 증발기, 압축기, 응축기, 팽창밸브를 순환하며 열을 실내에서 실외로 이동시키는 과정">
+            <svg viewbox="0 0 960 470" role="img" aria-labelledby="principleConceptTitle principleConceptDesc">
+              <title id="principleConceptTitle">증기압축식 냉동기의 기본 원리</title>
+              <desc id="principleConceptDesc">냉매가 증발기에서 열을 흡수하고 압축기, 응축기, 팽창밸브를 거쳐 다시 증발기로 순환하는 과정</desc>
+              <defs><marker id="principleConceptArrow" markerwidth="10" markerheight="10" refx="8" refy="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z"></path></marker></defs>
+
+              <g class="principle-outside cold-space cue-evap"><rect x="20" y="115" width="180" height="210" rx="18"></rect><text x="110" y="158" text-anchor="middle" class="principle-heading">냉각 대상</text><text x="110" y="190" text-anchor="middle">낮은 온도</text><path d="M110 220 V280 M82 236 L138 264 M138 236 L82 264"></path></g>
+
+              <g class="principle-component evaporator cue-evap"><rect x="270" y="285" width="190" height="110" rx="18"></rect><text x="365" y="328" text-anchor="middle" class="principle-heading">증발기</text><text x="365" y="362" text-anchor="middle">저압 냉매가 증발</text><text x="365" y="385" text-anchor="middle">열 흡수</text></g>
+
+              <g class="principle-component compressor cue-compress"><rect x="270" y="60" width="190" height="110" rx="18"></rect><text x="365" y="104" text-anchor="middle" class="principle-heading">압축기</text><text x="365" y="137" text-anchor="middle">압력·온도 상승</text><text x="365" y="160" text-anchor="middle">냉매 순환</text></g>
+
+              <g class="principle-component condenser cue-condense"><rect x="600" y="60" width="190" height="110" rx="18"></rect><text x="695" y="104" text-anchor="middle" class="principle-heading">응축기</text><text x="695" y="137" text-anchor="middle">고압 냉매가 응축</text><text x="695" y="160" text-anchor="middle">열 방출</text></g>
+
+              <g class="principle-component expansion cue-expand"><rect x="600" y="285" width="190" height="110" rx="18"></rect><text x="695" y="328" text-anchor="middle" class="principle-heading">팽창밸브</text><text x="695" y="362" text-anchor="middle">압력·온도 하강</text><text x="695" y="385" text-anchor="middle">유량 조절</text></g>
+
+              <g class="principle-outside outdoor cue-condense"><rect x="840" y="115" width="100" height="210" rx="18"></rect><text x="890" y="158" text-anchor="middle" class="principle-heading">실외</text><circle cx="890" cy="235" r="28"></circle><path d="M890 191 V201 M890 269 V279 M846 235 H856 M924 235 H934 M860 205 L868 213 M912 257 L920 265 M920 205 L912 213 M868 257 L860 265"></path></g>
+
+              <g class="principle-flow cue-compress"><path d="M365 285 V170"></path></g><g class="principle-flow cue-condense"><path d="M460 115 H600"></path></g><g class="principle-flow cue-expand"><path d="M695 170 V285"></path></g><g class="principle-flow cue-evap"><path d="M600 340 H460"></path></g>
+              <g class="principle-heat-flow cue-evap"><path d="M200 265 H270"></path><text x="235" y="248" text-anchor="middle">열 흡수</text></g><g class="principle-heat-flow cue-condense"><path d="M790 265 H840"></path><text x="815" y="248" text-anchor="middle">열 방출</text></g>
+              <text x="530" y="447" text-anchor="middle">냉매가 상태와 압력을 바꾸며 순환하여 열을 실내에서 실외로 이동</text>
+            </svg>
+          </div>
+
+          <div class="principle-ai-launch-wrap"></div>
+          <div class="fundamental-keyline"><strong>한 줄 정리</strong> 냉동기는 냉매가 증발·압축·응축·팽창을 반복하며 열을 냉각 대상에서 실외로 이동시키는 장치입니다.</div>
+        </div>
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>상태 1은 압축기 입구, 2는 출구, 3은 응축기 출구, 4는 팽창밸브 출구로 정합니다. h₁=400, h₂=440, h₃=h₄=250 kJ/kg이면 냉동효과는 150 kJ/kg, 압축일은 40 kJ/kg, 응축열은 190 kJ/kg입니다. 150+40=190으로 열수지를 확인할 수 있습니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>상태번호는 교재마다 다릅니다. 숫자를 외워 빼기보다 증발기 출구−입구, 압축기 출구−입구처럼 기기별 에너지 변화를 먼저 확인하세요.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-refrigeration-ton.html">← 이전: 4. 냉동톤(RT)이란?</a><a href="learning-fundamentals-components.html">다음: 6. 압축기·응축기·팽창밸브·증발기의 역할 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+  <div class="site-footer-inner">
+    <nav class="site-footer-links" aria-label="하단 메뉴">
+      <a href="index.html#privacy">개인정보처리방침</a>
+      <a href="index.html#terms">이용약관</a>
+      <a href="index.html#contact">문의하기</a>
+      <a href="index.html#copyright">저작권 안내</a>
+      <a href="index.html#about">사이트 소개</a>
+    </nav>
+    <p class="site-footer-copy">공조실기 · 공조냉동기계기사 실기 연습실<br>본 사이트는 한국산업인력공단 및 특정 출판사와 관계없는 비공식 학습 서비스입니다.</p>
+  </div>
+</footer>
+
+<script src="assets/learning-nav.js"></script></body></html>

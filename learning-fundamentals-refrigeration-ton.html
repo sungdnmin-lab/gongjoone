@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>냉동톤(RT)이란? | 공조냉동 기초 | GongjoOne</title>
+<meta name="description" content="냉동톤은 얼음을 만드는 능력에서 유래한 열량률 단위입니다. 미국 냉동톤은 2,000 lb의 물을 얼음으로 만드는 기준에서 유래하며 12,000 Btu/h, 약 3.517 kW입니다. 반면 국내 실기 자료에는 물 1,000 kg을 기준으로 한 약 3.86 kW의 냉동톤도 등장합니다. 따라">
+<meta name="keywords" content="공조냉동기계기사, 공조냉동기사, 실기, 모의고사, 계산문제, 습공기선도, 냉동공학, 공기조화">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#2f86e8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5763TMT4M"></script>
+<script src="assets/original-00.js"></script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1619455180227291" crossorigin="anonymous"></script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%232f86e8'/%3E%3Cg%20stroke='white'%20stroke-width='5'%20stroke-linecap='round'%3E%3Cpath%20d='M32%2010v44M13%2021l38%2022M51%2021L13%2043'/%3E%3C/g%3E%3Ccircle%20cx='32'%20cy='32'%20r='5'%20fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/articles.css"></head>
+<body class="article-view"><header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="index.html" aria-label="공조실기 홈">
+      <span class="site-brand-mark" aria-hidden="true">
+        <svg viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 4v24M5.6 10l20.8 12M26.4 10L5.6 22" stroke="#fff" stroke-width="3" stroke-linecap="round"></path>
+          <circle cx="16" cy="16" r="3.2" fill="#fff"></circle>
+          <path d="m16 4-2.3 3.2M16 4l2.3 3.2M16 28l-2.3-3.2M16 28l2.3-3.2M5.6 10l3.9.4M5.6 10l1.6 3.6M26.4 22l-3.9-.4M26.4 22l-1.6-3.6M26.4 10l-3.9.4M26.4 10l-1.6 3.6M5.6 22l3.9-.4M5.6 22l1.6-3.6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </span>
+      <span><span class="site-brand-name">공조실기</span><span class="site-brand-sub">공조냉동기계기사 실기 연습실</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="전체 메뉴 열기" aria-expanded="false" aria-controls="siteMenu" onclick="toggleSiteMenu(this)">☰</button>
+    <nav class="site-menu" id="siteMenu" aria-label="주요 메뉴">
+      <a data-view-link="home" href="index.html">홈</a>
+      <div class="nav-group">
+        <button class="nav-trigger" data-view-link="exam" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">실전 모의고사 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="exam-1.html"><span>모의고사 1</span></a>
+          <a href="exam-2.html"><span>모의고사 2</span></a>
+          <a href="exam-3.html"><span>모의고사 3</span></a>
+          <a href="exam-4.html"><span>모의고사 4</span></a>
+          <a href="exam-5.html"><span>모의고사 5</span></a>
+          <a href="exam-6.html"><span>모의고사 6</span></a>
+          <a href="exam-7.html"><span>모의고사 7</span></a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" data-view-link="practice" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">빠른 문제풀이 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="index.html#quick-refrigeration">냉동</a><a href="index.html#quick-airconditioning">공기조화</a><a href="index.html#quick-load">냉난방부하</a><a href="index.html#quick-duct">덕트·송풍기</a><a href="index.html#quick-descriptive">서술형</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">학습자료 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="learning-fundamentals.html">공조 기초</a>
+          <a href="learning-terms.html">용어 및 단위</a>
+          <a href="learning-refrigeration.html">냉동공학</a>
+          <a href="learning-equipment.html">냉동장치</a>
+          <a href="learning-load.html">공조부하</a>
+          <a href="learning-airconditioning.html">공기조화</a>
+          <a href="learning-heat.html">열전달</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">이용안내 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="index.html#guide">사이트 이용방법</a><a href="index.html#grading">채점 기준</a><a href="index.html#updates">업데이트 내역</a><a href="index.html#faq">자주 묻는 질문</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>냉동톤(RT)이란?</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>냉동톤은 얼음을 만드는 능력에서 유래한 열량률 단위입니다. 미국 냉동톤은 2,000 lb의 물을 얼음으로 만드는 기준에서 유래하며 12,000 Btu/h, 약 3.517 kW입니다. 반면 국내 실기 자료에는 물 1,000 kg을 기준으로 한 약 3.86 kW의 냉동톤도 등장합니다. 따라서 RT라는 글자만 보고 환산값을 선택하지 말고 문제의 정의를 확인해야 합니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+          <p>냉동톤은 냉동능력을 나타내는 단위입니다. 표준 <strong>1 RT는 약 3.517 kW, 12,000 BTU/h 또는 3,024 kcal/h</strong>입니다.</p>
+
+          <div class="ton-concept" id="tonConcept" data-cue="intro" aria-label="섭씨 0도의 물 약 907킬로그램을 24시간 동안 섭씨 0도의 얼음으로 만드는 냉동능력">
+            <svg viewbox="0 0 960 420" role="img" aria-labelledby="tonConceptTitle tonConceptDesc">
+              <title id="tonConceptTitle">1 냉동톤의 의미와 환산값</title>
+              <desc id="tonConceptDesc">섭씨 0도의 물 1 미국톤을 24시간 동안 섭씨 0도의 얼음으로 만드는 냉동능력이 1 냉동톤이며 약 3.517 킬로와트이다.</desc>
+              <defs><marker id="tonConceptArrow" markerwidth="10" markerheight="10" refx="8" refy="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z"></path></marker></defs>
+
+              <g class="ton-water cue-mass"><rect x="30" y="65" width="235" height="230" rx="18"></rect><text x="147" y="108" text-anchor="middle" class="ton-heading">0℃의 물</text><path d="M78 194 C100 174 120 214 145 194 C170 174 190 214 216 194 V255 H78 Z"></path><text x="147" y="150" text-anchor="middle">1 US ton</text><text x="147" y="276" text-anchor="middle">약 907 kg</text></g>
+
+              <g class="ton-process cue-freeze"><circle cx="430" cy="145" r="47"></circle><path d="M430 112 V145 L453 160"></path><text x="430" y="218" text-anchor="middle" class="ton-heading">24시간</text><text x="430" y="250" text-anchor="middle">열을 제거</text></g>
+
+              <g class="ton-ice cue-freeze"><rect x="560" y="65" width="190" height="230" rx="18"></rect><text x="655" y="108" text-anchor="middle" class="ton-heading">0℃의 얼음</text><path d="M610 158 L655 132 L700 158 V224 L655 250 L610 224 Z"></path><path d="M610 158 L655 184 L700 158 M655 184 V250"></path><text x="655" y="276" text-anchor="middle">상태변화 완료</text></g>
+
+              <g class="ton-flow cue-freeze"><path d="M265 180 H370"></path><path d="M490 180 H560"></path></g>
+
+              <g class="ton-result cue-result"><rect x="785" y="65" width="155" height="230" rx="18"></rect><text x="862" y="108" text-anchor="middle" class="ton-heading">1 RT</text><text x="862" y="153" text-anchor="middle">3.517 kW</text><line x1="813" y1="178" x2="912" y2="178"></line><text x="862" y="212" text-anchor="middle">12,000</text><text x="862" y="237" text-anchor="middle">BTU/h</text><text x="862" y="275" text-anchor="middle">약 3,024 kcal/h</text></g>
+
+              <g class="ton-flow cue-result"><path d="M750 180 H785"></path></g>
+              <g class="ton-note cue-result"><rect x="250" y="335" width="460" height="55" rx="12"></rect><text x="480" y="370" text-anchor="middle">냉동기의 무게가 아니라 냉동능력을 나타내는 단위</text></g>
+            </svg>
+          </div>
+
+          <div class="ton-ai-launch-wrap"></div>
+          <div class="fundamental-keyline"><strong>한 줄 정리</strong> 미국 냉동톤 1 USRT는 0℃의 물 약 907kg을 24시간 동안 0℃의 얼음으로 만드는 냉동능력입니다.</div>
+        <p>기존 도안의 RT 표기는 미국 냉동톤 기준으로 읽습니다. 물 1,000 kg 기준 냉동톤과 구분하세요.</p></div>
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>이 예제는 미국 냉동톤 1 USRT = 3.517 kW를 사용합니다. 10 USRT의 냉동능력은 10×3.517 = 35.17 kW입니다. COP가 4라면 압축기 입력은 Ẇ = <span class="solution-frac"><span class="solution-num">Q̇e</span><span class="solution-den">COP</span></span> = <span class="solution-frac"><span class="solution-num">35.17</span><span class="solution-den">4</span></span> = 8.79 kW입니다. 35.17 kW는 냉각 능력이며 소비전력과 구분합니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>물 1,000 kg 기준으로 1 RT = 3.86 kW가 주어졌다면 10 RT는 38.6 kW로 계산합니다. 미국 냉동톤, 물 1,000 kg 기준 냉동톤, 냉각탑 CRT를 서로 바꾸어 쓰지 않습니다. 문제에서 지정한 환산값이 우선입니다.</p></section></div><p class="reference-links"><a href="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8" target="_blank" rel="noopener noreferrer">미국 냉동톤 환산값: NIST SI 변환표</a></p></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-cooling-capacity.html">← 이전: 3. 냉동능력이란?</a><a href="learning-fundamentals-cycle-principle.html">다음: 5. 냉동기의 기본 원리 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+  <div class="site-footer-inner">
+    <nav class="site-footer-links" aria-label="하단 메뉴">
+      <a href="index.html#privacy">개인정보처리방침</a>
+      <a href="index.html#terms">이용약관</a>
+      <a href="index.html#contact">문의하기</a>
+      <a href="index.html#copyright">저작권 안내</a>
+      <a href="index.html#about">사이트 소개</a>
+    </nav>
+    <p class="site-footer-copy">공조실기 · 공조냉동기계기사 실기 연습실<br>본 사이트는 한국산업인력공단 및 특정 출판사와 관계없는 비공식 학습 서비스입니다.</p>
+  </div>
+</footer>
+
+<script src="assets/learning-nav.js"></script></body></html>

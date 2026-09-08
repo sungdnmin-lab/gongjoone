@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>증발기 | 냉동장치 | GongjoOne</title>
+<meta name="description" content="증발기는 냉각 대상의 열을 냉매에 전달합니다. 물 측 유량·온도차로 계산한 열량과 냉매 측 엔탈피 증가율은 열손실을 무시하면 같습니다. 전열면적을 구할 때는 주어진 열관류율의 면적 기준을 맞춰야 합니다.">
+<meta name="keywords" content="공조냉동기계기사, 공조냉동기사, 실기, 모의고사, 계산문제, 습공기선도, 냉동공학, 공기조화">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#2f86e8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5763TMT4M"></script>
+<script src="assets/original-00.js"></script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1619455180227291" crossorigin="anonymous"></script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%232f86e8'/%3E%3Cg%20stroke='white'%20stroke-width='5'%20stroke-linecap='round'%3E%3Cpath%20d='M32%2010v44M13%2021l38%2022M51%2021L13%2043'/%3E%3C/g%3E%3Ccircle%20cx='32'%20cy='32'%20r='5'%20fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/articles.css"></head>
+<body class="article-view"><header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="index.html" aria-label="공조실기 홈">
+      <span class="site-brand-mark" aria-hidden="true">
+        <svg viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 4v24M5.6 10l20.8 12M26.4 10L5.6 22" stroke="#fff" stroke-width="3" stroke-linecap="round"></path>
+          <circle cx="16" cy="16" r="3.2" fill="#fff"></circle>
+          <path d="m16 4-2.3 3.2M16 4l2.3 3.2M16 28l-2.3-3.2M16 28l2.3-3.2M5.6 10l3.9.4M5.6 10l1.6 3.6M26.4 22l-3.9-.4M26.4 22l-1.6-3.6M26.4 10l-3.9.4M26.4 10l-1.6 3.6M5.6 22l3.9-.4M5.6 22l1.6-3.6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </span>
+      <span><span class="site-brand-name">공조실기</span><span class="site-brand-sub">공조냉동기계기사 실기 연습실</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="전체 메뉴 열기" aria-expanded="false" aria-controls="siteMenu" onclick="toggleSiteMenu(this)">☰</button>
+    <nav class="site-menu" id="siteMenu" aria-label="주요 메뉴">
+      <a data-view-link="home" href="index.html">홈</a>
+      <div class="nav-group">
+        <button class="nav-trigger" data-view-link="exam" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">실전 모의고사 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="exam-1.html"><span>모의고사 1</span></a>
+          <a href="exam-2.html"><span>모의고사 2</span></a>
+          <a href="exam-3.html"><span>모의고사 3</span></a>
+          <a href="exam-4.html"><span>모의고사 4</span></a>
+          <a href="exam-5.html"><span>모의고사 5</span></a>
+          <a href="exam-6.html"><span>모의고사 6</span></a>
+          <a href="exam-7.html"><span>모의고사 7</span></a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" data-view-link="practice" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">빠른 문제풀이 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="index.html#quick-refrigeration">냉동</a><a href="index.html#quick-airconditioning">공기조화</a><a href="index.html#quick-load">냉난방부하</a><a href="index.html#quick-duct">덕트·송풍기</a><a href="index.html#quick-descriptive">서술형</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">학습자료 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="learning-fundamentals.html">공조 기초</a>
+          <a href="learning-terms.html">용어 및 단위</a>
+          <a href="learning-refrigeration.html">냉동공학</a>
+          <a href="learning-equipment.html">냉동장치</a>
+          <a href="learning-load.html">공조부하</a>
+          <a href="learning-airconditioning.html">공기조화</a>
+          <a href="learning-heat.html">열전달</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">이용안내 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="index.html#guide">사이트 이용방법</a><a href="index.html#grading">채점 기준</a><a href="index.html#updates">업데이트 내역</a><a href="index.html#faq">자주 묻는 질문</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-equipment.html">냉동장치</a></nav><article class="article-paper"><h1>증발기</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>증발기는 냉각 대상의 열을 냉매에 전달합니다. 물 측 유량·온도차로 계산한 열량과 냉매 측 엔탈피 증가율은 열손실을 무시하면 같습니다. 전열면적을 구할 때는 주어진 열관류율의 면적 기준을 맞춰야 합니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+          <p>증발기는 저압 냉매가 증발하면서 공기·물·브라인 등의 열을 흡수하는 열교환기이다.</p>
+          <div class="learn-formula">Q = KAΔtₘ = K(mπDᵢL)Δtₘ</div>
+          <table class="learn-table">
+            <tr><th>기호</th><th>뜻</th></tr>
+            <tr><td>K</td><td>열관류율</td></tr>
+            <tr><td>A</td><td>전열면적</td></tr>
+            <tr><td>m</td><td>관의 개수 또는 표면적 배수</td></tr>
+            <tr><td>Dᵢ</td><td>관의 내경</td></tr>
+            <tr><td>L</td><td>관의 길이</td></tr>
+            <tr><td>Δtₘ</td><td>냉매와 피냉각물의 평균온도차</td></tr>
+          </table>
+          <div class="exam-tip"><strong>핵심</strong><br>증발기에서는 냉매가 열을 흡수하며, 냉동부하는 냉매가 단위시간당 제거하는 열량이다.</div>
+        </div>
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>열량 20 kW, K=500 W/(m²·K), 평균온도차 8 K이면 A=<span class="solution-frac"><span class="solution-num">20,000</span><span class="solution-den">500×8</span></span>=5 m²입니다. K 단위가 W이므로 분자의 kW를 W로 바꿨습니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>내면 기준 열관류율에는 내면적을, 외면 기준에는 외면적을 사용합니다. 핀 면적이나 유효면적이 주어지면 맨관 면적으로 임의 변경하지 않습니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-equipment-pressure-regulators.html">← 이전: 4. 증발압력·흡입압력·응축압력 조정밸브</a><a href="learning-equipment-condensers.html">다음: 6. 응축기 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+  <div class="site-footer-inner">
+    <nav class="site-footer-links" aria-label="하단 메뉴">
+      <a href="index.html#privacy">개인정보처리방침</a>
+      <a href="index.html#terms">이용약관</a>
+      <a href="index.html#contact">문의하기</a>
+      <a href="index.html#copyright">저작권 안내</a>
+      <a href="index.html#about">사이트 소개</a>
+    </nav>
+    <p class="site-footer-copy">공조실기 · 공조냉동기계기사 실기 연습실<br>본 사이트는 한국산업인력공단 및 특정 출판사와 관계없는 비공식 학습 서비스입니다.</p>
+  </div>
+</footer>
+
+<script src="assets/learning-nav.js"></script></body></html>

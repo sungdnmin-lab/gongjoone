@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>건구온도·습구온도·상대습도란? | 공조냉동 기초 | GongjoOne</title>
+<meta name="description" content="건구온도는 일반 온도계의 공기온도이고 습구온도는 물의 증발냉각을 반영합니다. 상대습도는 현재 수증기 분압을 같은 온도의 포화 수증기압과 비교한 값입니다. 수증기를 추가하지 않아도 공기를 가열하면 상대습도가 내려갈 수 있으므로 상대습도만으로 수분의 실제 질량을 비교해서는 안 됩니다.">
+<meta name="keywords" content="공조냉동기계기사, 공조냉동기사, 실기, 모의고사, 계산문제, 습공기선도, 냉동공학, 공기조화">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#2f86e8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5763TMT4M"></script>
+<script src="assets/original-00.js"></script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1619455180227291" crossorigin="anonymous"></script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%232f86e8'/%3E%3Cg%20stroke='white'%20stroke-width='5'%20stroke-linecap='round'%3E%3Cpath%20d='M32%2010v44M13%2021l38%2022M51%2021L13%2043'/%3E%3C/g%3E%3Ccircle%20cx='32'%20cy='32'%20r='5'%20fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/articles.css"></head>
+<body class="article-view"><header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="index.html" aria-label="공조실기 홈">
+      <span class="site-brand-mark" aria-hidden="true">
+        <svg viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 4v24M5.6 10l20.8 12M26.4 10L5.6 22" stroke="#fff" stroke-width="3" stroke-linecap="round"></path>
+          <circle cx="16" cy="16" r="3.2" fill="#fff"></circle>
+          <path d="m16 4-2.3 3.2M16 4l2.3 3.2M16 28l-2.3-3.2M16 28l2.3-3.2M5.6 10l3.9.4M5.6 10l1.6 3.6M26.4 22l-3.9-.4M26.4 22l-1.6-3.6M26.4 10l-3.9.4M26.4 10l-1.6 3.6M5.6 22l3.9-.4M5.6 22l1.6-3.6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </span>
+      <span><span class="site-brand-name">공조실기</span><span class="site-brand-sub">공조냉동기계기사 실기 연습실</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="전체 메뉴 열기" aria-expanded="false" aria-controls="siteMenu" onclick="toggleSiteMenu(this)">☰</button>
+    <nav class="site-menu" id="siteMenu" aria-label="주요 메뉴">
+      <a data-view-link="home" href="index.html">홈</a>
+      <div class="nav-group">
+        <button class="nav-trigger" data-view-link="exam" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">실전 모의고사 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="exam-1.html"><span>모의고사 1</span></a>
+          <a href="exam-2.html"><span>모의고사 2</span></a>
+          <a href="exam-3.html"><span>모의고사 3</span></a>
+          <a href="exam-4.html"><span>모의고사 4</span></a>
+          <a href="exam-5.html"><span>모의고사 5</span></a>
+          <a href="exam-6.html"><span>모의고사 6</span></a>
+          <a href="exam-7.html"><span>모의고사 7</span></a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" data-view-link="practice" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">빠른 문제풀이 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="index.html#quick-refrigeration">냉동</a><a href="index.html#quick-airconditioning">공기조화</a><a href="index.html#quick-load">냉난방부하</a><a href="index.html#quick-duct">덕트·송풍기</a><a href="index.html#quick-descriptive">서술형</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">학습자료 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="learning-fundamentals.html">공조 기초</a>
+          <a href="learning-terms.html">용어 및 단위</a>
+          <a href="learning-refrigeration.html">냉동공학</a>
+          <a href="learning-equipment.html">냉동장치</a>
+          <a href="learning-load.html">공조부하</a>
+          <a href="learning-airconditioning.html">공기조화</a>
+          <a href="learning-heat.html">열전달</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">이용안내 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="index.html#guide">사이트 이용방법</a><a href="index.html#grading">채점 기준</a><a href="index.html#updates">업데이트 내역</a><a href="index.html#faq">자주 묻는 질문</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>건구온도·습구온도·상대습도란?</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>건구온도는 일반 온도계의 공기온도이고 습구온도는 물의 증발냉각을 반영합니다. 상대습도는 현재 수증기 분압을 같은 온도의 포화 수증기압과 비교한 값입니다. 수증기를 추가하지 않아도 공기를 가열하면 상대습도가 내려갈 수 있으므로 상대습도만으로 수분의 실제 질량을 비교해서는 안 됩니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+          <p>건구온도는 일반 온도계로 측정한 공기 온도이고, 습구온도는 젖은 감온부에서 물이 증발하며 나타나는 냉각 효과를 반영한 온도입니다. 상대습도는 현재 수증기압을 같은 온도의 포화 수증기압으로 나눈 비율입니다.</p>
+
+          <div class="humidity-concept" id="humidityConcept" data-cue="intro" aria-label="건구온도와 습구온도의 차이로 상대습도의 높고 낮음을 비교하는 그림">
+            <svg viewbox="0 0 960 590" role="img" aria-labelledby="humidityTitle humidityDesc">
+              <title id="humidityTitle">건구온도·습구온도·상대습도의 관계</title>
+              <desc id="humidityDesc">건구온도는 일반 온도계로 측정하고 습구온도는 젖은 거즈를 감싼 온도계로 측정한다. 건구와 습구의 차가 크면 상대습도가 낮고, 차가 작으면 상대습도가 높다.</desc>
+              <defs><marker id="humidityArrow" markerwidth="9" markerheight="9" refx="8" refy="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z"></path></marker></defs>
+
+              <g class="humidity-term cue-dry-bulb"><rect x="35" y="40" width="280" height="170" rx="17"></rect><text class="term-title" x="175" y="76">건구온도</text><text x="175" y="105">일반 온도계의 공기 온도</text><g class="thermometer" transform="translate(154 121)"><rect x="0" y="0" width="42" height="66" rx="20"></rect><circle cx="21" cy="66" r="22"></circle><path d="M21 15 V66"></path></g></g>
+              <g class="humidity-term cue-wet-bulb"><rect x="340" y="40" width="280" height="170" rx="17"></rect><text class="term-title" x="480" y="76">습구온도</text><text x="480" y="105">젖은 거즈의 증발 냉각 반영</text><g class="thermometer wet" transform="translate(459 121)"><rect x="0" y="0" width="42" height="66" rx="20"></rect><circle cx="21" cy="66" r="22"></circle><path d="M21 24 V66"></path><path class="gauze" d="M-8 33 H50 V62 H-8 Z"></path></g></g>
+              <g class="humidity-term cue-relative-humidity"><rect x="645" y="40" width="280" height="170" rx="17"></rect><text class="term-title" x="785" y="76">상대습도</text><text x="785" y="105">현재 수증기압의 포화 정도</text><text class="rh-formula" x="785" y="145">현재 수증기압</text><path class="fraction" d="M710 155 H860"></path><text class="rh-formula" x="785" y="181">포화 수증기압</text><text class="multiply" x="885" y="165">× 100%</text></g>
+
+              <g class="humidity-case cue-dry-air"><rect x="55" y="255" width="400" height="245" rx="18"></rect><text class="case-title" x="255" y="294">건조한 공기</text><text x="255" y="324">물이 잘 증발하여 습구온도가 크게 내려감</text><g class="mini-temp"><rect x="100" y="355" width="120" height="74" rx="12"></rect><text x="160" y="383">건구 30℃</text><text class="temp-value" x="160" y="414">30</text><rect x="290" y="355" width="120" height="74" rx="12"></rect><text x="350" y="383">습구 20℃</text><text class="temp-value" x="350" y="414">20</text></g><path class="relation-arrow" d="M225 392 H285"></path><text class="case-result" x="255" y="463">온도차 큼 → 상대습도 낮음</text></g>
+              <g class="humidity-case cue-humid-air"><rect x="505" y="255" width="400" height="245" rx="18"></rect><text class="case-title" x="705" y="294">습한 공기</text><text x="705" y="324">증발이 적어 습구온도가 조금만 내려감</text><g class="mini-temp"><rect x="550" y="355" width="120" height="74" rx="12"></rect><text x="610" y="383">건구 30℃</text><text class="temp-value" x="610" y="414">30</text><rect x="740" y="355" width="120" height="74" rx="12"></rect><text x="800" y="383">습구 28℃</text><text class="temp-value" x="800" y="414">28</text></g><path class="relation-arrow" d="M675 392 H735"></path><text class="case-result" x="705" y="463">온도차 작음 → 상대습도 높음</text></g>
+
+              <g class="humidity-summary cue-done"><rect x="145" y="530" width="670" height="42" rx="11"></rect><text x="480" y="558">건구−습구 온도차가 작을수록 상대습도는 높다</text></g>
+            </svg>
+          </div>
+
+          <div class="humidity-ai-launch-wrap"></div>
+          <div class="fundamental-keyline"><strong>한 줄 정리</strong> 같은 건구온도·대기압에서 건구와 습구의 온도차가 작을수록 상대습도는 높습니다.</div>
+        </div>
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>일정 압력에서 공기를 수분 변화 없이 20℃에서 30℃로 가열하면 절대습도는 일정하고 상대습도는 낮아집니다. 습공기선도에서는 오른쪽으로 수평 이동합니다. 반대로 냉각하면 상대습도가 올라가고, 노점에 도달한 뒤 더 냉각하면 결로가 일어날 수 있습니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>건구·습구온도차만으로 상대습도를 하나로 정할 수는 없습니다. 건구온도와 대기압 등 조건도 필요합니다. 포화상태에서는 일반적인 평형 조건에서 건구·습구·노점온도가 같습니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-sensible-latent.html">← 이전: 11. 현열과 잠열이란?</a><a href="learning-fundamentals-enthalpy.html">다음: 13. 엔탈피란? →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+  <div class="site-footer-inner">
+    <nav class="site-footer-links" aria-label="하단 메뉴">
+      <a href="index.html#privacy">개인정보처리방침</a>
+      <a href="index.html#terms">이용약관</a>
+      <a href="index.html#contact">문의하기</a>
+      <a href="index.html#copyright">저작권 안내</a>
+      <a href="index.html#about">사이트 소개</a>
+    </nav>
+    <p class="site-footer-copy">공조실기 · 공조냉동기계기사 실기 연습실<br>본 사이트는 한국산업인력공단 및 특정 출판사와 관계없는 비공식 학습 서비스입니다.</p>
+  </div>
+</footer>
+
+<script src="assets/learning-nav.js"></script></body></html>

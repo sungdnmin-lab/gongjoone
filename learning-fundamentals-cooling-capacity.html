@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>냉동능력이란? | 공조냉동 기초 | GongjoOne</title>
+<meta name="description" content="냉동능력은 단위시간 동안 제거할 수 있는 열량입니다. 열량이 저장되거나 이동한 에너지의 양이라면, 냉동능력은 그 에너지를 제거하는 속도입니다. 따라서 kJ와 kW는 다른 물리량이며 1 kW는 1초에 1 kJ를 처리하는 능력입니다. 냉수의 온도차와 유량을 알면 냉수 측에서 흡수한 열량률을">
+<meta name="keywords" content="공조냉동기계기사, 공조냉동기사, 실기, 모의고사, 계산문제, 습공기선도, 냉동공학, 공기조화">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#2f86e8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5763TMT4M"></script>
+<script src="assets/original-00.js"></script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1619455180227291" crossorigin="anonymous"></script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%232f86e8'/%3E%3Cg%20stroke='white'%20stroke-width='5'%20stroke-linecap='round'%3E%3Cpath%20d='M32%2010v44M13%2021l38%2022M51%2021L13%2043'/%3E%3C/g%3E%3Ccircle%20cx='32'%20cy='32'%20r='5'%20fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/articles.css"></head>
+<body class="article-view"><header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="index.html" aria-label="공조실기 홈">
+      <span class="site-brand-mark" aria-hidden="true">
+        <svg viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 4v24M5.6 10l20.8 12M26.4 10L5.6 22" stroke="#fff" stroke-width="3" stroke-linecap="round"></path>
+          <circle cx="16" cy="16" r="3.2" fill="#fff"></circle>
+          <path d="m16 4-2.3 3.2M16 4l2.3 3.2M16 28l-2.3-3.2M16 28l2.3-3.2M5.6 10l3.9.4M5.6 10l1.6 3.6M26.4 22l-3.9-.4M26.4 22l-1.6-3.6M26.4 10l-3.9.4M26.4 10l-1.6 3.6M5.6 22l3.9-.4M5.6 22l1.6-3.6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </span>
+      <span><span class="site-brand-name">공조실기</span><span class="site-brand-sub">공조냉동기계기사 실기 연습실</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="전체 메뉴 열기" aria-expanded="false" aria-controls="siteMenu" onclick="toggleSiteMenu(this)">☰</button>
+    <nav class="site-menu" id="siteMenu" aria-label="주요 메뉴">
+      <a data-view-link="home" href="index.html">홈</a>
+      <div class="nav-group">
+        <button class="nav-trigger" data-view-link="exam" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">실전 모의고사 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="exam-1.html"><span>모의고사 1</span></a>
+          <a href="exam-2.html"><span>모의고사 2</span></a>
+          <a href="exam-3.html"><span>모의고사 3</span></a>
+          <a href="exam-4.html"><span>모의고사 4</span></a>
+          <a href="exam-5.html"><span>모의고사 5</span></a>
+          <a href="exam-6.html"><span>모의고사 6</span></a>
+          <a href="exam-7.html"><span>모의고사 7</span></a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" data-view-link="practice" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">빠른 문제풀이 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="index.html#quick-refrigeration">냉동</a><a href="index.html#quick-airconditioning">공기조화</a><a href="index.html#quick-load">냉난방부하</a><a href="index.html#quick-duct">덕트·송풍기</a><a href="index.html#quick-descriptive">서술형</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">학습자료 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="learning-fundamentals.html">공조 기초</a>
+          <a href="learning-terms.html">용어 및 단위</a>
+          <a href="learning-refrigeration.html">냉동공학</a>
+          <a href="learning-equipment.html">냉동장치</a>
+          <a href="learning-load.html">공조부하</a>
+          <a href="learning-airconditioning.html">공기조화</a>
+          <a href="learning-heat.html">열전달</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">이용안내 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="index.html#guide">사이트 이용방법</a><a href="index.html#grading">채점 기준</a><a href="index.html#updates">업데이트 내역</a><a href="index.html#faq">자주 묻는 질문</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>냉동능력이란?</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>냉동능력은 단위시간 동안 제거할 수 있는 열량입니다. 열량이 저장되거나 이동한 에너지의 양이라면, 냉동능력은 그 에너지를 제거하는 속도입니다. 따라서 kJ와 kW는 다른 물리량이며 1 kW는 1초에 1 kJ를 처리하는 능력입니다. 냉수의 온도차와 유량을 알면 냉수 측에서 흡수한 열량률을 계산할 수 있습니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+          <p>냉동능력은 냉동기가 <strong>단위시간 동안</strong> 냉각 대상에서 제거할 수 있는 열량입니다. 일반적으로 kW, kcal/h 또는 RT로 나타냅니다.</p>
+
+          <div class="capacity-concept" id="capacityConcept" data-cue="intro" aria-label="냉각 대상에서 제거한 열량을 걸린 시간으로 나누어 냉동능력을 계산하는 과정">
+            <svg viewbox="0 0 940 410" role="img" aria-labelledby="capacityConceptTitle capacityConceptDesc">
+              <title id="capacityConceptTitle">냉동능력의 의미</title>
+              <desc id="capacityConceptDesc">냉각 대상에서 제거한 열량을 걸린 시간으로 나누어 냉동능력을 계산하는 과정</desc>
+              <defs><marker id="capacityConceptArrow" markerwidth="10" markerheight="10" refx="8" refy="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z"></path></marker></defs>
+
+              <g class="capacity-zone target-zone cue-heat"><rect x="30" y="65" width="235" height="225" rx="18"></rect><text x="147" y="108" text-anchor="middle" class="capacity-heading">냉각 대상</text><text x="147" y="141" text-anchor="middle">실내 · 냉장고 · 냉동창고</text><g class="capacity-heat-dots" aria-hidden="true"><circle cx="95" cy="192" r="10"></circle><circle cx="145" cy="192" r="10"></circle><circle cx="195" cy="192" r="10"></circle><circle cx="95" cy="237" r="10"></circle><circle cx="145" cy="237" r="10"></circle><circle cx="195" cy="237" r="10"></circle></g><text x="147" y="273" text-anchor="middle">보유한 열</text></g>
+
+              <g class="capacity-flow cue-heat"><path d="M265 180 H430"></path><text x="347" y="160" text-anchor="middle">제거한 열량</text><text x="347" y="208" text-anchor="middle">Qₑ</text></g>
+
+              <g class="capacity-zone evaporator-zone cue-heat"><rect x="430" y="65" width="200" height="225" rx="18"></rect><text x="530" y="108" text-anchor="middle" class="capacity-heading">증발기</text><path d="M470 160 C490 130 510 190 530 160 C550 130 570 190 590 160"></path><path d="M470 205 C490 175 510 235 530 205 C550 175 570 235 590 205"></path><text x="530" y="260" text-anchor="middle">열을 흡수</text></g>
+
+              <g class="capacity-time cue-time"><circle cx="337" cy="345" r="42"></circle><path d="M337 319 V346 L357 358"></path><text x="405" y="338">걸린 시간</text><text x="405" y="370">t초</text></g>
+
+              <g class="capacity-result cue-result"><rect x="705" y="65" width="205" height="225" rx="18"></rect><text x="807" y="108" text-anchor="middle" class="capacity-heading">냉동능력</text><text x="807" y="164" text-anchor="middle">Q̇ₑ = Qₑ ÷ t</text><line x1="742" y1="190" x2="872" y2="190"></line><text x="807" y="228" text-anchor="middle">1 kW = 1 kJ/s</text><text x="807" y="263" text-anchor="middle">단위: kW, RT</text></g>
+
+              <g class="capacity-flow cue-result"><path d="M630 180 H705"></path><text x="667" y="160" text-anchor="middle">계산</text></g>
+            </svg>
+          </div>
+
+          <div class="capacity-ai-launch-wrap"></div>
+          <div class="fundamental-keyline"><strong>한 줄 정리</strong> 냉동능력은 냉동기가 단위시간 동안 냉각 대상에서 제거할 수 있는 열량입니다.</div>
+        </div>
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>물 600 kg을 12℃에서 7℃로 10분 동안 냉각한다고 가정합니다. 비열은 4.19 kJ/(kg·K), 외부 열취득은 무시합니다. Q = mcΔt = 600×4.19×5 = 12,570 kJ. 평균 냉동능력 Q̇ = <span class="solution-frac"><span class="solution-num">Q</span><span class="solution-den">τ</span></span> = <span class="solution-frac"><span class="solution-num">12,570</span><span class="solution-den">600</span></span> = 20.95 kW입니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>시간 10분을 그대로 분모에 넣으면 결과는 kJ/min입니다. kW를 구할 때는 초로 바꿉니다. 실제 선정에서는 냉각 대상 이외의 열취득과 운전 조건도 포함하지만, 계산 문제에서는 주어진 범위만 반영합니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-refrigeration.html">← 이전: 2. 냉동이란 무엇인가?</a><a href="learning-fundamentals-refrigeration-ton.html">다음: 4. 냉동톤(RT)이란? →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+  <div class="site-footer-inner">
+    <nav class="site-footer-links" aria-label="하단 메뉴">
+      <a href="index.html#privacy">개인정보처리방침</a>
+      <a href="index.html#terms">이용약관</a>
+      <a href="index.html#contact">문의하기</a>
+      <a href="index.html#copyright">저작권 안내</a>
+      <a href="index.html#about">사이트 소개</a>
+    </nav>
+    <p class="site-footer-copy">공조실기 · 공조냉동기계기사 실기 연습실<br>본 사이트는 한국산업인력공단 및 특정 출판사와 관계없는 비공식 학습 서비스입니다.</p>
+  </div>
+</footer>
+
+<script src="assets/learning-nav.js"></script></body></html>

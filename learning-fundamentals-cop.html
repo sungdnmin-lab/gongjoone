@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>COP(성적계수)란? | 공조냉동 기초 | GongjoOne</title>
+<meta name="description" content="COP는 유용한 열량률과 그에 필요한 입력의 비입니다. 냉동기는 저온부에서 제거한 열을, 열펌프는 고온부에 공급한 열을 유용한 효과로 봅니다. 열을 새로 만드는 것만이 아니라 주변 열을 이동시키므로 COP가 1을 넘을 수 있습니다. 냉매 엔탈피로 계산하는 사이클 COP와 보조기기를 포함">
+<meta name="keywords" content="공조냉동기계기사, 공조냉동기사, 실기, 모의고사, 계산문제, 습공기선도, 냉동공학, 공기조화">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#2f86e8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5763TMT4M"></script>
+<script src="assets/original-00.js"></script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1619455180227291" crossorigin="anonymous"></script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%232f86e8'/%3E%3Cg%20stroke='white'%20stroke-width='5'%20stroke-linecap='round'%3E%3Cpath%20d='M32%2010v44M13%2021l38%2022M51%2021L13%2043'/%3E%3C/g%3E%3Ccircle%20cx='32'%20cy='32'%20r='5'%20fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/articles.css"></head>
+<body class="article-view"><header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="index.html" aria-label="공조실기 홈">
+      <span class="site-brand-mark" aria-hidden="true">
+        <svg viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 4v24M5.6 10l20.8 12M26.4 10L5.6 22" stroke="#fff" stroke-width="3" stroke-linecap="round"></path>
+          <circle cx="16" cy="16" r="3.2" fill="#fff"></circle>
+          <path d="m16 4-2.3 3.2M16 4l2.3 3.2M16 28l-2.3-3.2M16 28l2.3-3.2M5.6 10l3.9.4M5.6 10l1.6 3.6M26.4 22l-3.9-.4M26.4 22l-1.6-3.6M26.4 10l-3.9.4M26.4 10l-1.6 3.6M5.6 22l3.9-.4M5.6 22l1.6-3.6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </span>
+      <span><span class="site-brand-name">공조실기</span><span class="site-brand-sub">공조냉동기계기사 실기 연습실</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="전체 메뉴 열기" aria-expanded="false" aria-controls="siteMenu" onclick="toggleSiteMenu(this)">☰</button>
+    <nav class="site-menu" id="siteMenu" aria-label="주요 메뉴">
+      <a data-view-link="home" href="index.html">홈</a>
+      <div class="nav-group">
+        <button class="nav-trigger" data-view-link="exam" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">실전 모의고사 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="exam-1.html"><span>모의고사 1</span></a>
+          <a href="exam-2.html"><span>모의고사 2</span></a>
+          <a href="exam-3.html"><span>모의고사 3</span></a>
+          <a href="exam-4.html"><span>모의고사 4</span></a>
+          <a href="exam-5.html"><span>모의고사 5</span></a>
+          <a href="exam-6.html"><span>모의고사 6</span></a>
+          <a href="exam-7.html"><span>모의고사 7</span></a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" data-view-link="practice" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">빠른 문제풀이 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="index.html#quick-refrigeration">냉동</a><a href="index.html#quick-airconditioning">공기조화</a><a href="index.html#quick-load">냉난방부하</a><a href="index.html#quick-duct">덕트·송풍기</a><a href="index.html#quick-descriptive">서술형</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">학습자료 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="learning-fundamentals.html">공조 기초</a>
+          <a href="learning-terms.html">용어 및 단위</a>
+          <a href="learning-refrigeration.html">냉동공학</a>
+          <a href="learning-equipment.html">냉동장치</a>
+          <a href="learning-load.html">공조부하</a>
+          <a href="learning-airconditioning.html">공기조화</a>
+          <a href="learning-heat.html">열전달</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">이용안내 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="index.html#guide">사이트 이용방법</a><a href="index.html#grading">채점 기준</a><a href="index.html#updates">업데이트 내역</a><a href="index.html#faq">자주 묻는 질문</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>COP(성적계수)란?</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>COP는 유용한 열량률과 그에 필요한 입력의 비입니다. 냉동기는 저온부에서 제거한 열을, 열펌프는 고온부에 공급한 열을 유용한 효과로 봅니다. 열을 새로 만드는 것만이 아니라 주변 열을 이동시키므로 COP가 1을 넘을 수 있습니다. 냉매 엔탈피로 계산하는 사이클 COP와 보조기기를 포함한 시스템 COP는 경계가 다를 수 있습니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+          <p>COP는 공급한 일에 비해 얼마나 큰 냉동효과를 얻는지를 나타내는 성적계수입니다. 냉동기의 COP는 <strong>냉동효과 ÷ 압축일</strong>로 계산합니다.</p>
+
+          <div class="cop-concept" id="copConcept" data-cue="intro" aria-label="압축일 5킬로와트로 냉동효과 15킬로와트를 얻을 때 COP가 3이 되는 관계">
+            <svg viewbox="0 0 960 500" role="img" aria-labelledby="copTitle copDesc">
+              <title id="copTitle">냉동기 COP 계산과 의미</title>
+              <desc id="copDesc">냉동기에 압축일 5킬로와트를 공급하여 냉동효과 15킬로와트를 얻으면 COP는 15 나누기 5인 3이다.</desc>
+              <defs><marker id="copArrow" markerwidth="9" markerheight="9" refx="8" refy="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z"></path></marker></defs>
+
+              <g class="cop-node cue-work"><rect x="45" y="90" width="250" height="150" rx="16"></rect><text class="node-title" x="170" y="132">압축기에 공급한 일</text><text class="node-value" x="170" y="180">5 kW</text><rect class="unit-block" x="140" y="202" width="60" height="16" rx="3"></rect></g>
+              <g class="cop-machine cue-definition"><rect x="355" y="105" width="250" height="120" rx="60"></rect><text class="node-title" x="480" y="153">냉동기</text><text x="480" y="187">열을 이동시키는 장치</text></g>
+              <g class="cop-node cue-effect"><rect x="665" y="90" width="250" height="150" rx="16"></rect><text class="node-title" x="790" y="132">얻은 냉동효과</text><text class="node-value" x="790" y="180">15 kW</text><rect class="unit-block" x="700" y="202" width="52" height="16" rx="3"></rect><rect class="unit-block" x="764" y="202" width="52" height="16" rx="3"></rect><rect class="unit-block" x="828" y="202" width="52" height="16" rx="3"></rect></g>
+              <g class="cop-flow"><path d="M295 165 H355"></path><path d="M605 165 H665"></path></g>
+
+              <g class="cop-formula cue-formula cue-result"><rect x="185" y="285" width="590" height="92" rx="15"></rect><text class="formula-main" x="480" y="325">COP = 냉동효과 ÷ 압축일</text><text class="formula-example" x="480" y="357">15 ÷ 5 = 3</text></g>
+              <g class="cop-note cue-meaning"><rect x="80" y="414" width="380" height="58" rx="12"></rect><text x="270" y="449">1만큼의 일로 3만큼의 냉동효과</text></g>
+              <g class="cop-note cue-efficiency"><rect x="500" y="414" width="380" height="58" rx="12"></rect><text x="690" y="449">COP가 클수록 성능과 효율이 좋음</text></g>
+              <text class="unit-note cue-unit" x="480" y="397">같은 단위끼리 나누므로 COP에는 단위가 없음</text>
+            </svg>
+          </div>
+
+          <div class="cop-ai-launch-wrap"></div>
+          <div class="fundamental-keyline"><strong>한 줄 정리</strong> 냉동기 COP는 냉동효과를 압축일로 나눈 값이며, 클수록 효율이 좋습니다.</div>
+        </div>
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>냉동능력 24 kW, 압축기 입력 6 kW이면 COPᵣ = <span class="solution-frac"><span class="solution-num">24</span><span class="solution-den">6</span></span> = 4입니다. 열손실을 무시하면 응축기 방열량은 30 kW이고 COPₕ = <span class="solution-frac"><span class="solution-num">30</span><span class="solution-den">6</span></span> = 5입니다. 동일한 에너지 경계에서 COPₕ = COPᵣ+1이 성립합니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>COP 4를 400%의 에너지 생성이라고 해석하지 않습니다. 냉매 1 kg 기준으로 계산할 때는 분자와 분모를 모두 kJ/kg로 맞추고, 운전 동력 기준이라면 모두 kW로 맞춥니다.</p></section></div><p class="reference-links"><a href="https://heatpumpingtechnologies.org/articles/efficiency-heat-pumps/" target="_blank" rel="noopener noreferrer">COP 정의: IEA HPT</a></p></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-superheat-subcooling.html">← 이전: 9. 과열도와 과냉도란?</a><a href="learning-fundamentals-sensible-latent.html">다음: 11. 현열과 잠열이란? →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+  <div class="site-footer-inner">
+    <nav class="site-footer-links" aria-label="하단 메뉴">
+      <a href="index.html#privacy">개인정보처리방침</a>
+      <a href="index.html#terms">이용약관</a>
+      <a href="index.html#contact">문의하기</a>
+      <a href="index.html#copyright">저작권 안내</a>
+      <a href="index.html#about">사이트 소개</a>
+    </nav>
+    <p class="site-footer-copy">공조실기 · 공조냉동기계기사 실기 연습실<br>본 사이트는 한국산업인력공단 및 특정 출판사와 관계없는 비공식 학습 서비스입니다.</p>
+  </div>
+</footer>
+
+<script src="assets/learning-nav.js"></script></body></html>

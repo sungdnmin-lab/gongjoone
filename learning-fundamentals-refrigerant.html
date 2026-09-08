@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>냉매란 무엇인가? | 공조냉동 기초 | GongjoOne</title>
+<meta name="description" content="냉매는 열을 운반하는 작동유체입니다. 증기압축식에서는 증발과 응축의 상변화를 활용해 열을 이동시키며 압축기를 통해 순환합니다. 냉수나 브라인처럼 냉동기에서 받은 냉각 효과를 말단으로 옮기는 유체는 2차 냉매로 구분합니다. 냉매 선택에는 열역학적 성능뿐 아니라 재료 적합성도 필요합니다.">
+<meta name="keywords" content="공조냉동기계기사, 공조냉동기사, 실기, 모의고사, 계산문제, 습공기선도, 냉동공학, 공기조화">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#2f86e8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5763TMT4M"></script>
+<script src="assets/original-00.js"></script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1619455180227291" crossorigin="anonymous"></script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%232f86e8'/%3E%3Cg%20stroke='white'%20stroke-width='5'%20stroke-linecap='round'%3E%3Cpath%20d='M32%2010v44M13%2021l38%2022M51%2021L13%2043'/%3E%3C/g%3E%3Ccircle%20cx='32'%20cy='32'%20r='5'%20fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/articles.css"></head>
+<body class="article-view"><header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="index.html" aria-label="공조실기 홈">
+      <span class="site-brand-mark" aria-hidden="true">
+        <svg viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 4v24M5.6 10l20.8 12M26.4 10L5.6 22" stroke="#fff" stroke-width="3" stroke-linecap="round"></path>
+          <circle cx="16" cy="16" r="3.2" fill="#fff"></circle>
+          <path d="m16 4-2.3 3.2M16 4l2.3 3.2M16 28l-2.3-3.2M16 28l2.3-3.2M5.6 10l3.9.4M5.6 10l1.6 3.6M26.4 22l-3.9-.4M26.4 22l-1.6-3.6M26.4 10l-3.9.4M26.4 10l-1.6 3.6M5.6 22l3.9-.4M5.6 22l1.6-3.6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </span>
+      <span><span class="site-brand-name">공조실기</span><span class="site-brand-sub">공조냉동기계기사 실기 연습실</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="전체 메뉴 열기" aria-expanded="false" aria-controls="siteMenu" onclick="toggleSiteMenu(this)">☰</button>
+    <nav class="site-menu" id="siteMenu" aria-label="주요 메뉴">
+      <a data-view-link="home" href="index.html">홈</a>
+      <div class="nav-group">
+        <button class="nav-trigger" data-view-link="exam" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">실전 모의고사 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="exam-1.html"><span>모의고사 1</span></a>
+          <a href="exam-2.html"><span>모의고사 2</span></a>
+          <a href="exam-3.html"><span>모의고사 3</span></a>
+          <a href="exam-4.html"><span>모의고사 4</span></a>
+          <a href="exam-5.html"><span>모의고사 5</span></a>
+          <a href="exam-6.html"><span>모의고사 6</span></a>
+          <a href="exam-7.html"><span>모의고사 7</span></a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" data-view-link="practice" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">빠른 문제풀이 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="index.html#quick-refrigeration">냉동</a><a href="index.html#quick-airconditioning">공기조화</a><a href="index.html#quick-load">냉난방부하</a><a href="index.html#quick-duct">덕트·송풍기</a><a href="index.html#quick-descriptive">서술형</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">학습자료 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="learning-fundamentals.html">공조 기초</a>
+          <a href="learning-terms.html">용어 및 단위</a>
+          <a href="learning-refrigeration.html">냉동공학</a>
+          <a href="learning-equipment.html">냉동장치</a>
+          <a href="learning-load.html">공조부하</a>
+          <a href="learning-airconditioning.html">공기조화</a>
+          <a href="learning-heat.html">열전달</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" type="button" aria-expanded="false" onclick="toggleDropdown(event,this)">이용안내 <span class="nav-caret">▼</span></button>
+        <div class="nav-dropdown">
+          <a href="index.html#guide">사이트 이용방법</a><a href="index.html#grading">채점 기준</a><a href="index.html#updates">업데이트 내역</a><a href="index.html#faq">자주 묻는 질문</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>냉매란 무엇인가?</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>냉매는 열을 운반하는 작동유체입니다. 증기압축식에서는 증발과 응축의 상변화를 활용해 열을 이동시키며 압축기를 통해 순환합니다. 냉수나 브라인처럼 냉동기에서 받은 냉각 효과를 말단으로 옮기는 유체는 2차 냉매로 구분합니다. 냉매 선택에는 열역학적 성능뿐 아니라 재료 적합성도 필요합니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+          <p>냉매는 냉동장치 내부를 순환하면서 증발할 때 열을 흡수하고 응축할 때 열을 방출하여 열을 운반하는 작동유체입니다.</p>
+
+          <div class="refrigerant-concept" id="refrigerantConcept" data-cue="intro" aria-label="냉매가 증발기에서 열을 흡수하고 압축기, 응축기, 팽창밸브를 거쳐 다시 증발기로 순환하는 과정">
+            <svg viewbox="0 0 960 560" role="img" aria-labelledby="refrigerantTitle refrigerantDesc">
+              <title id="refrigerantTitle">냉매의 열 운반 과정</title>
+              <desc id="refrigerantDesc">냉매는 증발기에서 열을 흡수해 증기가 되고, 압축기와 응축기를 거치며 열을 외부로 방출한 뒤 팽창밸브를 통과해 다시 증발기로 돌아온다.</desc>
+              <defs><marker id="refrigerantArrow" markerwidth="9" markerheight="9" refx="8" refy="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z"></path></marker></defs>
+
+              <g class="refrigerant-definition cue-definition"><rect x="180" y="35" width="600" height="72" rx="15"></rect><text class="definition-title" x="480" y="66">냉매 = 냉동장치 안에서 열을 운반하는 작동유체</text><text x="480" y="92">차가움을 만드는 물질이 아니라 열을 다른 곳으로 옮기는 물질</text></g>
+
+              <g class="refrigerant-device cue-evaporator"><rect x="40" y="180" width="190" height="150" rx="16"></rect><text class="device-title" x="135" y="218">1. 증발기</text><text x="135" y="249">저압 혼합냉매 → 증기</text><text class="heat-label" x="135" y="282">주위의 열 흡수</text><path class="heat-arrow" d="M135 350 V315"></path></g>
+              <path class="cycle-arrow" d="M230 255 H280"></path>
+              <g class="refrigerant-device cue-compressor"><rect x="280" y="180" width="190" height="150" rx="16"></rect><text class="device-title" x="375" y="218">2. 압축기</text><text x="375" y="249">저압 증기 → 고압 증기</text><text x="375" y="282">압력·온도 상승</text></g>
+              <path class="cycle-arrow" d="M470 255 H520"></path>
+              <g class="refrigerant-device cue-condenser"><rect x="520" y="180" width="190" height="150" rx="16"></rect><text class="device-title" x="615" y="218">3. 응축기</text><text x="615" y="249">고압 증기 → 액체</text><text class="heat-label" x="615" y="282">외부로 열 방출</text><path class="heat-arrow" d="M615 315 V350"></path></g>
+              <path class="cycle-arrow" d="M710 255 H760"></path>
+              <g class="refrigerant-device cue-expansion"><rect x="760" y="180" width="160" height="150" rx="16"></rect><text class="device-title" x="840" y="218">4. 팽창밸브</text><text x="840" y="249">고압 액체 → 저압 냉매</text><text x="840" y="282">압력·온도 저하</text></g>
+
+              <g class="refrigerant-return cue-cycle"><path class="return-arrow" d="M840 330 V405 H135 V330"></path><text x="480" y="433">상태를 바꾸며 계속 순환</text></g>
+              <g class="refrigerant-latent cue-latent"><rect x="180" y="470" width="600" height="54" rx="12"></rect><text class="latent-title" x="480" y="503">증발과 응축 과정에서 많은 잠열을 주고받아 열을 효과적으로 운반</text></g>
+            </svg>
+          </div>
+
+          <div class="refrigerant-ai-launch-wrap"></div>
+          <div class="fundamental-keyline"><strong>한 줄 정리</strong> 냉매는 증발기에서 열을 흡수하고 응축기에서 열을 방출하며 계속 순환합니다.</div>
+        </div>
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>직접팽창식 공조기에서는 냉매가 실내 코일에서 직접 증발하여 공기를 냉각합니다. 냉수식 공조기에서는 냉동기의 증발기에서 물을 냉각한 뒤 펌프로 실내 코일에 보냅니다. 따라서 두 방식은 실내 코일을 흐르는 유체가 다릅니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>냉매 계열만으로 독성이나 가연성을 일괄 판단하지 않습니다. 냉매별 분류와 설비 조건을 확인해야 합니다. 기존 장치에 이름이 비슷한 냉매를 임의로 대체할 수 있다는 뜻도 아닙니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-enthalpy.html">← 이전: 13. 엔탈피란?</a><a href="learning-fundamentals-cycle-flow.html">다음: 15. 냉동사이클의 흐름 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+  <div class="site-footer-inner">
+    <nav class="site-footer-links" aria-label="하단 메뉴">
+      <a href="index.html#privacy">개인정보처리방침</a>
+      <a href="index.html#terms">이용약관</a>
+      <a href="index.html#contact">문의하기</a>
+      <a href="index.html#copyright">저작권 안내</a>
+      <a href="index.html#about">사이트 소개</a>
+    </nav>
+    <p class="site-footer-copy">공조실기 · 공조냉동기계기사 실기 연습실<br>본 사이트는 한국산업인력공단 및 특정 출판사와 관계없는 비공식 학습 서비스입니다.</p>
+  </div>
+</footer>
+
+<script src="assets/learning-nav.js"></script></body></html>
