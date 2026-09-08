@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760" role="img" aria-labelledby="title desc">
+  <title id="title">모의고사 1 제10번 2단 압축 2단 팽창 냉동장치 P-h 선도</title>
+  <desc id="desc">저압, 중간압, 고압에서 a부터 k까지의 상태점과 압축, 냉각, 응축, 팽창, 증발 및 중간냉각기 분리와 혼합을 나타낸 흑백 P-h 선도</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111"/>
+    </marker>
+    <style>
+      .axis{fill:none;stroke:#111;stroke-width:3;marker-end:url(#arrow)}
+      .guide{fill:none;stroke:#777;stroke-width:1.5;stroke-dasharray:8 7}
+      .dome{fill:none;stroke:#111;stroke-width:3}
+      .cycle{fill:none;stroke:#111;stroke-width:4;marker-end:url(#arrow);stroke-linecap:round;stroke-linejoin:round}
+      .same{fill:none;stroke:#111;stroke-width:3;marker-end:url(#arrow);stroke-linecap:round}
+      .branch{fill:none;stroke:#111;stroke-width:3;stroke-dasharray:9 7;marker-end:url(#arrow);stroke-linecap:round}
+      .point{fill:#fff;stroke:#111;stroke-width:3}
+      .anchor{fill:#111;stroke:#fff;stroke-width:2}
+      .leader{fill:none;stroke:#111;stroke-width:1.8}
+      .state{font:700 24px Arial,"Noto Sans KR",sans-serif;fill:#111;text-anchor:middle;dominant-baseline:middle}
+      .label{font:600 19px Arial,"Noto Sans KR",sans-serif;fill:#111}
+      .small{font:500 16px Arial,"Noto Sans KR",sans-serif;fill:#111}
+      .axisText{font:italic 28px Georgia,serif;fill:#111}
+      .title{font:800 28px Arial,"Noto Sans KR",sans-serif;fill:#111;text-anchor:middle}
+    </style>
+  </defs>
+  <rect width="1100" height="760" fill="#fff"/>
+  <text class="title" x="550" y="46">2단 압축·2단 팽창 냉동장치 P-h 선도</text>
+
+  <path class="axis" d="M110 665 V90"/>
+  <path class="axis" d="M110 665 H1010"/>
+  <text class="axisText" x="74" y="105">P</text>
+  <text class="axisText" x="986" y="705">h</text>
+  <text class="small" x="910" y="704">[kJ/kg]</text>
+
+  <path class="guide" d="M110 560 H965"/>
+  <path class="guide" d="M110 375 H965"/>
+  <path class="guide" d="M110 175 H965"/>
+  <text class="label" x="124" y="551">저압</text>
+  <text class="label" x="124" y="366">중간압</text>
+  <text class="label" x="124" y="166">고압</text>
+
+  <path class="dome" d="M190 560 C225 455 315 270 480 150 C630 235 700 310 720 375 C730 430 720 510 705 560"/>
+
+  <!-- 주 냉동사이클 -->
+  <path class="cycle" d="M245 560 H705"/>
+  <path class="cycle" d="M705 560 L785 375"/>
+  <path class="cycle" d="M785 375 H760"/>
+  <path class="cycle" d="M760 375 H720"/>
+  <path class="cycle" d="M720 375 L850 175"/>
+  <path class="cycle" d="M850 175 H400"/>
+  <path class="cycle" d="M400 175 V375"/>
+  <path class="cycle" d="M400 375 H245"/>
+  <path class="cycle" d="M245 375 V560"/>
+
+  <!-- 중간냉각기에서의 분리·혼합 -->
+  <path class="branch" d="M400 375 C500 305 630 305 720 375"/>
+  <text class="small" x="438" y="315">플래시가스 → 고단 흡입측 혼합</text>
+  <text class="small" x="218" y="406">액 분리</text>
+
+  <!-- 상태점 -->
+  <g transform="translate(245 560)"><circle class="point" r="18"/><text class="state" y="1">a</text></g>
+  <g transform="translate(705 560)"><circle class="point" r="18"/><text class="state" y="1">b</text></g>
+  <g transform="translate(785 375)"><circle class="point" r="18"/><text class="state" y="1">c</text></g>
+  <g transform="translate(760 375)"><circle class="point" r="18"/><text class="state" y="1">d</text></g>
+  <g transform="translate(720 375)"><circle class="point" r="18"/><text class="state" y="1">e</text></g>
+  <circle class="point" cx="850" cy="175" r="9"/>
+  <path class="leader" d="M844 168 L812 130"/><text class="state" x="800" y="121">f</text>
+  <path class="leader" d="M856 168 L895 130"/><text class="state" x="907" y="121">g</text>
+  <circle class="anchor" cx="400" cy="175" r="6"/>
+  <path class="leader" d="M396 169 L350 112"/>
+  <g transform="translate(336 96)"><circle class="point" r="18"/><text class="state" y="1">h</text></g>
+  <path class="leader" d="M404 169 L458 112"/>
+  <g transform="translate(472 96)"><circle class="point" r="18"/><text class="state" y="1">i</text></g>
+  <g transform="translate(400 375)"><circle class="point" r="18"/><text class="state" y="1">j</text></g>
+  <circle class="anchor" cx="245" cy="375" r="6"/>
+  <path class="leader" d="M240 380 L198 422"/>
+  <g transform="translate(182 438)"><circle class="point" r="18"/><text class="state" y="1">k</text></g>
+
+  <!-- 과정 표기 -->
+  <text class="label" x="410" y="592">a→b 증발</text>
+  <text class="label" x="741" y="493">b→c 저단압축</text>
+  <text class="label" x="705" y="350">c→d 수냉</text>
+  <text class="label" x="647" y="405">d→e 혼합</text>
+  <text class="label" x="757" y="280">e→f 고단압축</text>
+  <text class="small" x="780" y="218">f=g: 배관 열손실 무시</text>
+  <text class="label" x="575" y="205">g→h 응축</text>
+  <text class="small" x="315" y="218">h=i: 수액기 상태변화 무시</text>
+  <text class="label" x="415" y="278">i→j 제1팽창</text>
+  <text class="label" x="260" y="467">k→a 제2팽창</text>
+
+  <!-- 주어진 엔탈피 -->
+  <text class="small" x="205" y="630">hₐ = 373</text>
+  <text class="small" x="650" y="630">hᵦ = 1,624</text>
+  <text class="small" x="787" y="420">h𝚌 = 1,813</text>
+  <text class="small" x="730" y="448">h𝚍 = 1,758</text>
+  <text class="small" x="660" y="470">hₑ = 1,670</text>
+  <text class="small" x="825" y="82">h𝚐 = 1,871</text>
+  <text class="small" x="368" y="62">hᵢ = 536</text>
+
+  <text class="small" x="190" y="731">※ a와 j는 팽창 후 습증기 영역에 위치한다. 이상과정에서는 hₐ=hₖ, hᵢ=hⱼ, h𝚏=h𝚐, hₕ=hᵢ</text>
+</svg>

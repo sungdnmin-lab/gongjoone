@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650">
+ <defs><style>.s{fill:#fff;stroke:#111;stroke-width:2.2}.t{font-family:'Malgun Gothic',sans-serif;fill:#111}.h{font-size:22px;font-weight:700}.l{font-size:18px}.port{fill:#111}</style></defs>
+ <rect width="1000" height="650" fill="#fff"/><text class="t h" x="28" y="38">암모니아 냉동 강제순환 계통</text><text class="t l" x="28" y="68">각 장치를 연결하고 냉매 흐름 방향을 표시하시오. 저압측은 실선, 고압측은 점선으로 작도한다.</text>
+ <!-- low pressure receiver -->
+ <g transform="translate(120 120)"><rect class="s" x="28" y="0" width="76" height="180" rx="34"/><line class="s" x1="28" y1="88" x2="104" y2="88"/><text class="t h" x="66" y="210" text-anchor="middle">저압수액기</text><circle class="port" cx="66" cy="0" r="4"/><circle class="port" cx="28" cy="88" r="4"/><circle class="port" cx="66" cy="180" r="4"/><circle class="port" cx="104" cy="88" r="4"/></g>
+ <!-- evaporator -->
+ <g transform="translate(680 105)"><rect class="s" width="210" height="110" rx="6"/><path class="s" d="M25 30H165q20 0 20 18t-20 18H55q-20 0-20 18t20 18h130"/><text class="t h" x="105" y="140" text-anchor="middle">증발기</text><circle class="port" cx="0" cy="30" r="4"/><circle class="port" cx="210" cy="94" r="4"/></g>
+ <!-- expansion valve -->
+ <g transform="translate(805 290)"><circle class="s" cx="35" cy="35" r="21"/><path class="s" d="M21 21L49 49M49 21L21 49"/><text class="t h" x="75" y="43">팽창밸브</text><circle class="port" cx="35" cy="0" r="4"/><circle class="port" cx="35" cy="70" r="4"/></g>
+ <!-- liquid pump -->
+ <g transform="translate(475 280)"><path class="s" d="M25 35H75V78H15V52H25Z"/><rect class="s" x="40" y="12" width="20" height="23"/><text class="t h" x="45" y="112" text-anchor="middle">액펌프</text><circle class="port" cx="15" cy="52" r="4"/><circle class="port" cx="50" cy="12" r="4"/></g>
+ <!-- condenser -->
+ <g transform="translate(430 400)"><rect class="s" width="220" height="72" rx="34"/><line class="s" x1="35" y1="36" x2="185" y2="36"/><text class="t h" x="110" y="105" text-anchor="middle">응축기</text><circle class="port" cx="110" cy="0" r="4"/><circle class="port" cx="110" cy="72" r="4"/></g>
+ <!-- receiver -->
+ <g transform="translate(455 555)"><rect class="s" width="170" height="58" rx="28"/><text class="t h" x="85" y="-12" text-anchor="middle">수액기</text><circle class="port" cx="85" cy="0" r="4"/><circle class="port" cx="85" cy="58" r="4"/></g>
+ <!-- oil separator -->
+ <g transform="translate(225 350)"><rect class="s" x="20" y="0" width="86" height="105" rx="38"/><text class="t h" x="63" y="135" text-anchor="middle">유분리기</text><circle class="port" cx="20" cy="48" r="4"/><circle class="port" cx="106" cy="48" r="4"/><circle class="port" cx="63" cy="105" r="4"/></g>
+ <!-- compressor -->
+ <g transform="translate(95 470)"><path class="s" d="M38 30h34v24c26 8 43 31 43 59 0 39-28 67-60 67s-60-28-60-67c0-28 17-51 43-59z"/><text class="t h" x="55" y="215" text-anchor="middle">압축기</text><circle class="port" cx="38" cy="30" r="4"/><circle class="port" cx="72" cy="30" r="4"/></g>
+ <g transform="translate(690 555)"><line class="s" x1="0" y1="0" x2="85" y2="0"/><text class="t l" x="100" y="7">저압측</text><line class="s" x1="0" y1="42" x2="85" y2="42" stroke-dasharray="7 7"/><text class="t l" x="100" y="49">고압측</text></g>
+</svg>

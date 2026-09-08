@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <defs>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#111"/>
+    </marker>
+    <style>
+      .frame { fill:#fff; stroke:#111; stroke-width:2; }
+      .thin { fill:none; stroke:#111; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
+      .process { fill:none; stroke:#111; stroke-width:4; stroke-linecap:round; stroke-linejoin:round; }
+      .mix { fill:none; stroke:#111; stroke-width:3.5; stroke-linecap:round; stroke-linejoin:round; }
+      .point { fill:#fff; stroke:#111; stroke-width:3; }
+      .value { font-family:"DejaVu Serif",serif; font-size:30px; fill:#111; }
+      .state { font-family:"DejaVu Sans",sans-serif; font-size:24px; font-weight:700; text-anchor:middle; dominant-baseline:middle; fill:#111; }
+      .small { font-family:"DejaVu Sans",sans-serif; font-size:20px; fill:#111; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="620" fill="#fff"/>
+  <rect class="frame" x="25" y="25" width="1150" height="570"/>
+
+  <!-- Given enthalpies -->
+  <g transform="translate(95 138)">
+    <text class="value" x="0" y="0"><tspan font-style="italic">h</tspan><tspan baseline-shift="sub" font-size="21">1</tspan><tspan> = 9.6 kJ/kg</tspan></text>
+    <text class="value" x="0" y="58"><tspan font-style="italic">h</tspan><tspan baseline-shift="sub" font-size="21">2</tspan><tspan> = 38 kJ/kg</tspan></text>
+    <text class="value" x="0" y="116"><tspan font-style="italic">h</tspan><tspan baseline-shift="sub" font-size="21">3</tspan><tspan> = 14.7 kJ/kg</tspan></text>
+    <text class="value" x="0" y="174"><tspan font-style="italic">h</tspan><tspan baseline-shift="sub" font-size="21">4</tspan><tspan> = 32.2 kJ/kg</tspan></text>
+    <text class="value" x="0" y="232"><tspan font-style="italic">h</tspan><tspan baseline-shift="sub" font-size="21">6</tspan><tspan> = 53 kJ/kg</tspan></text>
+  </g>
+
+  <!-- Simplified psychrometric chart -->
+  <g transform="translate(420 65)">
+    <!-- chart boundary and guide lines -->
+    <path class="thin" d="M35 480 L35 355 C105 360 175 349 238 321 C305 291 350 224 390 135 L655 135 L655 480 Z"/>
+    <path class="thin" d="M10 305 L390 55"/>
+
+    <!-- processes -->
+    <path class="process" d="M145 400 L290 400" marker-end="url(#arrow)"/>
+    <path class="mix" d="M290 400 L410 315" marker-end="url(#arrow)"/>
+    <path class="mix" d="M525 235 L410 315" marker-end="url(#arrow)"/>
+    <path class="process" d="M410 315 L375 220" marker-end="url(#arrow)"/>
+    <path class="process" d="M375 220 L570 220" marker-end="url(#arrow)"/>
+    <path class="process" d="M570 220 L525 235" marker-end="url(#arrow)"/>
+
+    <!-- exact state points -->
+    <circle class="point" cx="145" cy="400" r="7"/>
+    <circle class="point" cx="290" cy="400" r="7"/>
+    <circle class="point" cx="410" cy="315" r="7"/>
+    <circle class="point" cx="525" cy="235" r="7"/>
+    <circle class="point" cx="375" cy="220" r="7"/>
+    <circle class="point" cx="570" cy="220" r="7"/>
+
+    <!-- state nodes -->
+    <g transform="translate(125 400)"><circle r="17" fill="#fff" stroke="#111" stroke-width="3"/><text class="state" y="1">1</text></g>
+    <g transform="translate(290 420)"><circle r="17" fill="#fff" stroke="#111" stroke-width="3"/><text class="state" y="1">3</text></g>
+    <g transform="translate(410 340)"><circle r="17" fill="#fff" stroke="#111" stroke-width="3"/><text class="state" y="1">4</text></g>
+    <g transform="translate(545 270)"><circle r="17" fill="#fff" stroke="#111" stroke-width="3"/><text class="state" y="1">2</text></g>
+    <g transform="translate(315 190)"><circle r="17" fill="#fff" stroke="#111" stroke-width="3"/><text class="state" y="1">5</text></g>
+    <g transform="translate(600 220)"><circle r="17" fill="#fff" stroke="#111" stroke-width="3"/><text class="state" y="1">6</text></g>
+  </g>
+</svg>

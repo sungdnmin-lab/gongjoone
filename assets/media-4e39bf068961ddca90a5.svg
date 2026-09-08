@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650" role="img" aria-labelledby="title desc">
+  <title id="title">모의고사 7 3번 공기 혼합 해설 도안</title>
+  <desc id="desc">외기 4킬로그램 매초와 환기 8킬로그램 매초가 혼합되는 상태를 나타낸 흑백 공기선도</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#111"/></marker>
+    <style>
+      text{font-family:'Malgun Gothic','Noto Sans KR',Arial,sans-serif;fill:#111}
+      .axis{stroke:#111;stroke-width:3;fill:none}.guide{stroke:#777;stroke-width:1.5;stroke-dasharray:7 6;fill:none}
+      .mix{stroke:#111;stroke-width:3;fill:none}.flow{stroke:#111;stroke-width:2.2;fill:none;marker-end:url(#arrow)}
+      .pt{fill:#fff;stroke:#111;stroke-width:3}.label{font-size:21px}.small{font-size:18px}.bold{font-weight:800}
+    </style>
+  </defs>
+  <rect x="20" y="20" width="960" height="610" rx="10" fill="#fff" stroke="#111" stroke-width="2"/>
+  <text x="55" y="67" font-size="29" font-weight="800">외기와 환기의 혼합상태</text>
+  <text x="55" y="101" class="small">외기 4 kg/s와 환기 8 kg/s가 단열 혼합되는 경우</text>
+
+  <g transform="translate(95 130)">
+    <path class="axis" d="M0 410H760M760 410V10"/>
+    <path class="axis" d="M75 350C190 330 330 250 500 80"/>
+    <path class="axis" d="M105 310L440 65"/>
+
+    <!-- mixture line -->
+    <path class="mix" d="M590 95L225 330"/>
+    <path class="flow" d="M560 114L438 193"/>
+    <path class="flow" d="M255 311L377 232"/>
+
+    <!-- state points -->
+    <circle class="pt" cx="590" cy="95" r="10"/>
+    <circle class="pt" cx="225" cy="330" r="10"/>
+    <circle class="pt" cx="385" cy="227" r="10"/>
+    <text x="610" y="84" class="label bold">① 외기</text>
+    <text x="110" y="360" class="label bold">② 환기</text>
+    <rect x="398" y="190" width="155" height="36" fill="#fff"/>
+    <text x="403" y="217" class="label bold">③ 혼합공기</text>
+
+    <!-- temperature and humidity guides -->
+    <path class="guide" d="M225 330V410M385 227V410M590 95V410"/>
+    <path class="guide" d="M590 95H760M385 227H760M225 330H760"/>
+    <text x="225" y="442" class="small" text-anchor="middle">t₂=25℃</text>
+    <text x="385" y="442" class="small" text-anchor="middle">t₃=28℃</text>
+    <text x="590" y="442" class="small" text-anchor="middle">t₁=34℃</text>
+    <text x="778" y="101" class="small">x₁=0.02021</text>
+    <text x="778" y="233" class="small">x₃=0.01331</text>
+    <text x="778" y="336" class="small">x₂=0.00986</text>
+
+    <!-- mass ratio -->
+    <text x="448" y="225" class="small">m₁=4 kg/s</text>
+    <text x="448" y="252" class="small">m₂=8 kg/s</text>
+    <text x="448" y="279" class="small">m₁:m₂=1:2</text>
+
+    <text x="380" y="485" class="label" text-anchor="middle">건구온도 t</text>
+    <text x="870" y="210" class="label" text-anchor="middle" transform="rotate(-90 870 210)">절대습도 x</text>
+  </g>
+</svg>

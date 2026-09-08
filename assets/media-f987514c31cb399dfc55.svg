@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420">
+  <rect width="960" height="420" fill="#fff"/>
+  <g fill="none" stroke="#111" stroke-width="2">
+    <rect x="180" y="92" width="600" height="250"/>
+    <line x1="405" y1="92" x2="405" y2="342"/>
+    <line x1="625" y1="92" x2="625" y2="342"/>
+
+    <line x1="180" y1="58" x2="780" y2="58"/>
+    <line x1="180" y1="49" x2="180" y2="67"/>
+    <line x1="780" y1="49" x2="780" y2="67"/>
+
+    <line x1="180" y1="162" x2="405" y2="162"/>
+    <line x1="180" y1="153" x2="180" y2="171"/>
+    <line x1="405" y1="153" x2="405" y2="171"/>
+
+    <line x1="405" y1="162" x2="625" y2="162"/>
+    <line x1="625" y1="153" x2="625" y2="171"/>
+
+    <line x1="625" y1="162" x2="780" y2="162"/>
+    <line x1="780" y1="153" x2="780" y2="171"/>
+
+    <path d="M180 58 l10 -5 v10 z" fill="#111"/>
+    <path d="M780 58 l-10 -5 v10 z" fill="#111"/>
+    <path d="M180 162 l10 -5 v10 z" fill="#111"/>
+    <path d="M405 162 l-10 -5 v10 z" fill="#111"/>
+    <path d="M405 162 l10 -5 v10 z" fill="#111"/>
+    <path d="M625 162 l-10 -5 v10 z" fill="#111"/>
+    <path d="M625 162 l10 -5 v10 z" fill="#111"/>
+    <path d="M780 162 l-10 -5 v10 z" fill="#111"/>
+
+    <line x1="144" y1="305" x2="180" y2="305"/>
+    <path d="M180 305 l-11 -5 v10 z" fill="#111"/>
+    <line x1="780" y1="305" x2="816" y2="305"/>
+    <path d="M780 305 l11 -5 v10 z" fill="#111"/>
+  </g>
+
+  <g fill="#111" font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif"
+     text-anchor="middle">
+    <text x="480" y="48" font-size="20" font-style="italic">d</text>
+
+    <text x="292" y="128" font-size="18">내화벽돌</text>
+    <text x="292" y="151" font-size="17" font-style="italic">d₁</text>
+
+    <text x="515" y="128" font-size="18">단열벽돌</text>
+    <text x="515" y="151" font-size="17" font-style="italic">d₂</text>
+
+    <text x="702" y="128" font-size="18">강판</text>
+    <text x="702" y="150" font-size="17">6 mm</text>
+
+    <text x="292" y="208" font-size="17">열전도율(λ₁)</text>
+    <text x="292" y="235" font-size="18">1.65 W/(m·K)</text>
+    <text x="292" y="284" font-size="17">최고사용온도</text>
+    <text x="292" y="314" font-size="18">1,350℃</text>
+
+    <text x="515" y="208" font-size="17">열전도율(λ₂)</text>
+    <text x="515" y="235" font-size="18">0.30 W/(m·K)</text>
+    <text x="515" y="284" font-size="17">최고사용온도</text>
+    <text x="515" y="314" font-size="18">900℃</text>
+
+    <text x="702" y="208" font-size="17">열전도율(λ₃)</text>
+    <text x="702" y="235" font-size="18">45 W/(m·K)</text>
+
+    <text x="126" y="299" font-size="18">1,320℃</text>
+    <text x="840" y="299" font-size="18">250℃</text>
+  </g>
+</svg>

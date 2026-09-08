@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="470" viewBox="0 0 1120 470" role="img" aria-labelledby="title desc">
+  <title id="title">모의고사 3 12번 냉수 배관계통 도안</title>
+  <desc id="desc">냉동기와 순환펌프에서 네 개 실로 이어지는 냉수 공급관 A부터 D, 환수관 E부터 H를 나타낸 흑백 계통도</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#111"/>
+    </marker>
+    <style>
+      .pipe { fill: none; stroke: #111; stroke-width: 3; stroke-linecap: square; stroke-linejoin: miter; }
+      .thin { fill: none; stroke: #111; stroke-width: 2; }
+      .box { fill: #fff; stroke: #111; stroke-width: 2.4; }
+      .label { fill: #111; font-family: "Noto Sans KR", "Malgun Gothic", sans-serif; font-size: 23px; font-weight: 700; }
+      .room { fill: #111; font-family: "Noto Sans KR", "Malgun Gothic", sans-serif; font-size: 21px; font-weight: 700; }
+      .small { fill: #111; font-family: "Noto Sans KR", "Malgun Gothic", sans-serif; font-size: 18px; }
+      .segment { fill: #fff; stroke: #111; stroke-width: 1.8; }
+      .segmentText { fill: #111; font-family: Arial, sans-serif; font-size: 21px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect width="1120" height="470" fill="#fff"/>
+
+  <!-- 냉동기 -->
+  <rect class="box" x="42" y="198" width="158" height="126" rx="5"/>
+  <path class="thin" d="M 67 267 C 80 243, 94 291, 108 267 S 136 243, 150 267 S 177 291, 189 267"/>
+  <path class="thin" d="M 67 286 C 80 262, 94 310, 108 286 S 136 262, 150 286 S 177 310, 189 286"/>
+  <text class="label" x="121" y="232" text-anchor="middle">냉동기</text>
+  <text class="small" x="210" y="249">CS</text>
+  <text class="small" x="210" y="317">CR</text>
+
+  <!-- 순환펌프 및 공급 입상관 -->
+  <path class="pipe" d="M 200 242 H 245"/>
+  <circle class="box" cx="275" cy="242" r="24"/>
+  <path class="thin" d="M 263 229 L 290 242 L 263 255 Z"/>
+  <text class="small" x="275" y="286" text-anchor="middle">순환펌프</text>
+  <path class="pipe" d="M 299 242 H 325 V 154 H 923"/>
+
+  <!-- 환수 주관 -->
+  <path class="pipe" d="M 968 324 H 200"/>
+
+  <!-- 흐름 방향 -->
+  <path class="thin" d="M 325 220 V 174" marker-end="url(#arrow)"/>
+  <text class="small" x="286" y="202" text-anchor="middle">공급</text>
+  <path class="thin" d="M 383 349 H 337" marker-end="url(#arrow)"/>
+  <text class="small" x="360" y="376" text-anchor="middle">환수</text>
+
+  <!-- 1실 -->
+  <rect class="box" x="388" y="48" width="104" height="62"/>
+  <text class="room" x="440" y="87" text-anchor="middle">1실</text>
+  <path class="pipe" d="M 415 154 V 110"/>
+  <path class="pipe" d="M 465 110 V 324"/>
+  <path class="thin" d="M 415 126 V 114" marker-end="url(#arrow)"/>
+  <path class="thin" d="M 465 116 V 132" marker-end="url(#arrow)"/>
+
+  <!-- 2실 -->
+  <rect class="box" x="558" y="48" width="104" height="62"/>
+  <text class="room" x="610" y="87" text-anchor="middle">2실</text>
+  <path class="pipe" d="M 585 154 V 110"/>
+  <path class="pipe" d="M 635 110 V 324"/>
+  <path class="thin" d="M 585 126 V 114" marker-end="url(#arrow)"/>
+  <path class="thin" d="M 635 116 V 132" marker-end="url(#arrow)"/>
+
+  <!-- 3실 -->
+  <rect class="box" x="728" y="48" width="104" height="62"/>
+  <text class="room" x="780" y="87" text-anchor="middle">3실</text>
+  <path class="pipe" d="M 755 154 V 110"/>
+  <path class="pipe" d="M 805 110 V 324"/>
+  <path class="thin" d="M 755 126 V 114" marker-end="url(#arrow)"/>
+  <path class="thin" d="M 805 116 V 132" marker-end="url(#arrow)"/>
+
+  <!-- 4실 -->
+  <rect class="box" x="898" y="48" width="104" height="62"/>
+  <text class="room" x="950" y="87" text-anchor="middle">4실</text>
+  <path class="pipe" d="M 923 154 V 110"/>
+  <path class="pipe" d="M 968 110 V 324"/>
+  <path class="thin" d="M 923 126 V 114" marker-end="url(#arrow)"/>
+  <path class="thin" d="M 968 116 V 132" marker-end="url(#arrow)"/>
+
+  <!-- 공급관 구간 A-D -->
+  <g>
+    <circle class="segment" cx="370" cy="154" r="17"/>
+    <text class="segmentText" x="370" y="161" text-anchor="middle">A</text>
+    <circle class="segment" cx="525" cy="154" r="17"/>
+    <text class="segmentText" x="525" y="161" text-anchor="middle">B</text>
+    <circle class="segment" cx="695" cy="154" r="17"/>
+    <text class="segmentText" x="695" y="161" text-anchor="middle">C</text>
+    <circle class="segment" cx="865" cy="154" r="17"/>
+    <text class="segmentText" x="865" y="161" text-anchor="middle">D</text>
+  </g>
+
+  <!-- 환수관 구간 E-H: 오른쪽에서 냉동기 방향 -->
+  <g>
+    <circle class="segment" cx="865" cy="324" r="17"/>
+    <text class="segmentText" x="865" y="331" text-anchor="middle">E</text>
+    <circle class="segment" cx="695" cy="324" r="17"/>
+    <text class="segmentText" x="695" y="331" text-anchor="middle">F</text>
+    <circle class="segment" cx="525" cy="324" r="17"/>
+    <text class="segmentText" x="525" y="331" text-anchor="middle">G</text>
+    <circle class="segment" cx="275" cy="324" r="17"/>
+    <text class="segmentText" x="275" y="331" text-anchor="middle">H</text>
+  </g>
+
+  <text class="small" x="560" y="430" text-anchor="middle">배관의 화살표는 냉수 흐름 방향을 나타낸다.</text>
+</svg>

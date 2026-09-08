@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="470" viewBox="0 0 1100 470">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#111"/></marker>
+    <style>.s{fill:none;stroke:#111;stroke-width:2}.t{font-family:'Malgun Gothic',sans-serif;fill:#111}.u{font-size:20px;font-weight:700}.l{font-size:17px}.p{fill:#111}</style>
+  </defs>
+  <rect width="1100" height="470" fill="#fff"/>
+  <text class="t u" x="28" y="38">팬코일 유닛 연결도</text>
+  <text class="t l" x="28" y="66">각 FCU의 3개 접속점에 FCS·FCR·FCD 배관을 연결하고 흐름 방향을 표시하시오.</text>
+  <g id="units">
+    <g transform="translate(50 105)"><rect class="s" width="125" height="45"/><rect class="s" x="10" y="10" width="105" height="16"/><text class="t u" x="62.5" y="-10" text-anchor="middle">FCU-1</text><circle class="p" cx="32" cy="45" r="4"/><circle class="p" cx="62.5" cy="45" r="4"/><circle class="p" cx="93" cy="45" r="4"/></g>
+    <g transform="translate(215 105)"><rect class="s" width="125" height="45"/><rect class="s" x="10" y="10" width="105" height="16"/><text class="t u" x="62.5" y="-10" text-anchor="middle">FCU-2</text><circle class="p" cx="32" cy="45" r="4"/><circle class="p" cx="62.5" cy="45" r="4"/><circle class="p" cx="93" cy="45" r="4"/></g>
+    <g transform="translate(380 105)"><rect class="s" width="125" height="45"/><rect class="s" x="10" y="10" width="105" height="16"/><text class="t u" x="62.5" y="-10" text-anchor="middle">FCU-3</text><circle class="p" cx="32" cy="45" r="4"/><circle class="p" cx="62.5" cy="45" r="4"/><circle class="p" cx="93" cy="45" r="4"/></g>
+    <g transform="translate(545 105)"><rect class="s" width="125" height="45"/><rect class="s" x="10" y="10" width="105" height="16"/><text class="t u" x="62.5" y="-10" text-anchor="middle">FCU-4</text><circle class="p" cx="32" cy="45" r="4"/><circle class="p" cx="62.5" cy="45" r="4"/><circle class="p" cx="93" cy="45" r="4"/></g>
+    <g transform="translate(710 105)"><rect class="s" width="125" height="45"/><rect class="s" x="10" y="10" width="105" height="16"/><text class="t u" x="62.5" y="-10" text-anchor="middle">FCU-5</text><circle class="p" cx="32" cy="45" r="4"/><circle class="p" cx="62.5" cy="45" r="4"/><circle class="p" cx="93" cy="45" r="4"/></g>
+    <g transform="translate(875 105)"><rect class="s" width="125" height="45"/><rect class="s" x="10" y="10" width="105" height="16"/><text class="t u" x="62.5" y="-10" text-anchor="middle">FCU-6</text><circle class="p" cx="32" cy="45" r="4"/><circle class="p" cx="62.5" cy="45" r="4"/><circle class="p" cx="93" cy="45" r="4"/></g>
+  </g>
+  <g transform="translate(815 250)">
+    <line class="s" x1="170" y1="0" x2="70" y2="0" marker-end="url(#arrow)"/><text class="t u" x="185" y="7">FCS</text>
+    <line class="s" x1="70" y1="48" x2="170" y2="48" marker-end="url(#arrow)"/><text class="t u" x="185" y="55">FCR</text>
+    <line class="s" x1="70" y1="96" x2="170" y2="96" marker-end="url(#arrow)"/><text class="t u" x="185" y="103">FCD</text>
+  </g>
+  <g transform="translate(55 295)"><rect class="s" width="430" height="150"/><text class="t l" x="18" y="28">접속점 기준</text><g transform="translate(30 55)"><rect class="s" width="125" height="40"/><text class="t u" x="62.5" y="-8" text-anchor="middle">FCU</text><circle class="p" cx="30" cy="40" r="4"/><circle class="p" cx="62.5" cy="40" r="4"/><circle class="p" cx="95" cy="40" r="4"/><text class="t l" x="30" y="72" text-anchor="middle">FCD</text><text class="t l" x="62.5" y="72" text-anchor="middle">FCR</text><text class="t l" x="95" y="72" text-anchor="middle">FCS</text></g></g>
+</svg>

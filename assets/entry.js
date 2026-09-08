@@ -1,0 +1,1 @@
+window.GONGJO_INITIAL_HASH=location.hash;

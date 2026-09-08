@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">2단 압축 1단 팽창 냉동사이클 P-h 선도</title>
+  <desc id="desc">상태점 1부터 8, 세 압력선, 엔탈피 값과 압축기 흡입 비체적을 표시한 흑백 선도</desc>
+  <rect width="900" height="560" fill="#fff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#111"/>
+    </marker>
+    <style>
+      .axis{stroke:#111;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+      .cycle{stroke:#111;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .guide{stroke:#555;stroke-width:1.5;stroke-dasharray:5 6;fill:none}
+      .dome{stroke:#111;stroke-width:2.2;fill:none;stroke-linecap:round}
+      .flow{stroke:#111;stroke-width:2.2;fill:none;marker-end:url(#arrow)}
+      .axis-label{font-family:"Noto Serif KR","Batang",serif;font-size:26px;font-style:italic;fill:#111}
+      .unit{font-family:"Noto Serif KR","Batang",serif;font-size:19px;fill:#111}
+      .point{font-family:"Noto Sans Symbols 2","Noto Sans KR","Malgun Gothic",sans-serif;font-size:25px;fill:#111}
+      .value{font-family:"Noto Serif KR","Batang",serif;font-size:18px;fill:#111}
+      .note{font-family:"Noto Serif KR","Batang",serif;font-size:18px;fill:#111}
+    </style>
+  </defs>
+
+  <!-- 좌표축 -->
+  <path class="axis" d="M105 454 V65"/>
+  <path class="axis" d="M105 454 H790"/>
+  <text class="axis-label" x="69" y="63">P</text>
+  <text class="unit" x="27" y="91">[MPa·a]</text>
+  <text class="axis-label" x="802" y="463">h</text>
+  <text class="unit" x="823" y="463">[kJ/kg]</text>
+
+  <!-- 포화액선·포화증기선 -->
+  <path class="dome" d="M278 397 C294 334 326 259 367 196 C401 143 438 103 477 77"/>
+  <path class="dome" d="M632 402 C657 350 676 295 686 238 C696 178 695 119 683 76"/>
+
+  <!-- 압력 판독용 보조선 -->
+  <path class="guide" d="M105 146 H714"/>
+  <path class="guide" d="M105 264 H655"/>
+  <path class="guide" d="M105 386 H602"/>
+
+  <!-- 냉동사이클 -->
+  <path class="cycle" d="M235 146 V386"/>
+  <path class="cycle" d="M285 146 V264"/>
+  <path class="cycle" d="M235 386 H568"/>
+  <path class="cycle" d="M568 386 L628 264"/>
+  <path class="cycle" d="M628 264 H600"/>
+  <path class="cycle" d="M600 264 L714 146"/>
+  <path class="cycle" d="M714 146 H235"/>
+  <path class="cycle" d="M285 264 H600"/>
+
+  <!-- 흐름 방향 -->
+  <path class="flow" d="M235 202 V250"/>
+  <path class="flow" d="M285 178 V222"/>
+  <path class="flow" d="M376 386 H424"/>
+  <path class="flow" d="M585 351 L606 307"/>
+  <path class="flow" d="M622 264 H607"/>
+  <path class="flow" d="M646 216 L682 179"/>
+  <path class="flow" d="M526 146 H474"/>
+  <path class="flow" d="M390 264 H438"/>
+
+  <!-- 엔탈피 판독용 수직 점선 -->
+  <path class="guide" d="M235 386 V454"/>
+  <path class="guide" d="M285 264 V454"/>
+  <path class="guide" d="M568 386 V454"/>
+  <path class="guide" d="M600 264 V454"/>
+  <path class="guide" d="M628 264 V454"/>
+  <path class="guide" d="M714 146 V454"/>
+
+  <!-- 상태점 -->
+  <text class="point" x="214" y="137">①</text>
+  <text class="point" x="294" y="137">⑦</text>
+  <text class="point" x="214" y="416">②</text>
+  <text class="point" x="294" y="286">⑧</text>
+  <text class="point" x="543" y="415">③</text>
+  <text class="point" x="638" y="286">④</text>
+  <text class="point" x="573" y="255">⑤</text>
+  <text class="point" x="721" y="138">⑥</text>
+
+  <!-- 비체적 -->
+  <text class="note" x="646" y="237">0.048 m³/kg</text>
+  <text class="note" x="587" y="365">0.136 m³/kg</text>
+
+  <!-- 엔탈피 값 -->
+  <text class="value" x="216" y="486">226</text>
+  <text class="value" x="268" y="514">248</text>
+  <text class="value" x="538" y="486">431.2</text>
+  <text class="value" x="584" y="514">442</text>
+  <text class="value" x="616" y="486">466</text>
+  <text class="value" x="701" y="514">484</text>
+</svg>

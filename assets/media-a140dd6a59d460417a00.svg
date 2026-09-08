@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#111"/>
+    </marker>
+  </defs>
+  <rect width="900" height="560" fill="#fff"/>
+  <g stroke="#111" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- upper evaporator -->
+    <rect x="170" y="92" width="126" height="84" rx="3"/>
+    <path d="M170 92l18-18h126l-18 18M296 92l18-18v84l-18 18"/>
+    <!-- lower evaporator -->
+    <rect x="170" y="264" width="126" height="84" rx="3"/>
+    <path d="M170 264l18-18h126l-18 18M296 264l18-18v84l-18 18"/>
+    <!-- compressor -->
+    <circle cx="690" cy="458" r="34"/>
+    <path d="M657 492h66M668 492l-10 16M712 492l10 16"/>
+    <!-- completed suction piping -->
+    <path d="M314 134h56
+             q18 0 18 18v17
+             q0 17 17 17
+             q17 0 17-17v-15
+             q0-10 10-10h111"/>
+    <path d="M314 306h56
+             q18 0 18 18v17
+             q0 17 17 17
+             q17 0 17-17v-15
+             q0-10 10-10h111"/>
+    <path d="M533 316V88
+             q0-26 26-26h22
+             q26 0 26 26v370h49"/>
+    <!-- flow arrows -->
+    <path d="M456 134h50" marker-end="url(#arrow)"/>
+    <path d="M456 306h50" marker-end="url(#arrow)"/>
+    <path d="M607 385v43" marker-end="url(#arrow)"/>
+  </g>
+  <g fill="#111" font-family="Arial, 'Noto Sans KR', sans-serif">
+    <text x="216" y="124" font-size="18" text-anchor="middle">증발기 A</text>
+    <text x="216" y="296" font-size="18" text-anchor="middle">증발기 B</text>
+    <text x="690" y="462" font-size="18" text-anchor="middle">압축기</text>
+    <text x="450" y="38" font-size="23" font-weight="700" text-anchor="middle">완성 흡입배관도</text>
+    <text x="400" y="213" font-size="15">트랩</text>
+    <text x="400" y="385" font-size="15">트랩</text>
+    <text x="621" y="83" font-size="15">상부 루프</text>
+  </g>
+</svg>

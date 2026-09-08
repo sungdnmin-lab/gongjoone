@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="650" viewBox="0 0 920 650" role="img" aria-labelledby="title desc">
+  <title id="title">모의고사 3 11번 사무실 평면 도안 미리보기</title>
+  <desc id="desc">동서 14미터, 남북 9미터인 사무실의 흑백 평면도. 남측에는 폭 10미터 유리창, 서측에는 폭 5미터 유리창이 있으며 북측과 동측은 공조되는 인접실이다.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111"/>
+    </marker>
+    <style>
+      .line { fill: none; stroke: #111; stroke-width: 2.5; stroke-linecap: square; }
+      .wall { fill: none; stroke: #111; stroke-width: 5; stroke-linecap: square; }
+      .thin { fill: none; stroke: #111; stroke-width: 1.5; }
+      .dim { fill: none; stroke: #111; stroke-width: 1.4; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .ext { fill: none; stroke: #111; stroke-width: 1.2; }
+      .glass { fill: none; stroke: #111; stroke-width: 2; }
+      .kr { fill: #111; font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; }
+      .label { font-size: 21px; }
+      .small { font-size: 18px; }
+      .dimtext { font-size: 20px; font-weight: 700; }
+      .note { font-size: 19px; }
+    </style>
+  </defs>
+
+  <rect width="920" height="650" fill="#fff"/>
+
+  <!-- North wall: adjacent conditioned room -->
+  <path class="wall" d="M 180 130 H 770"/>
+  <path class="line" d="M 180 154 H 770"/>
+  <path class="thin" d="M 180 130 V 154 M 770 130 V 154"/>
+  <text class="kr label" x="475" y="116" text-anchor="middle">인접실(공조)</text>
+  <path class="thin" d="M 475 119 V 143"/>
+  <text class="kr small" x="475" y="179" text-anchor="middle">(내벽)</text>
+
+  <!-- East wall: adjacent conditioned room -->
+  <path class="wall" d="M 770 130 V 530"/>
+  <path class="line" d="M 746 154 V 506"/>
+  <path class="thin" d="M 746 154 H 770 M 746 506 H 770"/>
+  <text class="kr label" x="822" y="313" text-anchor="middle">
+    <tspan x="822" dy="0">인접실</tspan>
+    <tspan x="822" dy="27">(공조)</tspan>
+  </text>
+  <path class="thin" d="M 782 323 H 803"/>
+  <text class="kr small" x="731" y="340" text-anchor="end">(내벽)</text>
+
+  <!-- West exterior wall with a five-metre window -->
+  <path class="wall" d="M 180 130 V 219 M 180 441 V 530"/>
+  <path class="glass" d="M 180 219 V 441 M 163 219 V 441"/>
+  <path class="thin" d="M 157 219 H 186 M 157 441 H 186"/>
+  <text class="kr small" x="205" y="193">(외벽)</text>
+  <path class="thin" d="M 200 198 L 181 187"/>
+  <text class="kr small" x="205" y="470">(외벽)</text>
+  <path class="thin" d="M 200 466 L 181 478"/>
+  <text class="kr small" x="212" y="338">(유리창)</text>
+  <path class="thin" d="M 205 343 L 181 343"/>
+
+  <!-- South exterior wall with a ten-metre window -->
+  <path class="wall" d="M 180 530 H 264 M 686 530 H 770"/>
+  <path class="glass" d="M 264 530 H 686 M 264 547 H 686"/>
+  <path class="thin" d="M 264 524 V 553 M 686 524 V 553"/>
+  <text class="kr small" x="220" y="504" text-anchor="middle">(외벽)</text>
+  <path class="thin" d="M 220 508 V 529"/>
+  <text class="kr small" x="730" y="504" text-anchor="middle">(외벽)</text>
+  <path class="thin" d="M 730 508 V 529"/>
+  <text class="kr small" x="475" y="506" text-anchor="middle">(유리창)</text>
+  <path class="thin" d="M 475 511 V 530"/>
+
+  <!-- Interior notes -->
+  <g class="kr note">
+    <text x="328" y="308">층고 : 3.8 m</text>
+    <text x="328" y="340">남측 유리창 높이 : 1.8 m</text>
+    <text x="328" y="372">서측 유리창 높이 : 1.8 m</text>
+    <text x="328" y="404">(남·서측은 외기에 면함)</text>
+  </g>
+
+  <!-- Compass -->
+  <g class="kr" transform="translate(650 280)">
+    <path class="thin" d="M 0 0 V -62 M 0 0 H 62 M 0 0 V 62 M 0 0 H -62"/>
+    <path d="M 0 -70 L -6 -55 H 6 Z" fill="#111"/>
+    <text class="dimtext" x="0" y="-82" text-anchor="middle">N</text>
+    <text class="dimtext" x="78" y="7" text-anchor="middle">E</text>
+    <text class="dimtext" x="0" y="86" text-anchor="middle">S</text>
+    <text class="dimtext" x="-78" y="7" text-anchor="middle">W</text>
+  </g>
+
+  <!-- Overall horizontal dimension -->
+  <path class="ext" d="M 180 130 V 72 M 770 130 V 72"/>
+  <path class="dim" d="M 180 75 H 770"/>
+  <text class="kr dimtext" x="475" y="62" text-anchor="middle">14 m</text>
+
+  <!-- Overall and segmented vertical dimensions -->
+  <path class="ext" d="M 180 130 H 92 M 180 530 H 92"/>
+  <path class="dim" d="M 95 130 V 530"/>
+  <text class="kr dimtext" x="77" y="330" text-anchor="middle" transform="rotate(-90 77 330)">9 m</text>
+
+  <path class="ext" d="M 163 219 H 125 M 163 441 H 125"/>
+  <path class="dim" d="M 128 219 V 441"/>
+  <text class="kr small" x="115" y="330" text-anchor="middle" transform="rotate(-90 115 330)">5 m</text>
+
+  <!-- South window dimension -->
+  <path class="ext" d="M 264 547 V 598 M 686 547 V 598"/>
+  <path class="dim" d="M 264 595 H 686"/>
+  <text class="kr dimtext" x="475" y="625" text-anchor="middle">10 m</text>
+</svg>

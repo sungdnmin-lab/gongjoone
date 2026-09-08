@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="470" viewBox="0 0 1100 470">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#111"/></marker><style>.s{fill:none;stroke:#111;stroke-width:2}.m{fill:none;stroke:#111;stroke-width:3}.t{font-family:'Malgun Gothic',sans-serif;fill:#111}.u{font-size:20px;font-weight:700}.p{fill:#111}</style></defs>
+  <rect width="1100" height="470" fill="#fff"/><text class="t u" x="28" y="38">해설 · 리버스리턴 배관</text>
+  <g>
+    <g transform="translate(50 85)"><rect class="s" width="125" height="45"/><rect class="s" x="10" y="10" width="105" height="16"/><text class="t u" x="62.5" y="-10" text-anchor="middle">FCU-1</text><circle class="p" cx="32" cy="45" r="4"/><circle class="p" cx="62.5" cy="45" r="4"/><circle class="p" cx="93" cy="45" r="4"/></g>
+    <g transform="translate(215 85)"><rect class="s" width="125" height="45"/><rect class="s" x="10" y="10" width="105" height="16"/><text class="t u" x="62.5" y="-10" text-anchor="middle">FCU-2</text><circle class="p" cx="32" cy="45" r="4"/><circle class="p" cx="62.5" cy="45" r="4"/><circle class="p" cx="93" cy="45" r="4"/></g>
+    <g transform="translate(380 85)"><rect class="s" width="125" height="45"/><rect class="s" x="10" y="10" width="105" height="16"/><text class="t u" x="62.5" y="-10" text-anchor="middle">FCU-3</text><circle class="p" cx="32" cy="45" r="4"/><circle class="p" cx="62.5" cy="45" r="4"/><circle class="p" cx="93" cy="45" r="4"/></g>
+    <g transform="translate(545 85)"><rect class="s" width="125" height="45"/><rect class="s" x="10" y="10" width="105" height="16"/><text class="t u" x="62.5" y="-10" text-anchor="middle">FCU-4</text><circle class="p" cx="32" cy="45" r="4"/><circle class="p" cx="62.5" cy="45" r="4"/><circle class="p" cx="93" cy="45" r="4"/></g>
+    <g transform="translate(710 85)"><rect class="s" width="125" height="45"/><rect class="s" x="10" y="10" width="105" height="16"/><text class="t u" x="62.5" y="-10" text-anchor="middle">FCU-5</text><circle class="p" cx="32" cy="45" r="4"/><circle class="p" cx="62.5" cy="45" r="4"/><circle class="p" cx="93" cy="45" r="4"/></g>
+    <g transform="translate(875 85)"><rect class="s" width="125" height="45"/><rect class="s" x="10" y="10" width="105" height="16"/><text class="t u" x="62.5" y="-10" text-anchor="middle">FCU-6</text><circle class="p" cx="32" cy="45" r="4"/><circle class="p" cx="62.5" cy="45" r="4"/><circle class="p" cx="93" cy="45" r="4"/></g>
+  </g>
+  <!-- FCS: right to left -->
+  <path class="m" d="M1040 205H143V130M308 205V130M473 205V130M638 205V130M803 205V130M968 205V130"/>
+  <line class="m" x1="1040" y1="205" x2="990" y2="205" marker-end="url(#a)"/><text class="t u" x="1045" y="212">FCS</text>
+  <!-- FCR: common return main flows opposite to FCS -->
+  <path class="m" d="M112 130V285H1040M277 130V285M442 130V285M607 130V285M772 130V285M937 130V285"/>
+  <line class="m" x1="990" y1="285" x2="1040" y2="285" marker-end="url(#a)"/><text class="t u" x="1045" y="292">FCR</text>
+  <!-- FCD -->
+  <path class="m" d="M82 130V365H1040M247 130V365M412 130V365M577 130V365M742 130V365M907 130V365"/>
+  <line class="m" x1="990" y1="365" x2="1040" y2="365" marker-end="url(#a)"/><text class="t u" x="1045" y="372">FCD</text>
+  <text class="t" font-size="17" x="48" y="430">FCS와 FCR은 각 FCU의 공급·환수 총 배관길이가 같도록 반대 방향으로 배치한다.</text>
+</svg>

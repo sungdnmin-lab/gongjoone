@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="500" viewBox="0 0 860 500" role="img" aria-labelledby="title desc">
+  <title id="title">2단 압축 1단 팽창 냉동사이클 P-h 선도</title>
+  <desc id="desc">상태점 1부터 8까지와 엔탈피 판독용 점선을 표시한 흑백 선도</desc>
+  <rect width="860" height="500" fill="#fff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#111"/>
+    </marker>
+    <style>
+      .axis{stroke:#111;stroke-width:2.4;fill:none;marker-end:url(#arrow)}
+      .cycle{stroke:#111;stroke-width:3.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .guide{stroke:#444;stroke-width:1.7;stroke-dasharray:5 6;fill:none}
+      .dome{stroke:#111;stroke-width:2.4;fill:none;stroke-linecap:round}
+      .axis-label{font-family:"Noto Serif KR","Batang",serif;font-size:24px;font-style:italic;fill:#111}
+      .unit{font-family:"Noto Serif KR","Batang",serif;font-size:19px;fill:#111}
+      .point{font-family:"Noto Sans Symbols 2","Noto Sans KR","Malgun Gothic",sans-serif;font-size:25px;fill:#111}
+      .value{font-family:"Noto Serif KR","Batang",serif;font-size:19px;fill:#111}
+    </style>
+  </defs>
+
+  <!-- 좌표축 -->
+  <path class="axis" d="M118 414 V68"/>
+  <path class="axis" d="M118 414 H742"/>
+  <text class="axis-label" x="85" y="61">P</text>
+  <text class="unit" x="34" y="91">[MPa·a]</text>
+  <text class="axis-label" x="754" y="421">h</text>
+  <text class="unit" x="776" y="421">[kJ/kg]</text>
+
+  <!-- 포화액선·포화증기선 -->
+  <path class="dome" d="M202 330 C224 241 299 160 365 130 C391 108 421 90 446 78"/>
+  <path class="dome" d="M470 342 C486 318 505 272 520 230 C530 181 531 122 520 76"/>
+
+  <!-- 실제 냉동사이클 실선: ⑦-④-③-②-①-⑧-⑦ -->
+  <path class="cycle" d="M286 130 H650"/>
+  <path class="cycle" d="M650 130 L520 230"/>
+  <path class="cycle" d="M520 230 H618"/>
+  <path class="cycle" d="M618 230 L478 320"/>
+  <path class="cycle" d="M478 320 H286"/>
+  <path class="cycle" d="M286 320 V130"/>
+
+  <!-- 엔탈피 판독용 점선: ⑤·⑥은 ⑦-⑧ 실선보다 오른쪽에 위치 -->
+  <path class="guide" d="M330 130 V414"/>
+  <path class="guide" d="M330 230 H520"/>
+  <path class="guide" d="M478 320 V414"/>
+  <path class="guide" d="M520 230 V414"/>
+  <path class="guide" d="M618 230 V414"/>
+
+  <!-- 상태점 번호 -->
+  <text class="point" x="248" y="139">⑦</text>
+  <text class="point" x="319" y="119">⑤</text>
+  <text class="point" x="337" y="222">⑥</text>
+  <text class="point" x="484" y="219">③</text>
+  <text class="point" x="656" y="139">④</text>
+  <text class="point" x="625" y="239">②</text>
+  <text class="point" x="443" y="349">①</text>
+  <text class="point" x="250" y="348">⑧</text>
+
+  <!-- 변형 문제의 엔탈피 값 -->
+  <text class="value" x="302" y="444">435.2</text>
+  <text class="value" x="449" y="444">616.8</text>
+  <text class="value" x="494" y="473">627.9</text>
+  <text class="value" x="590" y="444">657.5</text>
+</svg>

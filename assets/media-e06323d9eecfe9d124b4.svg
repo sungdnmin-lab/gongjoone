@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">R-22 2단 압축 1단 팽창 냉동사이클 P-h 선도</title>
+  <desc id="desc">상태점 1부터 8, 응축·중간·증발 압력선, 엔탈피와 비체적을 표시한 흑백 선도</desc>
+  <rect width="900" height="560" fill="#fff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#111"/>
+    </marker>
+    <style>
+      .axis{stroke:#111;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+      .cycle{stroke:#111;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .flow{stroke:#111;stroke-width:2.2;fill:none;marker-end:url(#arrow)}
+      .guide{stroke:#555;stroke-width:1.5;stroke-dasharray:5 6;fill:none}
+      .dome{stroke:#111;stroke-width:2.2;fill:none;stroke-linecap:round}
+      .axis-label{font-family:"Noto Serif KR","Batang",serif;font-size:26px;font-style:italic;fill:#111}
+      .unit{font-family:"Noto Serif KR","Batang",serif;font-size:19px;fill:#111}
+      .point{font-family:"Noto Sans Symbols 2","Noto Sans KR","Malgun Gothic",sans-serif;font-size:25px;fill:#111}
+      .value{font-family:"Noto Serif KR","Batang",serif;font-size:18px;fill:#111}
+      .note{font-family:"Noto Serif KR","Batang",serif;font-size:18px;fill:#111}
+      .temp{font-family:"Noto Sans KR","Malgun Gothic",sans-serif;font-size:19px;fill:#111}
+    </style>
+  </defs>
+
+  <!-- 좌표축 -->
+  <path class="axis" d="M105 454 V65"/>
+  <path class="axis" d="M105 454 H790"/>
+  <text class="axis-label" x="69" y="63">P</text>
+  <text class="unit" x="27" y="91">[MPa·a]</text>
+  <text class="axis-label" x="802" y="463">h</text>
+  <text class="unit" x="823" y="463">[kJ/kg]</text>
+
+  <!-- 포화액선·포화증기선 -->
+  <path class="dome" d="M228 397 C246 334 279 259 323 196 C361 143 401 103 444 77"/>
+  <path class="dome" d="M596 402 C622 350 642 295 652 238 C663 178 662 119 650 76"/>
+
+  <!-- 압력 판독용 보조선 -->
+  <path class="guide" d="M105 146 H704"/>
+  <path class="guide" d="M105 264 H704"/>
+  <path class="guide" d="M105 386 H610"/>
+  <text class="temp" x="120" y="138">40℃</text>
+  <text class="temp" x="120" y="256">0℃</text>
+  <text class="temp" x="120" y="378">−40℃</text>
+
+  <!-- 냉동사이클 -->
+  <path class="cycle" d="M260 264 V386"/>
+  <path class="cycle" d="M340 146 V264"/>
+  <path class="cycle" d="M260 386 H610"/>
+  <path class="cycle" d="M610 386 L704 264"/>
+  <path class="cycle" d="M704 264 H640"/>
+  <path class="cycle" d="M640 264 L704 146"/>
+  <path class="cycle" d="M704 146 H340"/>
+  <path class="cycle" d="M340 264 H260"/>
+
+  <!-- 흐름 방향 -->
+  <path class="flow" d="M260 292 V338"/>
+  <path class="flow" d="M340 174 V220"/>
+  <path class="flow" d="M405 386 H457"/>
+  <path class="flow" d="M634 355 L666 313"/>
+  <path class="flow" d="M687 264 H657"/>
+  <path class="flow" d="M656 234 L685 181"/>
+  <path class="flow" d="M582 146 H530"/>
+  <path class="flow" d="M318 264 H278"/>
+
+  <!-- 엔탈피 판독용 수직 점선 -->
+  <path class="guide" d="M260 264 V454"/>
+  <path class="guide" d="M340 146 V454"/>
+  <path class="guide" d="M610 386 V454"/>
+  <path class="guide" d="M640 264 V454"/>
+  <path class="guide" d="M704 146 V454"/>
+
+  <!-- 상태점 -->
+  <text class="point" x="238" y="255">⑦</text>
+  <text class="point" x="238" y="416">⑧</text>
+  <text class="point" x="348" y="137">⑤</text>
+  <text class="point" x="348" y="286">⑥</text>
+  <text class="point" x="584" y="416">①</text>
+  <text class="point" x="614" y="255">③</text>
+  <text class="point" x="711" y="286">②</text>
+  <text class="point" x="711" y="138">④</text>
+
+  <!-- 압축기 흡입 비체적 -->
+  <text class="note" x="430" y="371">v₁ = 0.22 m³/kg</text>
+  <text class="note" x="445" y="248">v₃ = 0.05 m³/kg</text>
+
+  <!-- 엔탈피 값 -->
+  <text class="value" x="241" y="486">429</text>
+  <text class="value" x="322" y="514">466</text>
+  <text class="value" x="589" y="486">618</text>
+  <text class="value" x="622" y="514">634</text>
+  <text class="value" x="687" y="486">660</text>
+</svg>

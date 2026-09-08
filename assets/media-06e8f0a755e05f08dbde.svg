@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520">
+  <defs>
+    <marker id="axisArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#111"/>
+    </marker>
+    <style>
+      .axis{fill:none;stroke:#111;stroke-width:3;marker-end:url(#axisArrow)}
+      .curve{fill:none;stroke:#111;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}
+      .proc{fill:none;stroke:#111;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}
+      .guide{fill:none;stroke:#555;stroke-width:1.6;stroke-dasharray:5 5}
+      .dot{fill:#111}
+      text{font-family:"Noto Serif KR","Nanum Myeongjo","Times New Roman",serif;fill:#111}
+      .axislabel{font-size:29px;font-weight:600}
+      .temp{font-size:27px}
+      .tick{font-size:24px}
+      .state{font-size:27px;font-weight:700}
+      .specific{font-size:25px;font-style:italic}
+    </style>
+  </defs>
+
+  <rect width="1000" height="520" fill="#fff"/>
+
+  <!-- axes -->
+  <path class="axis" d="M105 455 L105 42"/>
+  <path class="axis" d="M105 455 L900 455"/>
+  <text class="axislabel" x="63" y="145" transform="rotate(-90 63 145)">P (MPa)</text>
+  <text class="axislabel" x="865" y="493">h</text>
+  <text class="tick" x="891" y="492">(kJ/kg)</text>
+
+  <!-- saturation boundary -->
+  <path class="curve" d="M105 455 C150 377 205 278 273 192 C338 111 420 73 535 38"/>
+  <path class="curve" d="M535 38 C578 105 610 181 635 257 C655 320 671 386 682 455"/>
+
+  <!-- refrigeration-cycle construction lines -->
+  <path class="proc" d="M278 112 L748 112"/>
+  <path class="proc" d="M370 112 L370 218"/>
+  <path class="proc" d="M370 218 L692 218"/>
+  <path class="proc" d="M692 218 L748 112"/>
+  <path class="proc" d="M692 218 L646 342"/>
+  <path class="proc" d="M646 342 L278 342"/>
+  <path class="proc" d="M278 112 L278 342"/>
+
+  <!-- specific-volume construction -->
+  <path class="guide" d="M692 218 L780 238"/>
+  <path class="guide" d="M646 342 L780 286"/>
+
+  <!-- enthalpy guides -->
+  <path class="guide" d="M278 112 L278 455"/>
+  <path class="guide" d="M370 112 L370 455"/>
+  <path class="guide" d="M646 342 L646 455"/>
+  <path class="guide" d="M692 218 L692 455"/>
+  <path class="guide" d="M748 112 L748 455"/>
+
+  <!-- state points -->
+  <circle class="dot" cx="278" cy="112" r="5.5"/>
+  <circle class="dot" cx="370" cy="112" r="5.5"/>
+  <circle class="dot" cx="748" cy="112" r="5.5"/>
+  <circle class="dot" cx="370" cy="218" r="5.5"/>
+  <circle class="dot" cx="692" cy="218" r="5.5"/>
+  <circle class="dot" cx="780" cy="238" r="5.5"/>
+  <circle class="dot" cx="646" cy="342" r="5.5"/>
+  <circle class="dot" cx="278" cy="342" r="5.5"/>
+
+  <!-- state labels -->
+  <text class="state" x="258" y="96">⑦</text>
+  <text class="state" x="350" y="96">⑤</text>
+  <text class="state" x="733" y="96">④</text>
+  <text class="state" x="378" y="210">⑥</text>
+  <text class="state" x="676" y="205">③</text>
+  <text class="state" x="788" y="248">②</text>
+  <text class="state" x="653" y="366">①</text>
+  <text class="state" x="250" y="365">⑧</text>
+
+  <!-- temperatures -->
+  <text class="temp" x="485" y="98">40℃</text>
+  <text class="temp" x="472" y="206">0℃</text>
+  <text class="temp" x="438" y="331">−40℃</text>
+
+  <!-- specific volumes -->
+  <text class="specific" x="790" y="231">v₃ = 0.05 m³/kg</text>
+  <text class="specific" x="790" y="294">v₁ = 0.22 m³/kg</text>
+
+  <!-- enthalpy values -->
+  <text class="tick" x="251" y="485">429</text>
+  <text class="tick" x="345" y="485">466</text>
+  <text class="tick" x="620" y="485">618</text>
+  <text class="tick" x="666" y="513">634</text>
+  <text class="tick" x="722" y="485">660</text>
+</svg>

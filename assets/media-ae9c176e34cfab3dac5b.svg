@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" role="img" aria-labelledby="title desc">
+  <title id="title">모의고사 3 제9번 습공기선도 정답 미리보기</title>
+  <desc id="desc">겨울철 공기 혼합, 현열가열, 등엔탈피 가습, 실내 상태변화를 A부터 E까지 표시한 흑백 도안</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.2" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#111"/>
+    </marker>
+    <style>
+      .kr { font-family: "Noto Sans KR Thin", "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; fill: #111; }
+      .axis { fill: none; stroke: #111; stroke-width: 2.5; }
+      .guide { fill: none; stroke: #777; stroke-width: 1.5; stroke-dasharray: 6 6; }
+      .process { fill: none; stroke: #111; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .extension { fill: none; stroke: #555; stroke-width: 1.6; stroke-dasharray: 8 6; }
+      .point { fill: #fff; stroke: #111; stroke-width: 2.5; }
+      .state { font-size: 23px; font-weight: 800; }
+      .temp { font-size: 17px; }
+      .label { font-size: 18px; }
+      .small { font-size: 16px; }
+    </style>
+  </defs>
+
+  <rect width="1100" height="720" fill="#fff"/>
+  <rect x="18" y="18" width="1064" height="684" rx="10" fill="#fff" stroke="#111" stroke-width="2"/>
+
+  <text class="kr" x="550" y="55" font-size="25" font-weight="800" text-anchor="middle">겨울철 공기 가열·가습 과정 — 정답 선도 미리보기</text>
+
+  <!-- Psychrometric-chart frame -->
+  <path class="axis" d="M95 605 H965 V78"/>
+  <path class="axis" d="M95 605 C173 581 258 537 331 469 C401 404 456 316 496 216 C518 162 533 113 541 78"/>
+  <path class="axis" d="M112 526 L492 83" stroke-width="2"/>
+
+  <!-- Reference labels -->
+  <text class="kr label" x="531" y="650" text-anchor="middle">건구온도 (°C)</text>
+  <text class="kr label" x="1015" y="340" text-anchor="middle" transform="rotate(-90 1015 340)">절대습도 kg/kg(DA)</text>
+  <text class="kr small" x="252" y="306" text-anchor="middle" transform="rotate(-49 252 306)">엔탈피선 kJ/kg(DA)</text>
+  <text class="kr small" x="386" y="296" transform="rotate(-58 386 296)">포화곡선</text>
+
+  <!-- Plotting guides -->
+  <path class="guide" d="M232 575 V605"/>
+  <path class="guide" d="M562 412 V605"/>
+  <path class="guide" d="M644 372 V605"/>
+  <path class="guide" d="M782 393 V605"/>
+  <path class="guide" d="M830 412 V605"/>
+  <path class="guide" d="M644 372 H965"/>
+  <path class="guide" d="M782 393 H965"/>
+  <path class="guide" d="M562 412 H965"/>
+
+  <!-- Extended constant-enthalpy guide through D-E -->
+  <path class="extension" d="M480 274 L830 412"/>
+  <text class="kr small" x="611" y="301" text-anchor="middle" transform="rotate(22 611 301)">등습구온도선(등엔탈피선)</text>
+
+  <!-- Mixing line A-B, with C on the line -->
+  <path class="process" d="M232 575 L644 372"/>
+  <path class="process" d="M232 575 L548 419" marker-end="url(#arrow)"/>
+  <path class="process" d="M644 372 L576 406" marker-end="url(#arrow)"/>
+  <rect x="337" y="466" width="95" height="30" rx="6" fill="#fff"/>
+  <text class="kr small" x="385" y="487" text-anchor="middle">공기 혼합</text>
+
+  <!-- C-D sensible heating -->
+  <path class="process" d="M562 412 H830" marker-end="url(#arrow)"/>
+  <rect x="642" y="426" width="110" height="30" rx="6" fill="#fff"/>
+  <text class="kr small" x="697" y="447" text-anchor="middle">현열가열</text>
+
+  <!-- D-E adiabatic humidification -->
+  <path class="process" d="M830 412 L782 393" marker-end="url(#arrow)"/>
+  <rect x="798" y="354" width="140" height="31" rx="6" fill="#fff"/>
+  <text class="kr small" x="868" y="375" text-anchor="middle">등엔탈피 가습</text>
+
+  <!-- E-A room process -->
+  <path class="process" d="M782 393 L644 372" marker-end="url(#arrow)"/>
+  <rect x="681" y="334" width="108" height="30" rx="6" fill="#fff"/>
+  <text class="kr small" x="735" y="355" text-anchor="middle">SHF 0.829</text>
+
+  <!-- State points -->
+  <g>
+    <circle class="point" cx="644" cy="372" r="8"/>
+    <circle class="point" cx="232" cy="575" r="8"/>
+    <circle class="point" cx="562" cy="412" r="8"/>
+    <circle class="point" cx="830" cy="412" r="8"/>
+    <circle class="point" cx="782" cy="393" r="8"/>
+  </g>
+
+  <!-- Point letters -->
+  <text class="kr state" x="626" y="352" text-anchor="end">A</text>
+  <text class="kr state" x="216" y="563" text-anchor="end">B</text>
+  <text class="kr state" x="544" y="399" text-anchor="end">C</text>
+  <text class="kr state" x="847" y="434">D</text>
+  <text class="kr state" x="784" y="381" text-anchor="middle">E</text>
+
+  <!-- Dry-bulb temperatures -->
+  <text class="kr temp" x="232" y="631" text-anchor="middle">6</text>
+  <text class="kr temp" x="562" y="631" text-anchor="middle">20.4</text>
+  <text class="kr temp" x="644" y="631" text-anchor="middle">24</text>
+  <text class="kr temp" x="782" y="631" text-anchor="middle">30.0</text>
+  <text class="kr temp" x="830" y="631" text-anchor="middle">32.1</text>
+
+  <!-- State legend -->
+  <g class="kr small">
+    <text x="95" y="681">A 실내공기</text>
+    <text x="270" y="681">B 외기</text>
+    <text x="405" y="681">C 혼합공기</text>
+    <text x="585" y="681">D 가열기 출구</text>
+    <text x="805" y="681">E 취출공기</text>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+  <rect width="900" height="560" fill="#fff"/>
+  <g stroke="#111" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- upper evaporator -->
+    <rect x="170" y="92" width="126" height="84" rx="3"/>
+    <path d="M170 92l18-18h126l-18 18M296 92l18-18v84l-18 18"/>
+    <!-- lower evaporator -->
+    <rect x="170" y="264" width="126" height="84" rx="3"/>
+    <path d="M170 264l18-18h126l-18 18M296 264l18-18v84l-18 18"/>
+    <!-- compressor -->
+    <circle cx="690" cy="458" r="34"/>
+    <path d="M657 492h66M668 492l-10 16M712 492l10 16"/>
+    <!-- unfinished pipe stubs -->
+    <path d="M314 134h56M314 306h56M656 458h-58"/>
+  </g>
+  <g fill="#111" font-family="Arial, 'Noto Sans KR', sans-serif">
+    <text x="216" y="124" font-size="18" text-anchor="middle">증발기 A</text>
+    <text x="216" y="296" font-size="18" text-anchor="middle">증발기 B</text>
+    <text x="690" y="462" font-size="18" text-anchor="middle">압축기</text>
+    <text x="450" y="38" font-size="23" font-weight="700" text-anchor="middle">미완성 흡입배관도</text>
+    <text x="450" y="535" font-size="16" text-anchor="middle">배관선을 그려 계통도를 완성하시오.</text>
+  </g>
+</svg>
