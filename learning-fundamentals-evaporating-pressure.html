@@ -68,7 +68,13 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>증발압력과 증발온도의 관계</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>순수냉매가 액체와 증기로 평형을 이루는 포화 상태에서는 압력이 정해지면 포화온도도 정해집니다. 증발압력을 낮추면 더 낮은 온도에서 열을 흡수할 수 있습니다. 다만 냉각 대상과의 온도차가 커져도 압축비 상승 등으로 소비동력과 성능에 불리할 수 있어, 무조건 낮은 압력이 좋은 것은 아닙니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>증발압력과 증발온도의 관계</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>증발압력</strong>은 증발기 내부에서 냉매가 증발할 때의 압력이고, <strong>증발온도</strong>는 그 압력에서 냉매가 액체에서 증기로 상변화하는 포화온도를 말합니다. 같은 냉매에서는 포화상태의 압력과 온도가 서로 대응하므로 증발압력이 변하면 증발온도도 함께 변합니다.</p>
+<p>일반적으로 같은 냉매에서 <strong>증발압력이 낮아지면 증발온도도 낮아지고, 증발압력이 높아지면 증발온도도 높아집니다.</strong> 이것은 냉매마다 정해진 압력-포화온도 관계에 따른 것입니다.</p>
+<p>냉동장치가 냉각 대상에서 열을 흡수하려면 냉매의 증발온도가 냉각하려는 공기나 물 등의 온도보다 낮아야 합니다. 그래야 온도차에 의해 열이 냉각 대상에서 냉매 쪽으로 이동할 수 있습니다.</p>
+<p>그러나 증발온도를 필요 이상으로 낮추면 압축기 흡입압력이 낮아지고 응축측과의 압력차가 커져 압축비가 증가할 수 있습니다. 그 결과 압축일이 증가하고 냉동기의 COP가 저하되는 방향으로 작용할 수 있습니다. 따라서 단순히 “증발온도가 낮을수록 냉동성능이 좋다”고 판단해서는 안 됩니다.</p>
+<p>실제 장치에서는 증발기 열부하, 냉매유량, 열교환 상태, 압축기 용량제어 등 여러 요인이 증발압력에 영향을 줍니다. 실기문제에서는 이러한 실제 제어보다 먼저 <strong>주어진 냉매의 압력과 포화온도 관계</strong>를 정확히 해석하는 것이 핵심입니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <p>같은 냉매에서는 증발압력이 낮아지면 포화온도인 증발온도도 낮아지고, 증발압력이 높아지면 증발온도도 높아집니다.</p>
 
           <div class="evap-relation-concept" id="evapRelationConcept" data-cue="intro" aria-label="같은 냉매에서 증발압력과 증발온도가 같은 방향으로 변하는 관계">
@@ -91,7 +97,19 @@
           <div class="evap-relation-ai-launch-wrap"></div>
           <div class="fundamental-keyline"><strong>한 줄 정리</strong> 같은 냉매에서 증발압력과 증발온도는 같은 방향으로 변합니다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>압력계 값을 냉매의 압력·온도표와 대조하여 포화온도를 구합니다. 표에서 해당 압력의 포화온도가 −5℃이고 같은 위치의 냉매 실제 온도가 2℃이면 과열도는 2−(−5)=7 K입니다. 여기의 온도는 계산 설명용 가정값이며 특정 냉매의 실제 압력값을 뜻하지 않습니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>포화온도와 실제 흡입가스 온도는 구분해야 합니다. 압력표가 절대압력인지 게이지압력인지도 확인합니다. 온도활주가 있는 혼합냉매는 과열도 평가에 이슬점 기준을 사용합니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-components.html">← 이전: 6. 압축기·응축기·팽창밸브·증발기의 역할</a><a href="learning-fundamentals-condensing-pressure.html">다음: 8. 응축압력과 응축온도의 관계 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>어떤 냉매의 압력-온도 자료에서 증발압력 A에 대응하는 포화온도가 -5℃이고, 더 낮은 증발압력 B에 대응하는 포화온도가 -15℃라고 하겠습니다.</p>
+<p>증발압력이 A에서 B로 낮아지면 증발온도 역시 <strong>-5℃ → -15℃</strong>로 낮아집니다. 냉각 대상의 온도가 5℃라면 냉매와 냉각 대상 사이의 온도차는 각각 다음과 같습니다.</p>
+<p><strong>A 조건:</strong> 5-(-5)=<strong>10℃</strong></p>
+<p><strong>B 조건:</strong> 5-(-15)=<strong>20℃</strong></p>
+<p>B 조건에서는 열교환을 위한 온도차가 더 커지지만, 증발압력이 낮아진 만큼 압축기의 흡입압력도 낮아져 압축비와 압축일이 증가할 수 있습니다. 따라서 실제 냉동장치는 필요한 냉각온도와 에너지효율을 함께 고려하여 적절한 증발조건을 사용합니다.</p>
+<p>시험에서 압력이 주어지고 증발온도를 묻는 경우에는 임의로 계산하는 것이 아니라 <strong>해당 냉매의 포화표 또는 P-h 선도에서 그 압력에 대응하는 포화온도</strong>를 찾아야 합니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 증발압력과 증발온도는 서로 반대로 움직이지 않습니다.</strong><br>같은 냉매의 포화상태에서는 증발압력이 낮아지면 포화온도도 낮아지고, 압력이 높아지면 포화온도도 높아집니다.</p>
+<p><strong>② 증발온도와 냉장실 온도는 같은 값이 아닙니다.</strong><br>열이 냉장실 공기에서 냉매로 이동하려면 일반적으로 냉매의 증발온도가 냉각 대상의 온도보다 낮아야 합니다.</p>
+<p><strong>③ 증발온도가 낮을수록 무조건 좋은 것은 아닙니다.</strong><br>지나치게 낮은 증발압력·증발온도는 압축비와 압축일을 증가시켜 COP에 불리하게 작용할 수 있습니다.</p>
+<p><strong>④ 압력만 보고 모든 냉매의 온도를 동일하게 판단하면 안 됩니다.</strong><br>같은 압력이라도 냉매 종류가 다르면 포화온도가 다르므로 반드시 해당 냉매의 압력-온도 자료를 사용해야 합니다.</p>
+<p><strong>⑤ 압력 기준과 냉매 종류를 확인하세요.</strong><br>표나 계기의 압력이 게이지압력인지 절대압력인지 먼저 확인합니다. 절대압력=게이지압력+대기압이며, 압축비는 토출 절대압력을 흡입 절대압력으로 나누어 구합니다. 순수냉매·공비냉매와 달리 비공비 혼합냉매는 온도글라이드가 있으므로 같은 압력의 기포점·이슬점 또는 문제에서 지정한 평균온도를 구분하여 사용합니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-components.html">← 이전: 6. 압축기·응축기·팽창밸브·증발기의 역할</a><a href="learning-fundamentals-condensing-pressure.html">다음: 8. 응축압력과 응축온도의 관계 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

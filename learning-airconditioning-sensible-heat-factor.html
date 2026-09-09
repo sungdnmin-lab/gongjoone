@@ -68,18 +68,41 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>현열비(SHF)</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>현열비는 선택한 부하의 전열 중 현열 비중입니다. 실내 현열비와 외기를 포함한 장치 현열비는 계산 범위가 다를 수 있습니다. 현열비가 같아도 부하 크기와 급기 상태에 따라 필요한 풍량은 달라집니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
-          <p>전체 공급 열량 중 온도를 올리거나 내리는 데 사용된 현열량의 비로, 실내로 송출되는 공기 상태를 나타낸다.</p>
-          <div class="learn-formula">SHF = 현열량 / 전열량 = qₛ / qₜ = qₛ / (qₛ + qₗ)</div>
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>현열비(SHF)</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>현열비(SHF, Sensible Heat Factor)</strong>는 전체 열부하 중에서 현열부하가 차지하는 비율을 나타냅니다. 공기조화에서는 실내의 온도를 변화시키는 부하와 수분량을 변화시키는 부하를 구분하여 상태변화를 해석할 때 사용합니다.</p>
+<p><strong>현열</strong>은 공기의 건구온도를 변화시키는 열이고, <strong>잠열</strong>은 공기 중 수분량의 변화와 관련된 열입니다. 전체 열량은 현열과 잠열의 합으로 나타낼 수 있습니다.</p>
+<p><strong>전열부하 = 현열부하 + 잠열부하</strong></p>
+<p>따라서 현열비는 다음과 같습니다.</p>
+<p><strong>SHF = <span class="solution-frac"><span class="solution-num">현열부하</span><span class="solution-den">전열부하</span></span> = <span class="solution-frac"><span class="solution-num">현열부하</span><span class="solution-den">현열부하 + 잠열부하</span></span></strong></p>
+<p>SHF는 비율이므로 단위가 없으며 일반적으로 0과 1 사이의 값으로 나타냅니다. SHF가 1에 가까울수록 전체부하에서 현열의 비중이 크고, 값이 작아질수록 상대적으로 잠열부하의 비중이 커집니다.</p>
+<p>습공기선도에서는 SHF를 이용하여 공기의 상태변화 방향을 판단할 수 있습니다. 현열만 제거한다면 절대습도 변화 없이 온도가 낮아지고, 현열과 잠열을 함께 제거하는 냉각·감습 과정에서는 온도와 절대습도가 동시에 낮아집니다.</p>
+<p>실기에서는 <strong>RSHF(실내현열비), GSHF(장치현열비)</strong>처럼 적용 범위가 구분될 수 있습니다. 어떤 부하를 분자와 분모에 포함해야 하는지는 문제에서 요구하는 현열비의 종류와 주어진 부하 조건을 먼저 확인해야 합니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+          <p>전체 열부하 중 현열부하의 비율이며, 습공기선도에서 상태변화선의 방향을 정하는 데 사용한다. SHF만으로 급기 상태가 완전히 결정되지는 않는다.</p>
+          <div class="learn-formula">SHF = <span class="solution-frac"><span class="solution-num">현열량</span><span class="solution-den">전열량</span></span> = <span class="solution-frac"><span class="solution-num">qₛ</span><span class="solution-den">qₜ</span></span> = <span class="solution-frac"><span class="solution-num">qₛ</span><span class="solution-den">qₛ + qₗ</span></span></div>
           <p class="learn-caption">qₛ: 현열량, qₗ: 잠열량, qₜ: 전열량</p>
           <table class="learn-table">
             <tr><th>구분</th><th>의미</th></tr>
             <tr><td>SHF가 큰 경우</td><td>전체 부하 중 현열부하의 비율이 크다.</td></tr>
             <tr><td>SHF가 작은 경우</td><td>전체 부하 중 잠열부하의 비율이 크다.</td></tr>
           </table>
-          <div class="learn-tip"><strong>시험 암기</strong><br>전열량 = 현열량 + 잠열량<br>SHF = qₛ / (qₛ + qₗ)<br>SHF ↑ → 현열 비중 증가<br>SHF ↓ → 잠열 비중 증가</div>
+          <div class="learn-tip"><strong>시험 암기</strong><br>전열량 = 현열량 + 잠열량<br>SHF = <span class="solution-frac"><span class="solution-num">qₛ</span><span class="solution-den">qₛ + qₗ</span></span><br>SHF ↑ → 현열 비중 증가<br>SHF ↓ → 잠열 비중 증가</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>실내 현열 18 kW, 잠열 6 kW이면 SHF=<span class="solution-frac"><span class="solution-num">18</span><span class="solution-den">18+6</span></span>=0.75입니다. 실내점과 급기점은 이 실내부하 비율에 맞는 상태변화 방향으로 연결합니다. 선도 작도에서는 제공된 SHF 눈금의 기준점을 확인합니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>SHF 0.75는 온도가 75% 내려간다는 뜻이 아닙니다. 일반적인 양의 현열·잠열 냉방부하에서는 0~1 범위이지만, 서로 부호가 다른 특수 과정까지 같은 범위를 강제하지 않습니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-heat-moisture-ratio.html">← 이전: 5. 습공기선도와 열수분비</a><a href="learning-airconditioning-air-state-changes.html">다음: 7. 습공기의 상태 변화 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>어떤 실내의 현열부하가 24 kW, 잠열부하가 6 kW라고 하겠습니다.</p>
+<p><strong>① 전열부하</strong><br>24+6=<strong>30 kW</strong></p>
+<p><strong>② 현열비</strong><br>SHF=<span class="solution-frac"><span class="solution-num">24</span><span class="solution-den">30</span></span>=<strong>0.80</strong></p>
+<p>따라서 전체 열부하의 80%가 현열이고, 나머지 20%가 잠열에 해당합니다.</p>
+<p>반대로 전열부하가 45 kW이고 SHF가 0.70이라면 현열부하는 <strong>45×0.70=31.5 kW</strong>이고, 잠열부하는 <strong>45-31.5=13.5 kW</strong>입니다.</p>
+<p>검산하면 <strong>31.5+13.5=45 kW</strong>이고, <span class="solution-frac"><span class="solution-num">31.5</span><span class="solution-den">45</span></span>=0.70으로 처음 조건과 일치합니다.</p>
+<p>실기시험에서는 SHF 자체를 계산하는 문제뿐 아니라 습공기선도에서 상태변화선을 작도하거나 급기상태를 결정하는 과정에도 사용됩니다. 이때는 문제에서 실내부하만 사용하는지, 외기부하 등을 포함한 장치부하를 사용하는지 구분해야 합니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① SHF의 분모는 현열만이 아닙니다.</strong><br>분모에는 현열과 잠열을 합한 전열부하가 들어갑니다. 즉 SHF=현열÷(현열+잠열)입니다.</p>
+<p><strong>② SHF와 잠열비를 혼동하지 마세요.</strong><br>SHF가 0.80이라면 현열의 비율이 80%라는 뜻이고, 현열과 잠열만으로 구성된 조건이라면 잠열의 비율은 20%입니다.</p>
+<p><strong>③ RSHF와 GSHF는 적용하는 부하 범위가 다를 수 있습니다.</strong><br>실내현열비와 장치현열비를 계산할 때 포함되는 현열·잠열부하가 다르므로 문제의 정의와 조건을 먼저 확인해야 합니다.</p>
+<p><strong>④ 현열과 잠열의 단위를 통일하세요.</strong><br>한쪽은 kW, 다른 쪽은 kcal/h처럼 서로 다른 단위로 바로 나누면 안 됩니다. 같은 열량률 단위로 맞춘 뒤 SHF를 계산해야 합니다.</p>
+<p><strong>⑤ SHF는 냉동기의 COP와 다른 개념입니다.</strong><br>SHF는 전체 공조부하에서 현열이 차지하는 비율이고, COP는 냉동효과와 압축일의 비입니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-heat-moisture-ratio.html">← 이전: 5. 습공기선도와 열수분비</a><a href="learning-airconditioning-air-state-changes.html">다음: 7. 습공기의 상태 변화 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

@@ -68,23 +68,51 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>혼합공기</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>혼합에서는 건공기 질량, 수분 질량, 에너지를 각각 보존합니다. 단열이고 결로가 없다면 엔탈피와 습도비는 건공기 질량유량에 대한 가중평균입니다. 체적유량으로 평균하는 식은 밀도 차이를 무시하는 근사입니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>혼합공기</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>혼합공기</strong>는 서로 다른 상태의 두 공기가 섞여 만들어지는 공기입니다. 공조장치에서는 대표적으로 <strong>외기(OA)</strong>와 <strong>환기공기 또는 환류공기(RA)</strong>가 혼합되어 혼합공기(MA)를 만든 뒤 공조기로 들어갑니다.</p>
+<p>두 공기가 단열적으로 혼합되고 외부와의 열·수분 교환 및 혼합 중 응축이 없다고 보면, 혼합 후의 상태는 각 공기의 질량유량과 상태량에 의해 결정됩니다. 엔탈피와 절대습도는 <strong>건공기 질량유량에 따른 가중평균</strong>으로 계산합니다. 건구온도의 단순 가중평균은 두 공기의 비열 차이를 무시한 근사식입니다.</p>
+<p>여기서 ṁ는 건공기 질량유량(kg(DA)/s), h는 건공기 기준 엔탈피(kJ/kg(DA)), x는 수증기 질량/건공기 질량(kg/kg(DA))입니다. 예를 들어 외기량을 ṁ<sub>o</sub>, 환기공기량을 ṁ<sub>r</sub>라 하면 혼합공기의 총 질량유량은 다음과 같습니다.</p>
+<p><strong>ṁ<sub>m</sub>=ṁ<sub>o</sub>+ṁ<sub>r</sub></strong></p>
+<p>혼합공기의 엔탈피는 에너지수지로 다음과 같이 구합니다.</p>
+<p><strong>h<sub>m</sub>=<span class="solution-frac"><span class="solution-num">ṁ<sub>o</sub>h<sub>o</sub> + ṁ<sub>r</sub>h<sub>r</sub></span><span class="solution-den">ṁ<sub>o</sub> + ṁ<sub>r</sub></span></span></strong></p>
+<p>절대습도 역시 같은 방식으로 질량수지를 적용할 수 있습니다.</p>
+<p><strong>x<sub>m</sub>=<span class="solution-frac"><span class="solution-num">ṁ<sub>o</sub>x<sub>o</sub> + ṁ<sub>r</sub>x<sub>r</sub></span><span class="solution-den">ṁ<sub>o</sub> + ṁ<sub>r</sub></span></span></strong></p>
+<p>습공기선도에서는 두 상태점을 직선으로 연결하면 혼합공기 상태가 그 선 위에 위치합니다. 혼합점은 공기량이 많은 쪽의 상태점에 더 가깝게 형성됩니다.</p>
+<p>실기에서는 외기비나 환기비가 직접 주어지기도 하고, 두 공기량이 주어진 뒤 혼합온도·혼합엔탈피·혼합절대습도를 구하도록 출제되기도 합니다. 이때 가장 중요한 것은 <strong>혼합비의 기준을 잘못 해석하지 않는 것</strong>입니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <h3>혼합공기의 기본 개념</h3>
-          <p>서로 다른 상태의 두 공기가 혼합되면 혼합공기의 건구온도, 절대습도와 엔탈피는 각 공기량을 기준으로 한 가중평균으로 계산한다.</p>
-          <div class="learn-formula">t₃ = (t₁Q₁ + t₂Q₂) / (Q₁ + Q₂)</div>
-          <div class="learn-formula">x₃ = (x₁Q₁ + x₂Q₂) / (Q₁ + Q₂)</div>
-          <div class="learn-formula">i₃ = (i₁Q₁ + i₂Q₂) / (Q₁ + Q₂)</div>
+          <p>다음 식은 외부 열교환과 응축이 없는 혼합에 적용한다. ṁ₁, ṁ₂는 건공기 질량유량이다. 엔탈피와 절대습도는 건공기 기준이며, 온도식은 두 공기의 비열 차이를 무시한 근사식이다.</p>
+          <div class="learn-formula">t₃ ≈ <span class="solution-frac"><span class="solution-num">t₁ṁ₁ + t₂ṁ₂</span><span class="solution-den">ṁ₁ + ṁ₂</span></span></div>
+          <div class="learn-formula">x₃ = <span class="solution-frac"><span class="solution-num">x₁ṁ₁ + x₂ṁ₂</span><span class="solution-den">ṁ₁ + ṁ₂</span></span></div>
+          <div class="learn-formula">i₃ = <span class="solution-frac"><span class="solution-num">i₁ṁ₁ + i₂ṁ₂</span><span class="solution-den">ṁ₁ + ṁ₂</span></span></div>
           <table class="learn-table">
             <tr><th>기호</th><th>의미</th></tr>
-            <tr><td>Q₁</td><td>환기량 또는 첫 번째 공기량</td></tr>
-            <tr><td>Q₂</td><td>외기량 또는 두 번째 공기량</td></tr>
+            <tr><td>ṁ₁</td><td>첫 번째 공기의 건공기 질량유량</td></tr>
+            <tr><td>ṁ₂</td><td>두 번째 공기의 건공기 질량유량</td></tr>
             <tr><td>t₃</td><td>혼합공기의 건구온도</td></tr>
             <tr><td>x₃</td><td>혼합공기의 절대습도</td></tr>
             <tr><td>i₃</td><td>혼합공기의 엔탈피</td></tr>
           </table>
           <div class="exam-tip"><strong>시험 포인트</strong><br>혼합공기 상태는 단순 평균이 아니라 각 공기량을 반영한 가중평균으로 계산한다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>외기 건공기유량 1 kg/s, h=70·x=0.018, 환기 3 kg/s, h=50·x=0.010이면 h혼합=<span class="solution-frac"><span class="solution-num">1×70+3×50</span><span class="solution-den">4</span></span>=55 kJ/kg(DA), x혼합=<span class="solution-frac"><span class="solution-num">0.018+0.030</span><span class="solution-den">4</span></span>=0.012입니다. 혼합점은 양쪽 상태 사이이며 유량이 큰 환기점에 더 가깝습니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>외기비 25%이면 외기 상태에 0.25를 곱합니다. 비율을 반대로 넣지 않습니다. 서로 크게 다른 온습도에서는 엔탈피·습도비를 먼저 구한 뒤 건구온도를 구하는 것이 정확합니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-combined-processes.html">← 이전: 9. 가열·가습과 냉각·감습</a><a href="learning-airconditioning-bypass-factor.html">다음: 11. 냉각·감습과 바이패스 팩터 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>건공기 기준 외기량이 2 kg/s, 외기 엔탈피가 70 kJ/kg이고, 환기공기량이 6 kg/s, 환기공기 엔탈피가 45 kJ/kg이라고 하겠습니다.</p>
+<p><strong>① 총 혼합공기량</strong><br>ṁ<sub>m</sub>=2+6=<strong>8 kg/s</strong></p>
+<p><strong>② 혼합공기 엔탈피</strong><br>h<sub>m</sub>=(2×70+6×45)÷8</p>
+<p>= (140+270)÷8</p>
+<p>=<span class="solution-frac"><span class="solution-num">410</span><span class="solution-den">8</span></span>=<strong>51.25 kJ/kg</strong></p>
+<p>혼합공기 상태는 환기공기량이 외기량보다 3배 많으므로 외기 상태보다 환기공기 상태에 더 가까운 위치에 형성됩니다.</p>
+<p>이번에는 외기비가 25%, 환기비가 75%이고 외기 건구온도가 32℃, 환기공기 건구온도가 24℃라고 가정하겠습니다. 두 비율을 건공기 질량유량 기준으로 하고 두 공기의 비열 차이를 무시하면 다음과 같이 계산할 수 있습니다.</p>
+<p><strong>t<sub>m</sub>=0.25×32+0.75×24=8+18=<strong>26℃</strong></strong></p>
+<p>따라서 혼합공기는 외기 32℃와 환기공기 24℃ 사이에 위치하며, 비율이 큰 환기공기 쪽에 더 가까운 26℃가 됩니다.</p>
+<p>실제 습공기 문제에서는 온도만 평균내기보다 엔탈피와 절대습도 등 문제에서 주어진 상태량을 기준으로 질량·에너지수지를 적용하는 것이 정확합니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 두 공기의 온도를 그냥 평균내면 안 됩니다.</strong><br>공기량이 서로 다르면 혼합상태는 공기량을 고려한 가중평균으로 결정됩니다. 단순 산술평균은 두 공기량이 같을 때만 성립합니다.</p>
+<p><strong>② 외기비와 환기비의 합을 확인하세요.</strong><br>두 공기만 혼합하는 경우 일반적으로 외기비+환기비=1 또는 100%가 되어야 합니다.</p>
+<p><strong>③ 혼합점의 위치를 반대로 잡지 마세요.</strong><br>습공기선도에서 혼합점은 공기량이 많은 쪽 상태점에 더 가까워집니다.</p>
+<p><strong>④ 건구온도만으로 습공기 상태를 완전히 결정할 수 없습니다.</strong><br>습공기는 온도뿐 아니라 수분량도 함께 고려해야 하므로 문제에서 엔탈피, 상대습도, 절대습도 등이 주어졌다면 해당 상태량을 이용해야 합니다.</p>
+<p><strong>⑤ 체적유량과 질량유량을 혼용할 때는 주의하세요.</strong><br>정밀한 혼합 계산은 건공기 질량유량 기준으로 수행하는 것이 원칙입니다. 체적유량 Q가 주어졌다면 각 상태의 건공기 기준 비체적 v를 이용하여 ṁ=Q/v로 환산합니다. 두 공기의 v가 같다고 가정한 경우에만 체적유량 비를 건공기 질량유량 비로 그대로 사용할 수 있습니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-combined-processes.html">← 이전: 9. 가열·가습과 냉각·감습</a><a href="learning-airconditioning-bypass-factor.html">다음: 11. 냉각·감습과 바이패스 팩터 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

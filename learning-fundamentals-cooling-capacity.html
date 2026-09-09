@@ -68,7 +68,14 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>냉동능력이란?</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>냉동능력은 단위시간 동안 제거할 수 있는 열량입니다. 열량이 저장되거나 이동한 에너지의 양이라면, 냉동능력은 그 에너지를 제거하는 속도입니다. 따라서 kJ와 kW는 다른 물리량이며 1 kW는 1초에 1 kJ를 처리하는 능력입니다. 냉수의 온도차와 유량을 알면 냉수 측에서 흡수한 열량률을 계산할 수 있습니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>냉동능력이란?</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>냉동능력</strong>은 냉동기가 일정 시간 동안 냉각 대상에서 제거할 수 있는 열량을 뜻합니다. 쉽게 말하면 “얼마나 많은 열을 얼마나 빠르게 빼낼 수 있는가”를 나타내는 값입니다. 냉동능력이 클수록 같은 시간 동안 더 많은 열을 제거할 수 있습니다.</p>
+<p>냉매 1 kg이 증발기를 통과하면서 흡수하는 열량을 <strong>냉동효과</strong>라고 하고, 여기에 냉매의 질량유량을 곱하면 장치 전체의 냉동능력이 됩니다.</p>
+<p><strong>냉동능력 Q̇e = 냉매 질량유량 ṁ × 냉동효과 qₑ</strong></p>
+<p>표준 냉동사이클에서 증발기 입구 엔탈피를 h₄, 출구 엔탈피를 h₁이라 하면 냉동효과는 <strong>qₑ=h₁-h₄</strong>이고, 따라서 냉동능력은 <strong>Q̇e=ṁ(h₁-h₄)</strong>로 계산합니다.</p>
+<p>여기서 냉동효과의 단위가 kJ/kg이고 질량유량이 kg/s라면, 두 값을 곱한 결과는 kJ/s가 됩니다. <strong>1 kJ/s = 1 kW</strong>이므로 냉동능력을 바로 kW로 나타낼 수 있습니다.</p>
+<p>냉동능력은 <strong>kW, kcal/h, 냉동톤(RT)</strong> 등으로 표현할 수 있습니다. 국내 공조냉동 실기 계산에서는 문제에서 요구하는 단위를 반드시 확인하고 마지막에 필요한 단위로 환산해야 합니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <p>냉동능력은 냉동기가 <strong>단위시간 동안</strong> 냉각 대상에서 제거할 수 있는 열량입니다. 일반적으로 kW, kcal/h 또는 RT로 나타냅니다.</p>
 
           <div class="capacity-concept" id="capacityConcept" data-cue="intro" aria-label="냉각 대상에서 제거한 열량을 걸린 시간으로 나누어 냉동능력을 계산하는 과정">
@@ -94,7 +101,20 @@
           <div class="capacity-ai-launch-wrap"></div>
           <div class="fundamental-keyline"><strong>한 줄 정리</strong> 냉동능력은 냉동기가 단위시간 동안 냉각 대상에서 제거할 수 있는 열량입니다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>물 600 kg을 12℃에서 7℃로 10분 동안 냉각한다고 가정합니다. 비열은 4.19 kJ/(kg·K), 외부 열취득은 무시합니다. Q = mcΔt = 600×4.19×5 = 12,570 kJ. 평균 냉동능력 Q̇ = <span class="solution-frac"><span class="solution-num">Q</span><span class="solution-den">τ</span></span> = <span class="solution-frac"><span class="solution-num">12,570</span><span class="solution-den">600</span></span> = 20.95 kW입니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>시간 10분을 그대로 분모에 넣으면 결과는 kJ/min입니다. kW를 구할 때는 초로 바꿉니다. 실제 선정에서는 냉각 대상 이외의 열취득과 운전 조건도 포함하지만, 계산 문제에서는 주어진 범위만 반영합니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-refrigeration.html">← 이전: 2. 냉동이란 무엇인가?</a><a href="learning-fundamentals-refrigeration-ton.html">다음: 4. 냉동톤(RT)이란? →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>냉매의 증발기 입구 엔탈피가 h₄=250 kJ/kg, 증발기 출구 엔탈피가 h₁=400 kJ/kg이고 냉매 질량유량이 0.12 kg/s라고 하겠습니다.</p>
+<p><strong>① 냉동효과</strong><br>qₑ=h₁-h₄=400-250=<strong>150 kJ/kg</strong></p>
+<p><strong>② 냉동능력</strong><br>Q̇e=ṁqₑ=0.12×150=<strong>18 kW</strong></p>
+<p>이를 kcal/h로 환산할 때 1 kW ≈ 860 kcal/h를 적용하면 <strong>18×860=15,480 kcal/h</strong>입니다.</p>
+<p>미국 냉동톤으로 환산할 때 1 USRT ≈ 3.517 kW를 적용하면 <strong><span class="solution-frac"><span class="solution-num">18</span><span class="solution-den">3.517</span></span>≈5.12 USRT</strong>입니다.</p>
+<p>따라서 같은 냉동능력을 약 <strong>18 kW ≈ 15,480 kcal/h ≈ 5.12 USRT</strong>로 나타낼 수 있습니다. 단, 시험에서는 문제에서 제시한 단위환산값이 있다면 그 값을 우선 사용해야 합니다.</p>
+<p>실기문제에서는 냉동능력을 직접 구하기도 하지만, 냉동능력이 주어지고 냉매순환량을 역으로 구하는 형태도 자주 연결됩니다. 이때는 <strong>ṁ=<span class="solution-frac"><span class="solution-num">Q̇e</span><span class="solution-den">qₑ</span></span></strong>로 식을 변형하면 됩니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 냉동효과와 냉동능력은 같은 값이 아닙니다.</strong><br>냉동효과는 냉매 1 kg이 흡수하는 열량으로 보통 kJ/kg을 사용하고, 냉동능력은 장치가 단위시간에 제거하는 열량으로 kW 등을 사용합니다.</p>
+<p><strong>② 엔탈피 차의 방향을 주의하세요.</strong><br>증발기에서는 냉매가 열을 흡수하므로 일반적인 표준사이클에서 냉동효과는 <strong>증발기 출구 엔탈피 − 증발기 입구 엔탈피</strong>로 계산합니다.</p>
+<p><strong>③ kcal/h와 kcal를 혼동하지 마세요.</strong><br>냉동능력은 시간에 대한 열량의 비율이므로 kcal/h처럼 시간 단위가 포함됩니다.</p>
+<p><strong>④ RT 환산값을 임의로 바꾸지 마세요.</strong><br>미국 냉동톤은 1 USRT≈3.517 kW입니다. 물 1,000 kg 기준으로 1 RT=3,320 kcal/h를 적용하면 18 kW는 약 4.66 RT입니다(1 kW=860 kcal/h 적용). 두 기준을 섞지 말고 문제에서 제시한 환산값을 우선 적용합니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-refrigeration.html">← 이전: 2. 냉동이란 무엇인가?</a><a href="learning-fundamentals-refrigeration-ton.html">다음: 4. 냉동톤(RT)이란? →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

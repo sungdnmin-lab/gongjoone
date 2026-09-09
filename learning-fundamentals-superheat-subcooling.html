@@ -68,7 +68,14 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>과열도와 과냉도란?</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>과열도는 증기의 실제 온도가 같은 압력의 포화온도보다 얼마나 높은지를, 과냉도는 액체의 실제 온도가 같은 압력의 포화온도보다 얼마나 낮은지를 나타냅니다. 과열은 액냉매 유입 여부와 연결되고 과냉은 팽창장치에 액체를 공급하는 조건과 연결됩니다. 측정 위치에서의 압력과 온도를 짝지어야 의미가 있습니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>과열도와 과냉도란?</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>과열도(Superheat)</strong>는 같은 압력에서 냉매증기의 실제 온도가 포화온도보다 얼마나 높은지를 나타내는 값이고, <strong>과냉도(Subcooling)</strong>는 액냉매의 실제 온도가 같은 압력의 포화온도보다 얼마나 낮은지를 나타내는 값입니다.</p>
+<p><strong>과열도 = 실제 증기온도 − 해당 압력의 포화온도</strong></p>
+<p><strong>과냉도 = 해당 압력의 포화온도 − 실제 액온도</strong></p>
+<p>증발기에서 냉매는 열을 흡수하면서 액체에서 증기로 변합니다. 포화증기가 된 뒤에도 열을 더 받으면 온도가 포화온도보다 높아져 <strong>과열증기</strong>가 됩니다. 적절한 과열도는 압축기로 액냉매가 유입되는 것을 방지하는 데 중요합니다.</p>
+<p>응축기에서는 냉매증기가 열을 방출하면서 액체로 변합니다. 포화액이 된 뒤에도 열을 더 방출하여 액체 온도가 포화온도보다 낮아지면 <strong>과냉액</strong>이 됩니다. 과냉은 팽창장치 입구까지 액냉매 상태를 안정적으로 유지하고 팽창 전 플래시가스 발생 가능성을 줄이는 데 도움이 됩니다.</p>
+<p>P-h 선도에서는 일반적으로 포화증기선 오른쪽이 과열영역이고, 포화액선 왼쪽이 과냉영역입니다. 따라서 과열도와 과냉도를 이해하면 냉동사이클의 상태점이 포화선과 어떤 관계에 있는지 판단하기 쉬워집니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <p>과열도는 냉매증기의 실제 온도가 증발온도보다 높은 정도이고, 과냉도는 액 냉매의 실제 온도가 응축온도보다 낮은 정도입니다.</p>
 
           <div class="shsc-concept" id="superheatSubcoolConcept" data-cue="intro" aria-label="냉동사이클에서 과열 구간과 과냉 구간, 계산식과 역할을 설명하는 그림">
@@ -97,7 +104,20 @@
           <div class="shsc-ai-launch-wrap"></div>
           <div class="fundamental-keyline"><strong>한 줄 정리</strong> 과열도와 과냉도는 같은 압력의 포화온도와 실제 냉매온도를 비교한 값입니다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>증발 포화온도 −8℃, 흡입가스 온도 −1℃이면 과열도는 7 K입니다. 응축 포화온도 42℃, 액관 온도 36℃이면 과냉도는 6 K입니다. 온도차 7 K는 7℃의 차이와 같은 크기이며 절대온도 환산을 위해 273.15를 더하지 않습니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>흡입배관의 열취득으로 생긴 과열과 증발기 내부의 유효 과열은 구분합니다. 과열이 커지면 항상 냉동능력이 좋아진다고 단정할 수 없습니다. 혼합냉매는 이슬점·기포점 기준도 확인합니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-condensing-pressure.html">← 이전: 8. 응축압력과 응축온도의 관계</a><a href="learning-fundamentals-cop.html">다음: 10. COP(성적계수)란? →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p><strong>예 1 — 과열도</strong><br>증발압력에 대응하는 포화온도가 -8℃이고 압축기 흡입 냉매온도가 4℃라면:</p>
+<p>과열도 = 4 - (-8) = <strong>12℃</strong></p>
+<p>즉 냉매증기는 해당 압력의 포화온도보다 12℃ 높은 과열상태입니다.</p>
+<p><strong>예 2 — 과냉도</strong><br>응축압력에 대응하는 포화온도가 42℃이고 응축기 출구 액냉매온도가 35℃라면:</p>
+<p>과냉도 = 42 - 35 = <strong>7℃</strong></p>
+<p>즉 액냉매는 해당 압력의 포화온도보다 7℃ 낮은 과냉상태입니다.</p>
+<p>실기문제에서는 압력과 온도가 함께 주어지고 냉매의 포화온도를 표나 선도에서 찾아 과열도 또는 과냉도를 계산하는 형태가 나올 수 있습니다. 핵심은 <strong>현재 압력에 대응하는 포화온도와 실제 냉매온도를 비교</strong>하는 것입니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 과열도와 과냉도의 뺄셈 방향이 반대입니다.</strong><br>과열도는 실제 증기온도에서 포화온도를 빼고, 과냉도는 포화온도에서 실제 액온도를 뺍니다.</p>
+<p><strong>② 포화온도는 냉매 종류와 압력에 따라 달라집니다.</strong><br>온도만 보고 과열·과냉 여부를 판단할 수 없으며, 같은 냉매라도 압력이 달라지면 포화온도가 달라집니다.</p>
+<p><strong>③ 과열도가 크다고 무조건 좋은 것은 아닙니다.</strong><br>적절한 과열은 액냉매의 압축기 유입을 방지하는 데 필요하지만, 지나친 과열은 흡입가스 온도와 토출온도를 높이고 냉동성능에 불리할 수 있습니다.</p>
+<p><strong>④ 과냉도 역시 단순히 클수록 좋다고 볼 수 없습니다.</strong><br>과냉은 팽창장치 입구의 액상 냉매를 안정시키는 데 유리하지만 실제 시스템의 적정값은 장치 설계와 운전조건에 따라 달라집니다.</p>
+<p><strong>⑤ 비공비 혼합냉매의 기준온도를 구분하세요.</strong><br>온도글라이드가 있는 냉매는 같은 압력에서도 포화액온도와 포화증기온도가 다릅니다. 과열도는 포화증기온도(이슬점), 과냉도는 포화액온도(기포점)를 기준으로 계산합니다. 측정 위치의 압력과 온도를 짝지어 사용합니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-condensing-pressure.html">← 이전: 8. 응축압력과 응축온도의 관계</a><a href="learning-fundamentals-cop.html">다음: 10. COP(성적계수)란? →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>
