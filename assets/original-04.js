@@ -79,7 +79,27 @@ for(const question of refrigerationPracticeQuestions.slice(1,3)){
     ''
   );
 }
+function prepareSessionQuestions(selected,title){
+  const questions=selected.map(q=>({...q}));
+  // Fisher–Yates: shuffle complete question objects, never answer choices or subquestions.
+  for(let i=questions.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [questions[i],questions[j]]=[questions[j],questions[i]];
+  }
+  const removeBadge=isQuickSessionTitle(title)||title==='실전 모의고사 7';
+  return questions.map((question,index)=>{
+    if(removeBadge){
+      for(const key of ['promptHtml','problemHtml']){
+        if(typeof question[key]==='string'){
+          question[key]=question[key].replace(/<span\b[^>]*class=["'][^"']*\bvariant-kicker\b[^"']*["'][^>]*>[\s\S]*?<\/span>/gi,'');
+        }
+      }
+    }
+    return {...question,id:index+1};
+  });
+}
 function resetQuestionSession(selected,title){
+  selected=prepareSessionQuestions(selected,title);
   Q.splice(0,Q.length,...selected);
   idx=0;
   state=Q.map(()=>({memo:'',answers:[],manual:[],draw:[],redo:[],chartDraw:[],chartZoom:1,drawGrade:null,annots:{},annotRedo:{}}));
@@ -5350,6 +5370,23 @@ Object.assign(mock4Questions[0],{
     SL('상태변화 순서: ① 실내와 ③ 외기 혼합 → ④ 혼합공기 → ⑤ 냉각·감습 → ⑥·② 재열 후 실내 급기 → ① 실내')
 });
 
+// Mock 7: each original question is included in exactly one quick-practice category.
+const mock7PracticeGroups=[
+  {questions:refrigerationPracticeQuestions,category:'냉동',key:'refrigeration',ids:[4,7,10]},
+  {questions:airConditioningPracticeQuestions,category:'공기조화',key:'airconditioning',ids:[2,3,8,11]},
+  {questions:coolingHeatingLoadPracticeQuestions,category:'냉난방부하',key:'cooling-heating-load',ids:[1,12]},
+  {questions:ductBlowerPracticeQuestions,category:'덕트·송풍기',key:'duct-blower',ids:[5]},
+  {questions:refrigerationDescriptiveQuestions,category:'서술형',key:'descriptive',ids:[6,9,13,14]}
+];
+for(const group of mock7PracticeGroups){
+  for(const id of group.ids){
+    const original=mock7Questions.find(q=>q.id===id);
+    if(!original)throw new Error('Missing mock 7 question: '+id);
+    group.questions.push({...original,sourceId:`quick-${group.key}-mock7-q${id}`,
+      category:group.category,title:`[모의고사 7] ${original.title}`});
+  }
+}
+
 function startMock6Exam(event){
   if(event)event.preventDefault();
   const selected=mock6Questions.map((q,i)=>({...q,id:i+1}));
@@ -5394,7 +5431,7 @@ function startRefrigerationPractice(event){
   if(event)event.preventDefault();
   const selected=refrigerationPracticeQuestions.map((q,i)=>({...q,id:i+1}));
 
-  if(selected.length!==27){
+  if(selected.length!==30){
     showMenuNotice({preventDefault(){}},'냉동 문제 일부를 불러오지 못했습니다.');
     return;
   }
@@ -5410,7 +5447,8 @@ function startSingleQuickPractice(event,sourceId,title){
     ...mock3Questions,
     ...mock4Questions,
     ...mock5Questions,
-    ...mock6Questions
+    ...mock6Questions,
+    ...mock7Questions
   ];
 
   const source=sourcePool.find(q=>q.sourceId===sourceId);
@@ -5429,7 +5467,7 @@ function startAirConditioningPractice(event){
   if(event)event.preventDefault();
   const selected=airConditioningPracticeQuestions.map((q,i)=>({...q,id:i+1}));
 
-  if(selected.length!==10){
+  if(selected.length!==14){
     showMenuNotice({preventDefault(){}},'공기조화 문제 일부를 불러오지 못했습니다.');
     return;
   }
@@ -5442,7 +5480,7 @@ function startCoolingHeatingLoadPractice(event){
   if(event)event.preventDefault();
   const selected=coolingHeatingLoadPracticeQuestions.map((q,i)=>({...q,id:i+1}));
 
-  if(selected.length!==16){
+  if(selected.length!==18){
     showMenuNotice({preventDefault(){}},'냉난방부하 문제 일부를 불러오지 못했습니다.');
     return;
   }
@@ -5455,7 +5493,7 @@ function startDuctBlowerPractice(event){
   if(event)event.preventDefault();
   const selected=ductBlowerPracticeQuestions.map((q,i)=>({...q,id:i+1}));
 
-  if(selected.length!==7){
+  if(selected.length!==8){
     showMenuNotice({preventDefault(){}},'덕트·송풍기 문제 일부를 불러오지 못했습니다.');
     return;
   }
@@ -5470,7 +5508,7 @@ function startDescriptivePractice(event){
   const selected=refrigerationDescriptiveQuestions
     .map((q,i)=>({...q,id:i+1}));
 
-  if(selected.length!==20){
+  if(selected.length!==24){
     showMenuNotice({preventDefault(){}},'서술형 문제를 불러오지 못했습니다.');
     return;
   }
