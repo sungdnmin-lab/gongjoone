@@ -68,7 +68,17 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>환기량 산출</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>환기량은 사람 수, 환기횟수, 발생열, 오염물질 발생량 등 주어진 조건으로 산정할 수 있습니다. 정상상태 오염물질 수지는 완전혼합과 일정 발생량을 가정합니다. 농도 단위와 시간 단위를 맞추어야 필요한 체적유량이 나옵니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>환기량 산출</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>환기량</strong>은 실내의 오염된 공기를 외부로 배출하고 깨끗한 외기를 공급하기 위해 필요한 공기량입니다. 공조냉동 실기에서는 실의 체적과 환기횟수를 이용하거나, 실내에서 발생하는 오염물질의 농도를 허용기준 이하로 유지하기 위한 필요 외기량을 계산하는 형태로 출제될 수 있습니다.</p>
+<p><strong>① 환기횟수법</strong><br>실의 체적을 V(m³), 시간당 환기횟수를 N(회/h)라 하면 시간당 환기량 Q는 다음과 같습니다.</p>
+<p><strong>Q = V × N [m³/h]</strong></p>
+<p>여기서 환기횟수 N은 한 시간 동안 실내 체적에 해당하는 공기가 몇 번 교체되는지를 의미합니다. 예를 들어 환기횟수 3회/h라면 한 시간 동안 실 체적의 3배에 해당하는 공기량이 교환된다는 뜻입니다.</p>
+<p><strong>② 오염물질 농도에 의한 환기량</strong><br>실내에서 오염물질이 일정한 속도로 발생하고 완전혼합·정상상태라고 가정하면, 필요 환기량은 오염물질 발생량과 실내·외 농도차의 관계로 구할 수 있습니다.</p>
+<p><strong>Q = M ÷ (Cᵢ-Cₒ)</strong></p>
+<p>여기서 M은 오염물질 발생량, Cᵢ는 허용 실내농도, Cₒ는 외기농도입니다. 이 식을 사용할 때는 발생량과 농도의 단위를 서로 맞추는 것이 핵심입니다.</p>
+<p><strong>③ 환기량과 외기량</strong><br>공조계통에서는 실내에서 돌아온 공기의 일부를 다시 사용하고 필요한 만큼의 외기를 도입할 수 있습니다. 따라서 공조기의 전체 급기량과 환기를 위해 필요한 외기량은 반드시 같은 값은 아닙니다.</p>
+<p>실기문제에서는 먼저 어떤 방식으로 환기량을 구하도록 요구하는지 확인하고, <strong>실 체적·환기횟수·오염물질 발생량·허용농도</strong> 중 어떤 조건이 주어졌는지 구분해야 합니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <h3>실내 발생열 제거 환기량</h3>
           <div class="learn-formula">Q = q / [ρC<sub>p</sub>(t<sub>i</sub> − t<sub>o</sub>)]</div>
 
@@ -87,7 +97,23 @@
             <tr><td>V</td><td>실의 체적</td></tr>
           </table>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>바닥 50 m², 높이 3 m, 환기횟수 2 회/h이면 Q̇=nV=2×150=300 m³/h입니다. 환기횟수는 시간당 체적 교환의 지표이며 모든 공기가 실제로 정확히 두 번 교체된다는 뜻은 아닙니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>열 제거식은 외기가 실내보다 차가운 조건 등에 적용합니다. 외기온도가 더 높으면 같은 식으로 자연 냉각량을 확보할 수 없습니다. 실제 법정 환기량은 별도 적용 기준을 확인해야 합니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-air-washer.html">← 이전: 18. 에어와셔</a><a href="learning-airconditioning-pumps.html">다음: 20. 펌프 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>가로 8 m, 세로 6 m, 높이 3 m인 실의 필요 환기횟수가 5회/h라고 하겠습니다.</p>
+<p><strong>① 실의 체적</strong><br>V=8×6×3=<strong>144 m³</strong></p>
+<p><strong>② 시간당 환기량</strong><br>Q=V×N=144×5=<strong>720 m³/h</strong></p>
+<p><strong>③ 분당 환기량으로 환산</strong><br>720÷60=<strong>12 m³/min</strong></p>
+<p><strong>④ 초당 환기량으로 환산</strong><br>720÷3,600=<strong>0.20 m³/s</strong></p>
+<p>따라서 이 실에서 환기횟수 5회/h를 만족시키기 위해 필요한 환기량은 <strong>720 m³/h</strong>입니다.</p>
+<p>반대로 실 체적이 200 m³이고 실제 환기량이 800 m³/h라면 환기횟수는 다음과 같습니다.</p>
+<p><strong>N=Q÷V=800÷200=4회/h</strong></p>
+<p>실기에서는 m³/h, m³/min, m³/s가 섞여 제시되는 경우가 있으므로 계산을 시작하기 전에 요구하는 최종 단위를 확인하는 것이 좋습니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 환기횟수의 단위를 놓치지 마세요.</strong><br>환기횟수는 보통 회/h이므로 Q=V×N으로 계산하면 환기량의 단위는 m³/h가 됩니다.</p>
+<p><strong>② 바닥면적만 사용하면 안 됩니다.</strong><br>환기횟수법에서는 실의 <strong>체적</strong>이 필요하므로 가로×세로×높이를 사용해야 합니다.</p>
+<p><strong>③ m³/h와 m³/s를 혼동하지 마세요.</strong><br>m³/h를 m³/s로 바꿀 때는 3,600으로 나누고, 반대로 m³/s를 m³/h로 바꿀 때는 3,600을 곱합니다.</p>
+<p><strong>④ 환기량과 전체 급기량을 무조건 같다고 보면 안 됩니다.</strong><br>환류공기를 사용하는 공조방식에서는 전체 급기량 중 일부만 외기일 수 있습니다.</p>
+<p><strong>⑤ 농도법에서는 단위 통일이 가장 중요합니다.</strong><br>ppm, %, kg/m³ 등 농도표현과 오염물질 발생량의 시간단위를 확인한 뒤 서로 일치하도록 환산해야 합니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-air-washer.html">← 이전: 18. 에어와셔</a><a href="learning-airconditioning-pumps.html">다음: 20. 펌프 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

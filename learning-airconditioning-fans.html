@@ -68,7 +68,13 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>송풍기</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>송풍기는 공기에 압력과 유량을 제공합니다. 공기동력은 유량에 전압 상승을 곱하고, 축동력은 공기동력을 효율로 나눕니다. 같은 임펠러와 유체에서 회전수 변화에 대한 상사법칙은 운전점이 상사관계를 따른다는 조건에서 적용합니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>송풍기</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>송풍기</strong>는 공기에 압력을 가하여 덕트, 필터, 코일, 댐퍼 등의 저항을 이기고 필요한 풍량을 공급하는 장치입니다. 실기에서는 풍량·압력·동력·효율의 관계가 중요합니다.</p>
+<p>공기의 압력은 <strong>정압, 동압(속도압), 전압</strong>으로 구분하며 기본 관계는 <strong>전압 = 정압 + 동압</strong>입니다.</p>
+<p>송풍기 축동력은 공기에 전달해야 하는 유효동력을 효율로 나누어 구합니다. SI 단위에서 체적유량 Q(m³/s), 압력상승 ΔP(Pa), 송풍기 효율 η라면 <strong>P = QΔP/η</strong>입니다.</p>
+<p>회전수를 변화시키는 동일 송풍기의 상사법칙에서는 조건이 동일할 때 풍량은 회전수에 비례하고, 압력은 회전수의 제곱, 동력은 회전수의 세제곱에 비례합니다.</p>
+<p>따라서 회전수를 조금 높여도 동력 증가폭은 크게 나타날 수 있으므로 풍량만 보고 운전동력을 판단하면 안 됩니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <h3>사용 압력에 따른 구분</h3>
           <table class="learn-table">
             <tr><th>구분</th><th>압력 범위</th></tr>
@@ -81,9 +87,9 @@
           <div class="learn-formula">전압 = 정압 + 동압</div>
           <div class="learn-formula">동압 P<sub>v</sub> = ρV²/2</div>
 
-          <h3>송풍기 동력</h3>
-          <div class="learn-formula">공기동력 L[kW] = P<sub>t</sub>Q / 102</div>
-          <div class="learn-formula">축동력 L[kW] = P<sub>t</sub>Q / (102η)</div>
+          <h3>송풍기 동력</h3><p>Q는 m³/s, ΔP<sub>t</sub>는 송풍기 전압상승(Pa), η<sub>t</sub>는 전압효율입니다. 정압 기준으로 계산할 때는 해당 정압과 정압효율을 짝지어 사용합니다. 압력을 mmH₂O 또는 kgf/m², 풍량을 m³/s로 사용할 때의 관용식은 축동력[kW]≈압력×풍량/(102η)이며 Pa 단위식과 혼용하지 않습니다.</p>
+          <div class="learn-formula">공기동력 L[kW] = <span class="solution-frac"><span class="solution-num">ΔP<sub>t</sub>Q</span><span class="solution-den">1000</span></span></div>
+          <div class="learn-formula">축동력 L[kW] = <span class="solution-frac"><span class="solution-num">ΔP<sub>t</sub>Q</span><span class="solution-den">1000η<sub>t</sub></span></span></div>
           <div class="learn-formula">소요동력 = 축동력 × 전달계수 K</div>
 
           <h3>상사법칙</h3>
@@ -95,7 +101,16 @@
           </table>
           <div class="mistake-note"><strong>여유율</strong><br>문제에서 여유율이 주어지면 공기동력·축동력·소요동력에 반영한다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>전압 상승 600 Pa, 풍량 2 m³/s, 효율 0.60이면 공기동력은 1.2 kW, 축동력은 <span class="solution-frac"><span class="solution-num">600×2</span><span class="solution-den">1,000×0.60</span></span>=2.0 kW입니다. 회전수가 10% 증가하면 상사조건에서 풍량은 1.1배, 압력은 1.21배, 동력은 1.331배입니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>분모 102는 압력 kgf/m²(수치상 mmAq)와 풍량 m³/s를 쓰는 환산식입니다. Pa를 넣는 SI식의 kW 환산은 1,000입니다. 정압만 주어진 경우 요구한 효율·동력 기준을 확인합니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-ahu-components.html">← 이전: 13. 공기조화장치의 구성</a><a href="learning-airconditioning-ducts.html">다음: 15. 덕트 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>송풍기의 풍량이 2.5 m³/s, 필요한 전압상승이 600 Pa, 전압효율이 75%라고 하겠습니다.</p>
+<p>P = QΔP/η = 2.5×600÷0.75 = <strong>2,000 W = 2.0 kW</strong></p>
+<p>또 동일한 송풍기의 회전수를 기존의 1.10배로 높인다면 상사법칙상 풍량은 1.10배, 압력은 1.10²=<strong>1.21배</strong>, 동력은 1.10³=<strong>1.331배</strong>가 됩니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 전압과 정압을 같은 값으로 보지 마세요.</strong><br>전압은 정압과 동압의 합입니다.</p>
+<p><strong>② 효율을 곱하지 말고 나누는 경우를 확인하세요.</strong><br>요구 축동력은 공기에 전달되는 유효동력보다 커야 하므로 QΔP를 효율로 나눕니다.</p>
+<p><strong>③ % 효율은 소수로 바꾸세요.</strong><br>75%는 계산식에 0.75를 사용합니다.</p>
+<p><strong>④ 회전수와 동력이 정비례한다고 생각하지 마세요.</strong><br>동일 조건의 상사법칙에서 동력은 회전수의 세제곱에 비례합니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-ahu-components.html">← 이전: 13. 공기조화장치의 구성</a><a href="learning-airconditioning-ducts.html">다음: 15. 덕트 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

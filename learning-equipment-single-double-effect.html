@@ -68,7 +68,12 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-equipment.html">냉동장치</a></nav><article class="article-paper"><h1>1중·2중 효용 흡수식 냉동사이클</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>2중 효용은 고온재생기에서 나온 냉매증기의 열을 저온재생기에서 다시 활용합니다. 단순히 같은 냉동기를 두 대 연결했다는 뜻이 아닙니다. 효과 수가 늘면 열 활용이 좋아질 수 있지만 필요한 열원온도와 구성의 복잡성도 달라집니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-equipment.html">냉동장치</a></nav><article class="article-paper"><h1>1중·2중 효용 흡수식 냉동사이클</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>1중 효용 흡수식</strong>은 발생기에서 한 번 냉매를 분리하여 냉동사이클을 구성하는 기본 방식입니다. 구조가 비교적 단순하지만 공급열을 한 단계에서 이용합니다.</p>
+<p><strong>2중 효용 흡수식</strong>은 고온발생기와 저온발생기 등을 이용하여 공급된 열을 단계적으로 재활용함으로써 1중 효용보다 열이용효율을 높이는 방식입니다.</p>
+<p>따라서 일반적으로 2중 효용은 1중 효용보다 COP가 높을 수 있지만 구조와 제어가 복잡하고 더 높은 온도의 열원이 요구될 수 있습니다.</p>
+<p>실기에서는 두 방식의 세부 배관을 전부 외우기보다 <strong>발생기의 단계 수, 열의 재이용 여부, 상대적인 COP와 구조 복잡성</strong>을 중심으로 비교하는 것이 좋습니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <h3>1중 효용</h3>
           <p>재생기가 하나이며, 흡수기에서 만들어진 묽은 용액을 펌프로 재생기에 보내 가열한다. 재생기에서 분리된 냉매증기는 응축기에서 액화된 뒤 팽창밸브를 거쳐 증발기에서 증발한다.</p>
           <div class="cycle-step-grid">
@@ -86,7 +91,17 @@
           </table>
           <div class="exam-tip"><strong>핵심</strong><br>2중 효용은 고온재생기에서 발생한 냉매증기의 열을 저온재생기 가열에 다시 사용한다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>냉각열 120 kW를 얻는 장치의 열입력 COP가 1.2이면 재생기 열입력은 100 kW입니다. 같은 냉각열에 COP 0.7을 가정하면 약 171.43 kW가 필요합니다. 서로의 정격 조건이 같다는 비교용 예입니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>LiBr 용액의 농용액·희용액은 LiBr 농도를 기준으로 말합니다. 암모니아–물 방식에서는 농도의 기준 성분을 확인해야 같은 말을 잘못 해석하지 않습니다.</p></section></div><p class="reference-links"><a href="https://www.energy.gov/documents/bto-peer-2021-highly-efficient-microemulsion-based-chillerspdf" target="_blank" rel="noopener noreferrer">흡수식 열 이용 참고: 미국 에너지부</a></p></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-equipment-absorption-chiller.html">← 이전: 1. 흡수식 냉동기</a><a href="learning-equipment-compressor-displacement.html">다음: 3. 압축기 토출량 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>같은 500 kW의 냉동능력을 내는 두 흡수식 냉동기가 있다고 하겠습니다.</p>
+<p>A 장치의 COP가 0.70이면 필요한 열입력은 500÷0.70=<strong>약 714.29 kW</strong>입니다.</p>
+<p>B 장치의 COP가 1.20이면 필요한 열입력은 500÷1.20=<strong>약 416.67 kW</strong>입니다.</p>
+<p>이 단순 예에서 더 높은 COP를 가진 장치는 같은 냉동능력을 얻기 위해 필요한 열입력이 더 작습니다. 실제 1중·2중 효용의 성능은 장치와 운전조건에 따라 달라집니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 2중 효용을 냉동사이클이 두 개라는 뜻으로 이해하지 마세요.</strong><br>공급열을 단계적으로 더 효과적으로 이용하는 구조입니다.</p>
+<p><strong>② 실제 COP를 고정값으로 외우지 마세요.</strong><br>기종과 열원·냉각수 조건에 따라 달라집니다.</p>
+<p><strong>③ 효율이 높다고 구조까지 단순한 것은 아닙니다.</strong></p>
+<p><strong>④ 비교문제에서는 동일 냉동능력·동일 기준인지 확인하세요.</strong></p>
+</section></div><p class="reference-links"><a href="https://www.energy.gov/documents/bto-peer-2021-highly-efficient-microemulsion-based-chillerspdf" target="_blank" rel="noopener noreferrer">흡수식 열 이용 참고: 미국 에너지부</a></p></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-equipment-absorption-chiller.html">← 이전: 1. 흡수식 냉동기</a><a href="learning-equipment-compressor-displacement.html">다음: 3. 압축기 토출량 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

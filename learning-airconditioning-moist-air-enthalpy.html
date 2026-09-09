@@ -68,23 +68,44 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>수증기와 습공기의 엔탈피</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>습공기 엔탈피의 기준은 보통 0℃의 건공기와 액체 물입니다. 건공기의 현열에 동반 수증기의 잠열·현열을 합하며, 단위는 건공기 1 kg당 kJ입니다. 비열을 상수로 놓는 근사식이므로 교재나 선도별 계수가 약간 다를 수 있습니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
-          <h3>건공기 엔탈피</h3>
-          <div class="learn-formula">h<sub>a</sub> = C<sub>pa</sub>t ≒ 1.01t   [kJ/kg]</div>
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>수증기와 습공기의 엔탈피</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>습공기</strong>는 건공기와 수증기의 혼합물입니다. 공조에서는 공기의 온도뿐 아니라 포함된 수증기의 양도 열량에 영향을 주므로 <strong>엔탈피</strong>를 이용하면 현열과 잠열을 함께 다룰 수 있습니다.</p>
+<p>습공기의 엔탈피는 보통 <strong>건공기 1 kg을 기준</strong>으로 나타내며 단위는 kJ/kg(DA)를 사용합니다. 실기에서 자주 사용하는 근사식은 다음과 같습니다.</p>
+<p><strong>h = 1.006t + x(2501 + 1.86t)</strong></p>
+<p>여기서 t는 건구온도(℃), x는 절대습도(kg/kg(DA))입니다. 교재나 문제에 따라 1.005, 1.88, 2500 등 약간 다른 상수를 사용할 수 있으므로 <strong>문제에서 상수를 제시했다면 그 값을 우선</strong>해야 합니다.</p>
+<p>첫 번째 항 <strong>1.006t</strong>는 건공기가 가진 현열에 해당하고, 두 번째 항 <strong>x(2501+1.86t)</strong>는 수증기가 가진 잠열과 수증기의 현열을 포함합니다.</p>
+<p>따라서 같은 건구온도라도 절대습도가 높으면 엔탈피가 커집니다. 냉각·감습 과정에서 코일 전후의 엔탈피 차를 이용하면 공기에서 제거된 전체 열량을 계산할 수 있습니다.</p>
+<p>습공기선도에서는 건구온도와 상대습도, 절대습도 등의 상태값을 이용해 엔탈피를 읽을 수 있으므로 계산식과 선도 해석을 함께 익혀두는 것이 좋습니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+          <p>이 페이지는 0℃의 건공기와 액체 물을 엔탈피 기준으로 두고 1.006, 2501, 1.86을 사용하는 근사식으로 통일합니다. 문제에서 다른 상수를 지정하면 그 값을 사용합니다.</p><h3>건공기 엔탈피</h3>
+          <div class="learn-formula">h<sub>a</sub> = C<sub>pa</sub>t ≒ 1.006t   [kJ/kg]</div>
           <p class="learn-caption">C<sub>pa</sub>: 건공기 정압비열, t: 건구온도(℃)</p>
 
           <h3>수증기 엔탈피</h3>
           <p>0℃의 물이 수증기로 변하는 데 필요한 잠열과 수증기의 현열을 합한 값이다.</p>
-          <div class="learn-formula">h<sub>wa</sub> = 2501 + 1.85t   [kJ/kg]</div>
+          <div class="learn-formula">h<sub>wa</sub> = 2501 + 1.86t   [kJ/kg]</div>
 
           <h3>습공기 엔탈피</h3>
           <div class="learn-formula">h = h<sub>a</sub> + xh<sub>wa</sub></div>
-          <div class="learn-formula">h = 1.01t + x(2501 + 1.85t)   [kJ/kg′]</div>
-          <p class="learn-caption">x: 절대습도(kg/kg′), t: 건구온도(℃)</p>
+          <div class="learn-formula">h = 1.006t + x(2501 + 1.86t)   [kJ/kg(DA)]</div>
+          <p class="learn-caption">x: 절대습도(kg/kg(DA)), t: 건구온도(℃)</p>
 
-          <div class="learn-tip"><strong>시험 암기</strong><br>건공기 엔탈피: 1.01t<br>수증기 엔탈피: 2501 + 1.85t<br>습공기 엔탈피: 1.01t + x(2501 + 1.85t)</div>
+          <div class="learn-tip"><strong>시험 암기</strong><br>건공기 엔탈피: 1.006t<br>수증기 엔탈피: 2501 + 1.86t<br>습공기 엔탈피: 1.006t + x(2501 + 1.86t)</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>h=1.01t+x(2,501+1.85t)에 t=20℃, x=0.008을 넣으면 h=20.2+0.008×2,538=40.504 kJ/kg(DA)입니다. 건공기 1.5 kg/s를 h=60에서 40으로 냉각할 때 공기 측 엔탈피 감소율은 30 kW입니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>공기 밀도와 비체적의 질량 기준이 서로 맞는지 확인하세요. 현열·잠열을 근사식으로 따로 계산하면 전체 엔탈피차법과 작은 차이가 생길 수 있습니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-psychrometric-terms.html">← 이전: 1. 공기조화 주요 용어</a><a href="learning-airconditioning-system-types.html">다음: 3. 공기조화 방식의 분류 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>건구온도 25℃, 절대습도 0.010 kg/kg(DA)인 습공기의 엔탈피를 구해보겠습니다.</p>
+<p><strong>원식</strong><br>h = 1.006t + x(2501 + 1.86t)</p>
+<p><strong>대입</strong><br>h = 1.006×25 + 0.010×(2501 + 1.86×25)</p>
+<p><strong>계산</strong><br>h = 25.15 + 25.475 = <strong>50.625 kJ/kg(DA)</strong></p>
+<p>따라서 엔탈피는 약 <strong>50.63 kJ/kg(DA)</strong>입니다.</p>
+<p>만약 이 공기가 냉각코일을 지나 40 kJ/kg(DA)까지 내려가고 건공기 질량유량이 1.5 kg/s라면 코일의 제거열량은 1.5×(50.625-40)=<strong>약 15.94 kW</strong>입니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 절대습도 x의 단위를 확인하세요.</strong><br>10 g/kg(DA)는 식에 그대로 10을 넣는 것이 아니라 0.010 kg/kg(DA)로 환산해야 합니다.</p>
+<p><strong>② 엔탈피의 기준은 보통 건공기 1 kg입니다.</strong><br>습공기 전체 질량 1 kg 기준으로 착각하지 않도록 주의하세요.</p>
+<p><strong>③ 온도만으로 엔탈피를 판단하지 마세요.</strong><br>수증기량이 달라지면 같은 건구온도에서도 엔탈피가 달라집니다.</p>
+<p><strong>④ 상수값을 임의로 바꾸지 마세요.</strong><br>문제에서 비열이나 증발잠열 값을 지정하면 해당 값을 사용해야 채점 오차를 줄일 수 있습니다.</p>
+<p><strong>⑤ 냉각·감습 코일 열량은 엔탈피 차가 편리합니다.</strong><br>현열과 잠열을 따로 구한 뒤 더할 수도 있지만, 상태점 엔탈피가 주어진 경우에는 질량유량×엔탈피 차로 바로 계산할 수 있습니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-psychrometric-terms.html">← 이전: 1. 공기조화 주요 용어</a><a href="learning-airconditioning-system-types.html">다음: 3. 공기조화 방식의 분류 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

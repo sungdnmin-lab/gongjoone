@@ -68,7 +68,14 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-heat.html">열전달</a></nav><article class="article-paper"><h1>열전달 개념</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>열전달 방식은 경로를 기준으로 구분합니다. 벽 내부에서는 전도, 벽과 공기의 경계에서는 대류, 서로 마주 보는 표면 사이에서는 복사가 동시에 일어날 수 있습니다. 한 설비를 하나의 방식으로만 분류하기보다 구간별 열 이동을 나눠 생각하면 열저항식을 이해하기 쉽습니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-heat.html">열전달</a></nav><article class="article-paper"><h1>열전달 개념</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>열전달</strong>은 온도가 높은 곳에서 낮은 곳으로 에너지가 이동하는 현상이며, 기본 형태는 <strong>전도·대류·복사</strong> 세 가지입니다.</p>
+<p><strong>전도</strong>는 물질 내부에서 분자의 직접적인 에너지 전달로 열이 이동하는 현상입니다. 평판을 통한 정상상태 전도열은 <strong>Q = kAΔT/L</strong>로 나타낼 수 있습니다.</p>
+<p><strong>대류</strong>는 고체 표면과 유체 사이에서 유체의 움직임을 동반하여 열이 전달되는 현상입니다. 대류열은 <strong>Q = hAΔT</strong>로 계산합니다.</p>
+<p><strong>복사</strong>는 전자기파 형태로 열이 전달되는 현상으로, 매질이 없어도 전달될 수 있습니다. 태양에서 지표로 열이 전달되는 것이 대표적인 예입니다.</p>
+<p>실제 벽체나 열교환기에서는 이 세 방식이 따로 떨어져 작용하기보다 여러 단계가 연속해서 나타납니다. 예를 들어 실내공기에서 벽 표면까지는 대류, 벽 내부는 전도, 벽 외부에서 외기까지 다시 대류가 일어납니다.</p>
+<p>공조냉동 실기에서는 열전도율 k, 열전달계수 h, 열관류율 U를 서로 구분하는 것이 중요합니다. 각각 적용되는 위치와 단위가 다릅니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <p>열에너지는 온도가 높은 곳에서 낮은 곳으로 이동하며, 온도차가 클수록 일반적으로 열의 이동도 활발해진다.</p>
           <div class="heat-visual">
             <div class="heat-mode"><strong>전도</strong><div class="heat-icon">●●● →</div><span>물질 내부의 입자 간 전달</span></div>
@@ -77,7 +84,20 @@
           </div>
           <div class="exam-tip"><strong>시험 포인트</strong><br>열전달 방식은 전도, 대류, 복사의 세 가지로 구분한다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>실내공기에서 외기로 열이 나가는 벽을 생각하면 실내 표면 열전달, 벽체 전도, 실외 표면 열전달이 직렬로 연결됩니다. 정상상태에서 축열과 측면 손실을 무시하면 각 층을 통과하는 열량률은 같습니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>열량 Q의 단위 J와 열량률 Q̇의 단위 W를 구분합니다. 아래 기존 식의 Q가 W로 계산되면 열량률을 의미합니다.</p></section></div><p class="reference-links"><a href="https://www.caleffi.com/en-us/magazine/23-heat-transfer-hydronic-systems" target="_blank" rel="noopener noreferrer">열전달 학습 참고: Caleffi idronics 23</a></p></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-heat.html">← 열전달 목차</a><a href="learning-heat-conduction.html">다음: 2. 전도 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>두께 0.08 m, 열전도율 0.16 W/(m·K), 면적 12 m²인 평판의 양쪽 표면 온도차가 10℃라고 하겠습니다.</p>
+<p><strong>전도열량</strong></p>
+<p>Q = kAΔT/L</p>
+<p>Q = 0.16×12×10÷0.08 = <strong>240 W</strong></p>
+<p>같은 면적 12 m²의 표면에서 대류열전달계수가 8 W/(m²·K), 공기와 표면의 온도차가 4℃라면:</p>
+<p>Q = hAΔT = 8×12×4 = <strong>384 W</strong></p>
+<p>전도식에는 재료의 두께와 열전도율이 들어가고, 대류식에는 유체와 표면 사이의 열전달계수가 들어간다는 차이를 확인할 수 있습니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① k, h, U를 같은 계수로 보지 마세요.</strong><br>k는 재료 자체의 열전도 특성, h는 표면과 유체 사이의 대류 특성, U는 여러 열저항을 포함한 전체 열전달 특성입니다.</p>
+<p><strong>② 전도식의 두께 L을 빠뜨리지 마세요.</strong><br>같은 재료라도 두꺼워질수록 전도열량은 작아집니다.</p>
+<p><strong>③ 복사는 공기가 있어야만 발생하는 현상이 아닙니다.</strong><br>진공에서도 전달될 수 있습니다.</p>
+<p><strong>④ 열은 고온에서 저온 방향으로 이동합니다.</strong><br>냉동기는 외부 일을 사용해 저온부의 열을 고온부로 이동시키는 장치입니다.</p>
+</section></div><p class="reference-links"><a href="https://www.caleffi.com/en-us/magazine/23-heat-transfer-hydronic-systems" target="_blank" rel="noopener noreferrer">열전달 학습 참고: Caleffi idronics 23</a></p></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-heat.html">← 열전달 목차</a><a href="learning-heat-conduction.html">다음: 2. 전도 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

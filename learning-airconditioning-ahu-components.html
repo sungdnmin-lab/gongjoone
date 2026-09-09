@@ -68,17 +68,37 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>공기조화장치의 구성</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>공조장치는 열원 생산, 열 운반, 공기 처리, 자동제어로 나눠 볼 수 있습니다. 냉동기가 냉수를 만들고 펌프가 코일로 운반하며 송풍기가 공기를 코일과 실내로 이동시킵니다. 제어기는 센서값을 받아 밸브나 댐퍼를 조절합니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>공기조화장치의 구성</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>공기조화기(AHU)</strong>는 실내에 공급할 공기를 목적에 맞는 상태로 처리하는 장치입니다. 일반적으로 외기와 환류공기를 받아 <strong>혼합·여과·냉각 또는 가열·가습 또는 감습·송풍</strong> 과정을 거쳐 급기로 내보냅니다.</p>
+<p><strong>혼합부</strong>에서는 외기(OA)와 환류공기(RA)가 섞입니다. 외기량이 많아지면 환기에는 유리하지만 외기부하가 증가할 수 있으므로 필요한 외기량과 에너지 소비를 함께 고려합니다.</p>
+<p><strong>필터</strong>는 먼지와 입자성 오염물질을 제거합니다. 필터가 막히면 압력손실이 커지고 송풍기 동력이 증가하거나 풍량이 감소할 수 있습니다.</p>
+<p><strong>냉각코일</strong>은 공기의 온도를 낮추며, 코일 표면온도가 공기의 이슬점보다 낮으면 수분이 응축되어 감습도 동시에 일어납니다. <strong>가열코일</strong>은 공기를 가열하고, 필요하면 <strong>가습기</strong>가 수분을 공급합니다.</p>
+<p><strong>송풍기</strong>는 처리된 공기가 덕트와 취출구의 저항을 이기고 실내까지 이동하도록 압력을 제공합니다. 따라서 공조기는 각 구성기기가 따로 작동하는 장치가 아니라, 필요한 공기상태와 풍량을 만들기 위해 연속적으로 연결된 시스템으로 이해해야 합니다.</p>
+<p>실기에서는 공기조화기 구성기기의 명칭뿐 아니라 <strong>공기가 어느 순서로 지나가는지, 각 기기에서 온도·습도·엔탈피가 어떻게 변하는지</strong>를 함께 묻는 경우가 많습니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body"><p>아래 표는 공조기(AHU) 한 대의 내부 구성이 아니라 열원·열운반·제어장치를 포함한 공조설비 전체의 구성입니다.</p>
           <table class="learn-table">
             <tr><th>구분</th><th>주요 기기</th><th>기능</th></tr>
             <tr><td>열운반장치</td><td>송풍기, 펌프, 덕트, 배관</td><td>공기·물·냉매를 필요한 곳으로 운반</td></tr>
             <tr><td>공기조화기</td><td>공기여과기, 냉각코일, 가열코일, 가습기, 공기예냉기·예열기, 재열기</td><td>공기의 온도·습도·청정도를 조절</td></tr>
-            <tr><td>열원장치</td><td>보일러, 냉동기, 냉각탑</td><td>냉수·온수·증기 등 열원 생산</td></tr>
+            <tr><td>열원장치</td><td>보일러, 냉동기, 냉각탑</td><td>냉동기·보일러는 냉수·온수·증기를 공급하고, 냉각탑은 냉각수의 열을 외기로 방출</td></tr>
             <tr><td>자동제어장치</td><td>센서, 조절기, 밸브, 댐퍼</td><td>경제적이고 안정적인 운전</td></tr>
           </table>
           <div class="exam-tip"><strong>공기조화기</strong><br>냉수·온수 코일, 여과기, 가습기, 송풍기 등이 조합되어 공기의 온도·습도·청정도를 조절한다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>실내온도가 높을 때 냉수밸브 개도를 바꾸는 계통이라면 센서, 조절기, 조절밸브, 냉각코일, 실내의 연결 관계를 설명할 수 있습니다. 풍량을 바꾸는 계통이라면 조작 대상이 달라집니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>열원기기와 열교환기를 혼동하지 않습니다. 일반 냉수코일은 냉수를 생산하는 기기가 아니라 공기의 열을 냉수로 전달하는 기기입니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-chart-construction.html">← 이전: 12. 공조장치 내 상태변화와 선도 작도</a><a href="learning-airconditioning-fans.html">다음: 14. 송풍기 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>공조기를 통과하는 건공기 질량유량이 2.0 kg/s이고, 냉각코일 입구와 출구의 엔탈피가 각각 62 kJ/kg(DA), 42 kJ/kg(DA)라고 하겠습니다.</p>
+<p><strong>냉각코일의 처리열량</strong></p>
+<p>Q = ṁ × (h<sub>in</sub> - h<sub>out</sub>)</p>
+<p>Q = 2.0 × (62 - 42) = <strong>40 kW</strong></p>
+<p>즉 냉각코일은 공기로부터 약 40 kW의 열을 제거해야 합니다.</p>
+<p>여기서 입·출구 엔탈피 차에는 현열과 잠열의 영향이 함께 포함될 수 있습니다. 따라서 냉각·감습 과정에서는 건구온도 차만으로 계산하기보다 문제에서 엔탈피가 주어졌다면 엔탈피 차를 사용하는 것이 더 직접적입니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 공조기의 구성 순서를 무조건 하나로 외우지 마세요.</strong><br>설계 목적에 따라 코일·가습기·송풍기 등의 배치가 달라질 수 있으므로 문제의 계통도를 먼저 확인해야 합니다.</p>
+<p><strong>② 냉각코일은 항상 냉각만 하는 것이 아닙니다.</strong><br>코일 표면온도가 이슬점보다 낮으면 냉각과 함께 감습이 일어납니다.</p>
+<p><strong>③ 필터의 압력손실을 무시하지 마세요.</strong><br>필터 오염은 풍량 저하와 송풍기 동력 증가의 원인이 될 수 있습니다.</p>
+<p><strong>④ 혼합공기와 외기를 같은 상태로 보면 안 됩니다.</strong><br>외기와 환류공기가 섞인 뒤의 공기는 두 공기의 유량과 상태에 따라 결정됩니다.</p>
+<p><strong>⑤ 장치부하 계산에서는 공기 기준을 확인하세요.</strong><br>습공기선도에서 사용하는 엔탈피는 보통 건공기 1 kg 기준이므로 질량유량의 기준도 맞춰야 합니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-chart-construction.html">← 이전: 12. 공조장치 내 상태변화와 선도 작도</a><a href="learning-airconditioning-fans.html">다음: 14. 송풍기 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

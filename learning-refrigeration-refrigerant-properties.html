@@ -68,7 +68,13 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-refrigeration.html">냉동공학</a></nav><article class="article-paper"><h1>냉매의 종류와 핵심 특징</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>냉매는 증발잠열뿐 아니라 압력, 비체적, 열전달, 재료 적합성, 독성·가연성 등을 함께 고려합니다. 암모니아는 구리·구리합금과의 재료 적합성에 제약이 있습니다. 할로겐화탄화수소계라는 이유만으로 모든 냉매를 불연성으로 보아서는 안 됩니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-refrigeration.html">냉동공학</a></nav><article class="article-paper"><h1>냉매의 종류와 핵심 특징</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>냉매</strong>는 냉동사이클 내부를 순환하면서 저온부에서 열을 흡수하고 고온부에서 열을 방출하는 작동유체입니다. 좋은 냉매는 열역학적 성능뿐 아니라 안전성, 재료 적합성, 환경성까지 함께 고려해야 합니다.</p>
+<p>냉매 선택 시에는 적절한 증발·응축압력, 큰 증발잠열, 양호한 열전달 특성, 화학적 안정성 등이 중요합니다. 또한 독성·가연성과 같은 안전특성도 고려합니다.</p>
+<p>환경 측면에서는 <strong>ODP(오존층파괴지수)</strong>와 <strong>GWP(지구온난화지수)</strong>가 중요한 지표입니다. 냉매의 환경영향을 평가할 때는 단순히 냉동성능만으로 판단하면 안 됩니다.</p>
+<p>냉매에는 단일냉매뿐 아니라 두 종류 이상을 섞은 혼합냉매도 있습니다. 혼합냉매는 조성에 따라 상변화 특성이 달라질 수 있으므로 온도글라이드 여부 등을 확인해야 합니다.</p>
+<p>실기에서는 냉매의 명칭 자체보다 <strong>냉매의 역할, 요구특성, 환경지표, 혼합냉매의 특징</strong>을 연결해 이해하는 것이 중요합니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <div class="refrig-key-grid">
             <div class="refrig-key-card"><strong>암모니아(R-717)</strong><span>증발잠열이 크고 전열성능이 좋다. 다만 독성·가연성·자극성 냄새가 있으며, 수분과 만나면 장치 부식과 운전 장애를 일으킬 수 있다.</span></div>
             <div class="refrig-key-card"><strong>할로겐화탄화수소계 냉매</strong><span>독성과 가연성은 냉매별로 다르므로 개별 안전등급을 확인한다. 수분이 섞이면 동결이나 부식 문제가 생길 수 있어 드라이어가 중요하다.</span></div>
@@ -76,14 +82,22 @@
           </div>
           <table class="learn-table">
             <tr><th>항목</th><th>암모니아</th><th>할로겐화탄화수소계 냉매</th></tr>
-            <tr><td>열전달 성능</td><td>좋음</td><td>상대적으로 작음</td></tr>
-            <tr><td>독성·냄새</td><td>독성·자극성 냄새 있음</td><td>대체로 낮음</td></tr>
+            <tr><td>열전달 성능</td><td>좋음</td><td>냉매·온도·유동조건에 따라 다름</td></tr>
+            <tr><td>독성·냄새</td><td>독성·자극성 냄새 있음</td><td>냉매별 독성·가연성 안전등급과 물질안전보건자료 확인</td></tr>
             <tr><td>수분 영향</td><td>수분과 잘 섞이며 부식·유화 문제</td><td>수분이 얼거나 산을 만들어 문제</td></tr>
             <tr><td>동관 사용</td><td>사용하지 않음</td><td>일반적으로 사용 가능</td></tr>
           </table>
           <div class="mistake-note"><strong>자주 혼동</strong><br>암모니아는 전열성능이 좋지만 동관을 사용할 수 없고, 프레온계 냉매는 수분 제거를 위해 드라이어가 중요하다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>같은 냉동능력이라도 냉동효과가 큰 냉매는 필요한 질량유량이 작을 수 있습니다. 그러나 흡입 비체적이 다르면 압축기 체적유량은 달라지므로 냉동효과 하나로 압축기 크기까지 판단할 수 없습니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>냉매별 안전등급과 설계압력은 개별 물질 자료를 확인합니다. 수분의 영향과 오일 상용성도 냉매·윤활유 조합에 따라 달라 일반화하지 않습니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-refrigeration-primary-secondary-refrigerants.html">← 이전: 1. 냉매란?</a><a href="learning-refrigeration-mixtures-numbering.html">다음: 3. 혼합냉매와 냉매 번호 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>두 냉매 후보가 있다고 가정하겠습니다. A는 ODP가 0이고 GWP가 1,500, B는 ODP가 0이고 GWP가 5라고 하면 두 냉매 모두 오존층파괴 측면에서는 ODP가 0이지만, 직접적인 지구온난화 영향 지표는 B가 훨씬 작습니다.</p>
+<p>다만 실제 냉매 선정은 GWP 하나만으로 결정하지 않고 <strong>효율·압력·가연성·독성·장치 적합성</strong>을 함께 검토해야 합니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① ODP와 GWP를 같은 지표로 보지 마세요.</strong><br>ODP는 오존층 파괴, GWP는 지구온난화 영향과 관련됩니다.</p>
+<p><strong>② GWP가 낮다는 이유만으로 무조건 좋은 냉매라고 단정하지 마세요.</strong><br>안전성·효율·압력특성 등도 중요합니다.</p>
+<p><strong>③ 냉매와 브라인을 혼동하지 마세요.</strong><br>브라인은 일반적으로 열을 운반하는 2차 냉매입니다.</p>
+<p><strong>④ 모든 냉매의 상변화 특성이 같다고 생각하지 마세요.</strong></p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-refrigeration-primary-secondary-refrigerants.html">← 이전: 1. 냉매란?</a><a href="learning-refrigeration-mixtures-numbering.html">다음: 3. 혼합냉매와 냉매 번호 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

@@ -68,7 +68,14 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>COP(성적계수)란?</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>COP는 유용한 열량률과 그에 필요한 입력의 비입니다. 냉동기는 저온부에서 제거한 열을, 열펌프는 고온부에 공급한 열을 유용한 효과로 봅니다. 열을 새로 만드는 것만이 아니라 주변 열을 이동시키므로 COP가 1을 넘을 수 있습니다. 냉매 엔탈피로 계산하는 사이클 COP와 보조기기를 포함한 시스템 COP는 경계가 다를 수 있습니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>COP(성적계수)란?</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>COP(Coefficient of Performance, 성적계수)</strong>는 냉동기나 히트펌프가 투입된 일에 비해 얼마나 많은 열을 이동시키는지를 나타내는 성능지표입니다. 냉동기에서는 압축기에 공급한 일에 대한 냉동효과의 비로 정의합니다.</p>
+<p><strong>냉동기 COP = 냉동효과 ÷ 압축일량</strong></p>
+<p>표준 냉동사이클에서 압축기 입구를 1, 출구를 2, 응축기 출구를 3, 팽창밸브 출구를 4로 두면 <strong>COP<sub>R</sub>=(h₁-h₄)÷(h₂-h₁)</strong>입니다.</p>
+<p>COP는 분자와 분모가 같은 에너지 단위를 사용하므로 <strong>무차원 값</strong>입니다. COP가 4라면 압축기에 1만큼의 일을 공급할 때 냉각 대상에서 4만큼의 열을 제거한다는 의미입니다.</p>
+<p>히트펌프 난방에서는 목적이 응축기에서 방출하는 열이므로 <strong>COP<sub>H</sub>=응축기 방열량÷압축일량</strong>입니다. 같은 사이클에서는 에너지수지에 의해 <strong>COP<sub>H</sub>=COP<sub>R</sub>+1</strong>의 관계가 성립합니다.</p>
+<p>일반적으로 증발온도가 지나치게 낮아지거나 응축온도가 높아져 압축기의 압력비와 일이 증가하면 COP는 불리해지는 경향이 있습니다. 따라서 COP는 단순한 냉동능력의 크기가 아니라 <strong>투입 에너지 대비 성능</strong>을 판단하는 값입니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <p>COP는 공급한 일에 비해 얼마나 큰 냉동효과를 얻는지를 나타내는 성적계수입니다. 냉동기의 COP는 <strong>냉동효과 ÷ 압축일</strong>로 계산합니다.</p>
 
           <div class="cop-concept" id="copConcept" data-cue="intro" aria-label="압축일 5킬로와트로 냉동효과 15킬로와트를 얻을 때 COP가 3이 되는 관계">
@@ -92,7 +99,20 @@
           <div class="cop-ai-launch-wrap"></div>
           <div class="fundamental-keyline"><strong>한 줄 정리</strong> 냉동기 COP는 냉동효과를 압축일로 나눈 값이며, 클수록 효율이 좋습니다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>냉동능력 24 kW, 압축기 입력 6 kW이면 COPᵣ = <span class="solution-frac"><span class="solution-num">24</span><span class="solution-den">6</span></span> = 4입니다. 열손실을 무시하면 응축기 방열량은 30 kW이고 COPₕ = <span class="solution-frac"><span class="solution-num">30</span><span class="solution-den">6</span></span> = 5입니다. 동일한 에너지 경계에서 COPₕ = COPᵣ+1이 성립합니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>COP 4를 400%의 에너지 생성이라고 해석하지 않습니다. 냉매 1 kg 기준으로 계산할 때는 분자와 분모를 모두 kJ/kg로 맞추고, 운전 동력 기준이라면 모두 kW로 맞춥니다.</p></section></div><p class="reference-links"><a href="https://heatpumpingtechnologies.org/articles/efficiency-heat-pumps/" target="_blank" rel="noopener noreferrer">COP 정의: IEA HPT</a></p></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-superheat-subcooling.html">← 이전: 9. 과열도와 과냉도란?</a><a href="learning-fundamentals-sensible-latent.html">다음: 11. 현열과 잠열이란? →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>h₁=405, h₂=450, h₃=h₄=255 kJ/kg이라고 하겠습니다.</p>
+<p><strong>① 냉동효과:</strong> 405-255=<strong>150 kJ/kg</strong></p>
+<p><strong>② 압축일량:</strong> 450-405=<strong>45 kJ/kg</strong></p>
+<p><strong>③ 냉동기 COP:</strong> 150÷45=<strong>3.33</strong></p>
+<p>응축기 방열량은 450-255=<strong>195 kJ/kg</strong>이므로 히트펌프 난방 COP는 195÷45=<strong>4.33</strong>입니다.</p>
+<p>관계식으로도 <strong>COP<sub>H</sub>=COP<sub>R</sub>+1=3.33+1=4.33</strong>이 됩니다.</p>
+<p>실기시험에서는 엔탈피가 직접 주어지거나 P-h 선도에서 읽도록 할 수 있습니다. 먼저 문제가 <strong>냉동기 COP인지 히트펌프 난방 COP인지</strong> 확인한 뒤 분자에 들어갈 열량을 결정해야 합니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① COP를 열효율(%)과 같은 개념으로 보면 안 됩니다.</strong><br>COP는 열기관의 열효율과 정의가 달라 1보다 큰 값이 정상적으로 나올 수 있습니다.</p>
+<p><strong>② 냉동기 COP와 히트펌프 COP의 분자가 다릅니다.</strong><br>냉동에서는 증발기 흡열량을, 난방용 히트펌프에서는 응축기 방열량을 사용합니다.</p>
+<p><strong>③ 압축일량과 압축동력의 단위를 확인하세요.</strong><br>엔탈피 차는 보통 kJ/kg이고 질량유량을 곱한 동력은 kW입니다. COP에서는 분자와 분모의 단위를 서로 일치시켜야 합니다.</p>
+<p><strong>④ COP가 높다고 냉동능력 자체가 무조건 큰 것은 아닙니다.</strong><br>COP는 투입한 일에 대한 유효 열량의 비이므로 냉동능력의 절대적인 크기와 구분해야 합니다.</p>
+</section></div><p class="reference-links"><a href="https://heatpumpingtechnologies.org/articles/efficiency-heat-pumps/" target="_blank" rel="noopener noreferrer">COP 정의: IEA HPT</a></p></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-superheat-subcooling.html">← 이전: 9. 과열도와 과냉도란?</a><a href="learning-fundamentals-sensible-latent.html">다음: 11. 현열과 잠열이란? →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

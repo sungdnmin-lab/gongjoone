@@ -68,7 +68,14 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>압축기·응축기·팽창밸브·증발기의 역할</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>압축기는 증기를 압축하도록 설계되며, 응축기는 고압 냉매의 열을 외부로 방출합니다. 팽창밸브는 압력을 낮추고 냉매 공급을 조절하며, 증발기는 저압에서 냉매를 증발시켜 냉각 대상의 열을 흡수합니다. 응축기에서는 먼저 과열증기가 냉각되고 이후 응축이 일어나며, 조건에 따라 액체가 과냉될 수 있습니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>압축기·응축기·팽창밸브·증발기의 역할</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p>증기압축식 냉동장치의 기본 구성은 <strong>압축기 → 응축기 → 팽창밸브 → 증발기</strong>입니다. 네 기기는 각각 역할이 다르지만 하나의 폐회로를 이루며 냉매를 계속 순환시킵니다. 기기의 이름만 외우기보다 <strong>냉매의 압력·온도·상태가 어떻게 변하는지</strong>를 함께 이해하는 것이 중요합니다.</p>
+<p><strong>① 압축기:</strong> 증발기에서 나온 저압의 냉매증기를 흡입하여 고압·고온의 냉매증기로 압축합니다. 냉매를 순환시키고 저압측과 고압측의 압력차를 유지하는 핵심 장치입니다. 압축 과정에서는 외부에서 일이 공급되므로 냉매의 엔탈피가 증가합니다.</p>
+<p><strong>② 응축기:</strong> 압축기에서 나온 고온·고압 냉매증기가 외기나 냉각수에 열을 방출하여 액체로 응축되는 곳입니다. 응축기에서 방출하는 열은 증발기에서 흡수한 열에 압축기에서 공급된 일이 더해진 값입니다.</p>
+<p><strong>③ 팽창밸브:</strong> 응축기에서 나온 고압의 액냉매를 교축하여 저압으로 낮추고, 증발기에 필요한 냉매량을 공급합니다. 표준 냉동사이클에서는 팽창밸브 전후를 <strong>등엔탈피 과정(h₃=h₄)</strong>으로 봅니다. 압력이 낮아지면서 냉매의 일부가 순간적으로 증발하여 저온의 액·증기 혼합상태가 됩니다.</p>
+<p><strong>④ 증발기:</strong> 저온·저압의 냉매가 냉각 대상의 열을 흡수하면서 증발하는 열교환기입니다. 이때 냉매가 흡수한 열이 실제 냉각에 이용되는 <strong>냉동효과</strong>입니다.</p>
+<p>정리하면 압축기는 <strong>압력을 높이고</strong>, 응축기는 <strong>열을 방출하며</strong>, 팽창밸브는 <strong>압력을 낮추고</strong>, 증발기는 <strong>열을 흡수합니다.</strong> 이 네 역할을 기준으로 생각하면 냉동사이클 문제의 상태점과 엔탈피 관계를 훨씬 쉽게 판단할 수 있습니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <p>냉동사이클의 네 가지 주요 기기는 냉매의 압력과 상태를 바꾸며, 냉각 대상에서 흡수한 열을 실외로 이동시킵니다.</p>
 
           <div class="components-role-concept" id="componentsRoleConcept" data-cue="intro" aria-label="압축기, 응축기, 팽창밸브, 증발기의 역할과 냉매 상태 변화">
@@ -97,7 +104,20 @@
           <div class="components-ai-launch-wrap"></div>
           <div class="fundamental-keyline"><strong>한 줄 정리</strong> 압축기는 압력 상승, 응축기는 열 방출, 팽창밸브는 감압, 증발기는 열 흡수를 담당합니다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>기기의 기능을 서술할 때는 냉매 상태, 압력 변화, 열의 이동을 함께 적습니다. 예를 들어 증발기는 저압 냉매가 열을 흡수하여 증발하는 열교환기라고 설명하면 됩니다. 냉각수 온도가 응축기에서 상승하는 것도 냉매로부터 열을 받기 때문입니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>팽창밸브가 외부의 열을 빼앗아 냉매를 냉각한다고 설명하면 교축을 오해한 것입니다. 일반적인 교축은 외부 일과 열교환을 무시하면서 일부 냉매가 플래시 증발하여 온도가 내려가는 과정입니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-cycle-principle.html">← 이전: 5. 냉동기의 기본 원리</a><a href="learning-fundamentals-evaporating-pressure.html">다음: 7. 증발압력과 증발온도의 관계 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>상태 1을 압축기 입구, 상태 2를 압축기 출구, 상태 3을 응축기 출구, 상태 4를 팽창밸브 출구라고 하겠습니다. 엔탈피가 h₁=410, h₂=455, h₃=h₄=260 kJ/kg이라면 각 기기의 역할을 엔탈피 변화와 연결할 수 있습니다.</p>
+<p><strong>압축기:</strong> h₂-h₁=455-410=<strong>45 kJ/kg</strong>의 일이 냉매에 공급됩니다.</p>
+<p><strong>응축기:</strong> h₂-h₃=455-260=<strong>195 kJ/kg</strong>의 열을 외부로 방출합니다.</p>
+<p><strong>팽창밸브:</strong> 교축과정이므로 <strong>h₃=h₄=260 kJ/kg</strong>으로 계산합니다.</p>
+<p><strong>증발기:</strong> h₁-h₄=410-260=<strong>150 kJ/kg</strong>의 열을 냉각 대상에서 흡수합니다.</p>
+<p>따라서 <strong>응축기 방열량 = 냉동효과 + 압축일량 = 150+45=195 kJ/kg</strong>이 되어 에너지수지가 일치합니다.</p>
+<p>실기시험에서는 기기 명칭을 묻는 문제뿐 아니라 P-h 선도, 냉동능력, 압축동력, 응축기 방열량 계산에도 이 관계가 그대로 사용됩니다. 상태번호보다 <strong>각 기기의 입구와 출구가 어디인지</strong>를 먼저 확인하는 습관이 중요합니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 압축기는 액냉매를 압축하는 장치가 아닙니다.</strong><br>일반적인 증기압축식 냉동사이클에서 압축기는 냉매증기를 압축합니다. 액냉매가 압축기로 유입되는 액압축은 압축기 손상의 원인이 될 수 있습니다.</p>
+<p><strong>② 응축기에서는 단순히 냉매를 액체로만 만드는 것이 아닙니다.</strong><br>냉매가 응축하면서 증발기에서 흡수한 열과 압축기에 의해 더해진 에너지를 외부로 방출합니다.</p>
+<p><strong>③ 팽창밸브는 냉매를 적극적으로 냉각시키는 열교환기가 아닙니다.</strong><br>교축을 통해 압력을 낮추어 낮은 증발온도를 만들 수 있는 조건을 형성하는 장치입니다. 표준 문제에서는 전후 엔탈피가 같다고 봅니다.</p>
+<p><strong>④ 증발기와 응축기의 열 이동 방향을 반대로 외우지 마세요.</strong><br>증발기는 냉각 대상에서 <strong>열을 흡수</strong>하고, 응축기는 외부로 <strong>열을 방출</strong>합니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-cycle-principle.html">← 이전: 5. 냉동기의 기본 원리</a><a href="learning-fundamentals-evaporating-pressure.html">다음: 7. 증발압력과 증발온도의 관계 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

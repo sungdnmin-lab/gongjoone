@@ -68,7 +68,13 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>덕트</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>덕트 손실은 직관 마찰과 곡관·분기·확대·축소 같은 국부저항을 합산합니다. 구간마다 풍량과 단면이 다르면 풍속도 다르므로 하나의 동압을 모든 구간에 쓰면 안 됩니다. 등마찰손실법은 단위 길이당 마찰손실을 기준으로 치수를 정하는 방법입니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>덕트</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>덕트</strong>는 공조기에서 처리된 공기를 각 실로 공급하거나 실내공기를 환류·배기하기 위한 통로입니다. 덕트 설계에서는 필요한 풍량을 보내면서 압력손실, 소음, 설치공간을 적절히 관리해야 합니다.</p>
+<p>체적유량 Q, 덕트 단면적 A, 평균풍속 V의 기본관계는 <strong>Q = A×V</strong>입니다.</p>
+<p>덕트 내부의 압력손실은 직선구간의 마찰손실과 엘보, 분기, 댐퍼 등에서 발생하는 국부손실로 나눌 수 있습니다. 송풍기는 이 전체 저항을 이길 수 있는 압력을 제공해야 합니다.</p>
+<p>원형덕트와 장방형덕트를 비교하거나 등가직경을 구하는 문제도 출제될 수 있으며, 문제에서 제시한 공식이나 표를 우선 적용해야 합니다.</p>
+<p>풍속을 지나치게 높이면 덕트 크기는 줄일 수 있지만 마찰손실과 소음이 증가할 수 있습니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <h3>베르누이식과 압력</h3>
           <div class="learn-formula">P₁ + ρv₁²/2 = P₂ + ρv₂²/2 + ΔP</div>
           <div class="learn-formula">전압 = 정압 + 동압</div>
@@ -82,9 +88,9 @@
           <h3>장방형 덕트의 상당지름</h3>
           <div class="learn-formula">D = 1.3[(ab)⁵/(a+b)²]¹⁄⁸</div>
 
-          <h3>덕트 설계 기본</h3>
+          <h3>덕트 설계 참고값</h3><p>아래 값은 학습용 예시입니다. 고속·저속 분류와 허용 종횡비·각도는 적용 자료에 따라 달라지므로 문제 조건이나 설계기준을 우선합니다. 각도는 전체각인지 한쪽 벽의 각도인지도 확인합니다.</p>
           <table class="learn-table">
-            <tr><th>항목</th><th>기준</th></tr>
+            <tr><th>항목</th><th>학습용 참고값</th></tr>
             <tr><td>저속덕트</td><td>15 m/s 이하</td></tr>
             <tr><td>고속덕트</td><td>15 m/s 초과</td></tr>
             <tr><td>장방형 덕트 종횡비</td><td>가능하면 4:1 이하, 최대 8:1 이하</td></tr>
@@ -96,7 +102,17 @@
           <p>등마찰손실법, 등속법, 정압재취득법, 전압법 등을 사용한다.</p>
           <div class="exam-tip"><strong>가장 많이 사용</strong><br>실무와 시험에서는 등마찰손실법이 가장 널리 사용된다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>원형 덕트 D=0.4 m, L=10 m, v=5 m/s, ρ=1.2, 마찰계수 0.02이면 동압은 15 Pa입니다. 직관 손실은 0.02×<span class="solution-frac"><span class="solution-num">10</span><span class="solution-den">0.4</span></span>×15=7.5 Pa이고, K=1.5의 부속 손실은 22.5 Pa입니다. 합계는 30 Pa입니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>마찰계수가 Darcy 기준인지 확인합니다. 장방형 덕트의 수력직경과 등마찰 상당지름은 목적이 달라 같은 값으로 대체하지 않습니다. 설계 각도와 풍속 범위는 문제의 지정 기준을 따릅니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-fans.html">← 이전: 14. 송풍기</a><a href="learning-airconditioning-filters.html">다음: 16. 공기여과기 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>풍량이 1.8 m³/s이고 덕트 내 평균풍속을 6 m/s로 설계한다면 필요한 단면적은:</p>
+<p>A = Q÷V = 1.8÷6 = <strong>0.30 m²</strong></p>
+<p>이 단면적을 정사각형 덕트로 만든다면 한 변의 길이는 √0.30 = <strong>약 0.548 m</strong>, 즉 약 <strong>548 mm</strong>입니다.</p>
+<p>같은 풍량에서 풍속을 9 m/s로 높이면 필요한 단면적은 1.8÷9=<strong>0.20 m²</strong>로 줄어들지만 일반적으로 압력손실과 소음 증가를 함께 고려해야 합니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① m³/h와 m³/s를 바로 섞지 마세요.</strong><br>Q=A×V에서 풍속이 m/s라면 풍량도 m³/s로 맞추는 것이 편리합니다.</p>
+<p><strong>② 덕트 면적과 한 변의 길이를 혼동하지 마세요.</strong><br>정사각형이라면 한 변은 면적의 제곱근입니다.</p>
+<p><strong>③ 마찰손실만 계산하고 국부손실을 빠뜨리지 마세요.</strong></p>
+<p><strong>④ 풍속을 높이면 항상 유리한 것이 아닙니다.</strong><br>소음과 압력손실이 커질 수 있습니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-fans.html">← 이전: 14. 송풍기</a><a href="learning-airconditioning-filters.html">다음: 16. 공기여과기 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

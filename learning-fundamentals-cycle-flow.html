@@ -68,7 +68,15 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>냉동사이클의 흐름</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>사이클은 닫힌 순환이므로 어느 기기부터 설명해도 연결은 같습니다. 다만 계산에서는 상태번호를 고정해 일관되게 사용합니다. 압축기 입구를 1로 잡으면 1→2 압축, 2→3 응축, 3→4 팽창, 4→1 증발입니다. 이상적인 모델에서는 응축·증발의 압력손실을 무시하고 팽창밸브 양쪽 엔탈피를 같게 둡니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>냉동사이클의 흐름</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p>냉동사이클은 냉매가 <strong>압축 → 응축 → 팽창 → 증발</strong>의 네 과정을 반복하면서 저온부의 열을 고온부로 이동시키는 순환과정입니다. 사이클은 닫힌 순환이므로 어느 기기부터 설명해도 결국 같은 흐름으로 연결되지만, 계산에서는 상태번호를 일정하게 정해 사용하는 것이 중요합니다.</p>
+<p>압축기 입구를 상태 1로 정하면 <strong>1→2 압축, 2→3 응축, 3→4 팽창, 4→1 증발</strong>로 나타낼 수 있습니다.</p>
+<p><strong>① 1→2 압축:</strong> 증발기에서 나온 저압 냉매증기가 압축기로 들어가 고압·고온의 증기가 됩니다. 이 과정에는 외부에서 압축일이 공급됩니다.</p>
+<p><strong>② 2→3 응축:</strong> 고온·고압 냉매가 응축기에서 외기 또는 냉각수에 열을 방출하면서 액체로 변합니다. 압력은 이상적인 표준사이클에서는 거의 일정하다고 봅니다.</p>
+<p><strong>③ 3→4 팽창:</strong> 고압의 액냉매가 팽창장치를 지나면서 압력이 급격히 낮아지고 일부가 증발하여 저온의 액·증기 혼합상태가 됩니다. 표준적인 교축과정에서는 <strong>h₃=h₄</strong>로 봅니다.</p>
+<p><strong>④ 4→1 증발:</strong> 저온·저압 냉매가 증발기에서 냉각 대상의 열을 흡수하면서 증발합니다. 이때 흡수한 열이 냉동효과입니다.</p>
+<p>이상적인 표준 냉동사이클에서는 응축기와 증발기의 압력손실을 무시하고, 압축은 이상적으로 이루어진다고 가정합니다. 실제 장치에서는 압축기 효율과 배관·열교환기의 압력손실 때문에 이상적인 사이클과 차이가 생깁니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <p>냉동사이클은 냉매가 <strong>압축기 → 응축기 → 팽창밸브 → 증발기</strong>를 차례로 지나며 열을 실내에서 실외로 옮기는 반복 과정입니다.</p>
 
           <div class="cycle-flow-concept" id="cycleFlowConcept" data-cue="intro" aria-label="압축기, 응축기, 팽창밸브, 증발기로 이어지는 냉동사이클의 흐름">
@@ -98,7 +106,18 @@
           <div class="cycle-flow-ai-launch-wrap"></div>
           <div class="fundamental-keyline"><strong>한 줄 정리</strong> 냉매는 압축·응축·팽창·증발을 반복하며, 증발기에서 실내 열을 흡수하고 응축기에서 실외로 방출합니다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>h₁=405, h₂=450, h₃=h₄=255 kJ/kg, 냉매유량 0.10 kg/s라고 가정합니다. Q̇e=0.10×150=15 kW, Ẇ=0.10×45=4.5 kW, Q̇c=0.10×195=19.5 kW입니다. 15+4.5=19.5로 검산합니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>실제 압축은 완전한 등엔트로피가 아니고 배관·열교환기 압력손실도 있습니다. 표준사이클 문제에서의 가정과 실제 운전 현상을 구분하여 설명합니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-refrigerant.html">← 이전: 14. 냉매란 무엇인가?</a><a href="learning-fundamentals-air-streams.html">다음: 16. 공조에서 외기·환기·급기·배기란? →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p><strong>상태값을 먼저 기기에 연결합니다.</strong> h₁=405, h₂=450, h₃=h₄=255 kJ/kg이고 냉매유량이 0.10 kg/s라고 가정합니다.</p>
+<p>증발기에서의 냉동효과는 <strong>h₁-h₄=405-255=150 kJ/kg</strong>이므로 냉동능력은 <strong>Q̇e=0.10×150=15 kW</strong>입니다.</p>
+<p>압축기 일량은 <strong>h₂-h₁=450-405=45 kJ/kg</strong>이므로 압축동력은 <strong>Ẇ=0.10×45=4.5 kW</strong>입니다.</p>
+<p>응축기 방열량은 <strong>h₂-h₃=450-255=195 kJ/kg</strong>이므로 <strong>Q̇c=0.10×195=19.5 kW</strong>입니다.</p>
+<p>마지막으로 <strong>냉동능력 + 압축동력 = 응축기 방열량</strong>을 적용하면 15+4.5=19.5 kW가 되어 계산 결과를 검산할 수 있습니다.</p>
+<p>실기시험에서는 상태점의 엔탈피를 P-h 선도나 조건에서 읽은 뒤 각 기기의 입구와 출구를 정확히 연결하는 것이 핵심입니다. 공식을 외우기보다 <strong>어느 기기에서 열을 흡수하고, 일을 받고, 열을 방출하는지</strong>를 먼저 판단하면 엔탈피 차의 방향을 실수할 가능성이 줄어듭니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 상태번호 자체를 외우지 마세요.</strong><br>문제나 교재에 따라 상태번호가 달라질 수 있습니다. 압축기·응축기·팽창장치·증발기의 입구와 출구를 먼저 확인해야 합니다.</p>
+<p><strong>② 팽창과정에서 엔탈피가 감소한다고 생각하기 쉽습니다.</strong><br>표준 냉동사이클의 팽창밸브는 교축과정으로 보고 보통 <strong>입구와 출구의 엔탈피가 같다(h₃=h₄)</strong>고 계산합니다. 압력과 온도는 낮아지지만 이것을 곧바로 엔탈피 감소로 판단하면 안 됩니다.</p>
+<p><strong>③ 표준사이클과 실제 운전을 구분하세요.</strong><br>실제 압축은 완전한 이상압축이 아니며 배관과 열교환기에서도 압력손실이 발생합니다. 시험에서 표준사이클 조건이 주어졌다면 문제의 가정을 우선 적용해야 합니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-refrigerant.html">← 이전: 14. 냉매란 무엇인가?</a><a href="learning-fundamentals-air-streams.html">다음: 16. 공조에서 외기·환기·급기·배기란? →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

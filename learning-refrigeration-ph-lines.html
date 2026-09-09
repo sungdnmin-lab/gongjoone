@@ -68,18 +68,40 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-refrigeration.html">냉동공학</a></nav><article class="article-paper"><h1>P-h 선도의 6가지 선</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>등압선과 등엔탈피선은 축의 정의로 방향이 정해집니다. 등엔트로피선은 이상 압축 경로를, 등비체적선은 흡입 체적유량 계산을 돕습니다. 순수냉매의 두 상 영역에서는 일정 압력의 상변화 온도가 일정합니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-refrigeration.html">냉동공학</a></nav><article class="article-paper"><h1>P-h 선도의 6가지 선</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p>P-h 선도에는 냉매의 상태를 읽기 위해 여러 종류의 상태선이 함께 표시됩니다. 실기에서 자주 확인하는 대표적인 선은 <strong>등압선, 등엔탈피선, 등온선, 등엔트로피선, 등비체적선, 등건도선</strong>입니다. 각 선이 무엇이 일정한 상태를 나타내는지 이해하면 선도에서 상태점을 읽거나 냉동사이클을 해석할 때 훨씬 수월합니다.</p>
+<p><strong>① 등압선</strong><br>압력이 일정한 상태를 연결한 선입니다. 일반적인 P-h 선도에서 세로축 자체가 압력축이므로 동일한 압력은 같은 높이에서 읽습니다. 표준 냉동사이클의 증발과 응축은 압력손실을 무시하면 거의 등압과정으로 취급합니다.</p>
+<p><strong>② 등엔탈피선</strong><br>엔탈피가 일정한 상태를 연결한 선입니다. 가로축이 엔탈피이므로 같은 엔탈피는 같은 세로 방향 위치에 놓입니다. 팽창밸브의 교축과정은 대표적인 등엔탈피 과정으로, 표준 문제에서는 <strong>h₃=h₄</strong>로 계산합니다.</p>
+<p><strong>③ 등온선</strong><br>온도가 같은 상태를 연결한 선입니다. 과열증기 영역에서 냉매의 온도를 읽을 때 중요하며, 냉매 종류와 상태에 따라 선의 기울기와 형태가 달라집니다.</p>
+<p><strong>④ 등엔트로피선</strong><br>엔트로피가 일정한 상태를 연결한 선입니다. 이상적인 압축과정을 해석할 때 사용하며, 표준 냉동사이클에서 압축기 과정은 이상적으로 등엔트로피 압축으로 다루기도 합니다.</p>
+<p><strong>⑤ 등비체적선</strong><br>비체적이 같은 상태를 연결한 선입니다. 압축기 흡입상태의 비체적을 읽어 냉매 체적유량이나 압축기 토출량 관련 계산을 할 때 활용됩니다.</p>
+<p><strong>⑥ 등건도선</strong><br>습증기 영역에서 건도, 즉 전체 질량 중 증기가 차지하는 질량비가 같은 상태를 연결한 선입니다. 포화액선에서는 건도 x=0, 포화증기선에서는 x=1이며 그 사이에서 0&lt;x&lt;1입니다.</p>
+<p>이 여섯 가지 선은 단독으로 외우기보다 <strong>어떤 물리량이 일정한지, 냉동사이클의 어느 과정이나 계산과 연결되는지</strong>를 함께 기억하는 것이 좋습니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <div class="line-list">
             <div class="line-item"><strong>등압선</strong>압력이 같은 점을 이은 선. P-h 선도에서는 가로선으로 나타난다.</div>
             <div class="line-item"><strong>등엔탈피선</strong>엔탈피가 같은 선. 세로선이며 팽창밸브 과정과 연결된다.</div>
             <div class="line-item"><strong>등온선</strong>온도가 같은 점을 이은 선. 과냉각액 구역에서는 거의 수직, 과열증기 구역에서는 오른쪽 아래로 굽는다.</div>
-            <div class="line-item"><strong>등엔트로피선</strong>엔트로피가 같은 선. 이론적인 단열압축 과정은 이 선을 따라 진행한다.</div>
+            <div class="line-item"><strong>등엔트로피선</strong>엔트로피가 같은 선. 가역 단열압축 과정은 이 선을 따라 진행한다.</div>
             <div class="line-item"><strong>등비체적선</strong>비체적이 같은 선. 압축기 흡입가스의 비체적을 읽을 때 사용한다.</div>
             <div class="line-item"><strong>등건도선</strong>습증기 구역 안에서 건도가 같은 선. 포화액선은 x=0, 건포화증기선은 x=1이다.</div>
           </div>
-          <div class="mistake-note"><strong>가장 중요한 연결</strong><br>압축기는 등엔트로피, 팽창밸브는 등엔탈피, 응축기와 증발기는 등압 과정으로 정리한다.</div>
+          <div class="mistake-note"><strong>가장 중요한 연결</strong><br>이상적인 증기압축 사이클에서는 압축을 등엔트로피, 팽창밸브 교축을 등엔탈피, 압력손실 없는 응축·증발을 등압으로 정리합니다. 실제 단열압축은 비가역성 때문에 엔트로피가 증가할 수 있습니다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>팽창밸브를 통과하는 h가 250 kJ/kg이면 P-h 선도에서 같은 h의 수직선을 따라 저압측으로 이동합니다. 압축기는 이상적으로 등엔트로피선을 따라 고압측으로 이동하고 h는 증가합니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>실제 단열압축은 비가역성이 있어 엔트로피가 증가합니다. 단열이라는 말만으로 무조건 등엔트로피라고 쓰지 않습니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-refrigeration-ph-chart.html">← 이전: 7. P-h 선도 한눈에 보기</a><a href="learning-refrigeration-vapor-compression-cycle.html">다음: 9. 증기압축 냉동사이클 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>예를 들어 P-h 선도에서 상태 3의 엔탈피가 255 kJ/kg이고, 팽창밸브를 지난 상태 4를 구한다고 하겠습니다. 팽창밸브는 이상적인 교축과정으로 보므로 <strong>등엔탈피선</strong>을 따라 이동합니다.</p>
+<p>따라서 <strong>h₄=h₃=255 kJ/kg</strong>입니다.</p>
+<p>또한 증발기 출구 상태의 비체적이 0.065 m³/kg이고 냉매 질량유량이 0.20 kg/s라면, 체적유량은 다음과 같습니다.</p>
+<p><strong>V̇=ṁv=0.20×0.065=0.013 m³/s</strong></p>
+<p>이를 분당 체적유량으로 환산하면 <strong>0.013×60=0.78 m³/min</strong>입니다. 이처럼 등비체적선에서 읽은 비체적은 냉매의 체적유량 또는 압축기 용량 관련 문제로 연결될 수 있습니다.</p>
+<p>습증기 영역의 상태점이 건도 x=0.25인 등건도선 위에 있다면 전체 냉매 질량 중 증기 질량분율이 25%, 액체 질량분율이 75%라는 뜻입니다. 예를 들어 전체 냉매가 8 kg이라면 증기는 <strong>8×0.25=2 kg</strong>, 액체는 <strong>8×0.75=6 kg</strong>입니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 등압선과 등엔탈피선을 혼동하지 마세요.</strong><br>P-h 선도에서 압력은 세로축, 엔탈피는 가로축입니다. 같은 압력은 같은 높이에서, 같은 엔탈피는 같은 가로축 위치에서 읽습니다.</p>
+<p><strong>② 등엔트로피선과 등엔탈피선은 서로 다른 선입니다.</strong><br>이상적인 압축은 등엔트로피 과정이고, 팽창밸브의 교축은 등엔탈피 과정입니다.</p>
+<p><strong>③ 건도는 과열증기 영역이나 과냉액 영역에 적용하는 값이 아닙니다.</strong><br>건도는 액체와 증기가 함께 존재하는 습증기 영역에서만 의미가 있습니다.</p>
+<p><strong>④ 등비체적선은 단순한 부피 자체가 아닙니다.</strong><br>비체적은 단위 질량당 부피로 단위는 m³/kg입니다. 질량유량을 곱하면 체적유량을 구할 수 있습니다.</p>
+<p><strong>⑤ 선의 모양을 기계적으로 외우기보다 선도에 표시된 기호를 확인하세요.</strong><br>냉매 종류나 선도 제작방식에 따라 보조선의 모양과 간격이 달라질 수 있으므로 실제 시험에서는 선도에 적힌 값과 기호를 기준으로 판독해야 합니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-refrigeration-ph-chart.html">← 이전: 7. P-h 선도 한눈에 보기</a><a href="learning-refrigeration-vapor-compression-cycle.html">다음: 9. 증기압축 냉동사이클 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

@@ -68,7 +68,15 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-heat.html">열전달</a></nav><article class="article-paper"><h1>열관류율과 열저항</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>열관류율은 여러 층과 양쪽 표면을 통과하는 전체 열 이동을 하나의 계수로 표현합니다. 아래 R은 단위면적당 열저항이며, 전체 면적을 포함하는 열저항 K/W와 구분합니다. 병렬 경로가 있는 열교 부위는 단순 직렬 합만으로 처리할 수 없습니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-heat.html">열전달</a></nav><article class="article-paper"><h1>열관류율과 열저항</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>열저항 R</strong>은 열이 흐르기 어려운 정도를 나타내고, <strong>열관류율 U</strong>는 벽체 전체를 통해 열이 얼마나 쉽게 전달되는지를 나타냅니다. 두 값은 서로 반대 성격을 가집니다.</p>
+<p>한 층의 전도 열저항은 <strong>R = L/k</strong>로 계산합니다. 여기서 L은 두께(m), k는 열전도율 W/(m·K)입니다.</p>
+<p>여러 재료가 직렬로 겹쳐진 벽체에서는 각 층의 열저항과 실내·외 표면 열저항을 더합니다.</p>
+<p><strong>R<sub>total</sub> = 1/h<sub>i</sub> + Σ(L/k) + 1/h<sub>o</sub></strong></p>
+<p>그다음 전체 열관류율은 <strong>U = 1/R<sub>total</sub></strong>로 구합니다.</p>
+<p>따라서 단열재를 두껍게 하거나 열전도율이 작은 재료를 사용하면 열저항은 커지고 열관류율은 작아집니다. 열관류율이 작다는 것은 같은 면적과 온도차에서 열이 덜 전달된다는 뜻입니다.</p>
+<p>벽체를 통한 정상상태 열전달량은 <strong>Q = U A ΔT</strong>로 계산합니다. 실기에서는 두께 단위가 mm로 주어지는 경우가 많으므로 반드시 m로 환산해야 합니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <p>여러 재료층과 실내외 표면을 통과하는 전체 열이동은 각 구간의 열저항을 합하여 계산한다.</p>
           <div class="wall-diagram" aria-label="다층 벽체 열저항 개념도">
             <div>실내 공기</div><div>내장재</div><div class="insul">단열재</div><div class="block">구조체</div><div>실외 공기</div>
@@ -83,7 +91,19 @@
           <div class="exam-tip"><strong>계산 순서</strong><br>각 재료의 L/λ 계산 → 실내외 표면저항 추가 → 전체 R 합산 → K=1/R</div>
           <div class="mistake-note"><strong>자주 하는 실수</strong><br>실내측과 실외측의 표면 열전달저항 1/α를 빠뜨리지 않는다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>αᵢ=8, αₒ=20 W/(m²·K), 단열재 L=0.04 m, λ=0.04 W/(m·K)이면 R=<span class="solution-frac"><span class="solution-num">1</span><span class="solution-den">8</span></span>+<span class="solution-frac"><span class="solution-num">0.04</span><span class="solution-den">0.04</span></span>+<span class="solution-frac"><span class="solution-num">1</span><span class="solution-den">20</span></span>=1.175 m²·K/W입니다. K=<span class="solution-frac"><span class="solution-num">1</span><span class="solution-den">1.175</span></span>≈0.851 W/(m²·K). A=10 m², ΔT=20 K이면 약 170.21 W입니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>이미 주어진 K에 표면저항이 포함되어 있으면 다시 더하지 않습니다. 관 내면 기준 K와 관 외면 기준 면적처럼 기준이 다른 값을 섞어 쓰지 않습니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-heat-radiation.html">← 이전: 4. 복사</a><a href="learning-heat-review.html">다음: 6. 시험 직전 암기 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>열전도율 0.8 W/(m·K), 두께 0.10 m인 재료와 열전도율 0.04 W/(m·K), 두께 0.05 m인 단열재가 직렬로 구성되어 있다고 하겠습니다. 실내·외 표면열저항은 각각 0.12, 0.05 m²·K/W로 가정합니다.</p>
+<p><strong>① 각 층 열저항</strong><br>R₁=0.10÷0.8=0.125 m²·K/W<br>R₂=0.05÷0.04=1.25 m²·K/W</p>
+<p><strong>② 전체 열저항</strong><br>R<sub>total</sub>=0.12+0.125+1.25+0.05=<strong>1.545 m²·K/W</strong></p>
+<p><strong>③ 열관류율</strong><br>U=1÷1.545=<strong>약 0.647 W/(m²·K)</strong></p>
+<p>면적이 40 m²이고 실내외 온도차가 15℃라면:</p>
+<p>Q=0.647×40×15=<strong>약 388 W</strong></p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① mm를 그대로 L에 넣지 마세요.</strong><br>열전도율 단위가 W/(m·K)이면 두께도 m로 맞춰야 합니다.</p>
+<p><strong>② 열저항과 열관류율의 크기 관계를 반대로 기억하지 마세요.</strong><br>R이 커질수록 U는 작아집니다.</p>
+<p><strong>③ 표면열전달저항 포함 여부를 확인하세요.</strong><br>문제에서 실내외 표면 열전달계수를 주었다면 1/h 형태로 포함합니다.</p>
+<p><strong>④ 여러 층의 U값을 단순히 더하지 마세요.</strong><br>직렬 벽체는 열저항을 합산한 뒤 역수를 취해 전체 U값을 구합니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-heat-radiation.html">← 이전: 4. 복사</a><a href="learning-heat-review.html">다음: 6. 시험 직전 암기 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

@@ -68,7 +68,15 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-refrigeration.html">냉동공학</a></nav><article class="article-paper"><h1>표준 냉동사이클</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>표준 증기압축사이클은 흡입 포화증기, 응축기 출구 포화액, 이상 압축, 등엔탈피 교축, 열교환기 압력손실 무시 등의 가정으로 상태를 정합니다. 실제 과열도나 과냉도가 제시되면 표준 포화점 대신 그 조건의 상태점을 사용합니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-refrigeration.html">냉동공학</a></nav><article class="article-paper"><h1>표준 냉동사이클</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>표준 냉동사이클</strong>은 실제 냉동장치의 복잡한 손실을 단순화하여 압축기·응축기·팽창밸브·증발기의 기본 작동을 해석하는 이상적인 증기압축 냉동사이클입니다. 공조냉동 실기에서는 P-h 선도와 엔탈피 계산의 기준이 되는 가장 중요한 기본사이클입니다.</p>
+<p>상태점을 압축기 입구 1, 압축기 출구 2, 응축기 출구 3, 팽창밸브 출구 4로 두면 과정은 <strong>1→2 압축, 2→3 응축, 3→4 팽창, 4→1 증발</strong> 순서로 진행됩니다.</p>
+<p><strong>① 1→2 압축</strong><br>증발기에서 나온 저압 냉매증기를 고압으로 압축하는 과정입니다. 표준사이클에서는 압축을 이상적인 <strong>등엔트로피 압축</strong>으로 취급하며, 압축기에서 외부 일이 공급되므로 엔탈피가 증가합니다.</p>
+<p><strong>② 2→3 응축</strong><br>고온·고압 냉매가 응축기에서 외기나 냉각수에 열을 방출하여 액체가 되는 과정입니다. 표준사이클에서는 응축기 내부의 압력손실을 무시하여 <strong>등압 응축</strong>으로 취급합니다.</p>
+<p><strong>③ 3→4 팽창</strong><br>고압 액냉매가 팽창밸브를 통과하여 저압으로 낮아지는 교축과정입니다. 외부와의 일 교환을 무시하는 표준 계산에서는 <strong>등엔탈피 과정으로 보아 h₃=h₄</strong>로 둡니다.</p>
+<p><strong>④ 4→1 증발</strong><br>저온·저압 냉매가 증발기에서 냉각 대상의 열을 흡수하며 증발하는 과정입니다. 표준사이클에서는 증발기 압력손실을 무시하여 <strong>등압 증발</strong>로 취급합니다.</p>
+<p>표준사이클에서는 열교환기와 배관의 압력손실, 외부와의 불필요한 열교환, 실제 압축기의 비가역성 등을 생략합니다. 따라서 실제 장치와 완전히 같지는 않지만 냉동효과, 압축일, 응축열, COP의 관계를 이해하고 계산하는 기준으로 사용됩니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <p>표준 냉동사이클은 실제 장치의 복잡한 변화를 단순화하여 계산하기 위한 기준 사이클이다. 압축기 흡입은 건포화증기, 응축기 출구는 포화액으로 보고 과열도와 과냉각도는 별도로 주어지지 않으면 고려하지 않는다.</p>
           <table class="learn-table">
             <tr><th>기준 상태</th><th>의미</th></tr>
@@ -79,7 +87,23 @@
           </table>
           <div class="exam-tip"><strong>풀이 순서</strong><br>증발·응축온도로 압력을 정하고 → 각 상태점의 엔탈피를 읽고 → 냉동효과·압축일·응축열·COP를 계산한다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>압축기 흡입이 건포화증기라고 주어지면 증발압력의 포화증기 엔탈피와 엔트로피를 읽습니다. 토출점은 같은 엔트로피와 응축압력의 교점입니다. 응축기 출구는 고압측 포화액 엔탈피를 읽습니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>과열·과냉 조건이 따로 주어졌는데 포화표 값만 사용하지 않습니다. 점을 정하는 독립 상태값이 무엇인지 한 줄씩 적으면 빠뜨리기 어렵습니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-refrigeration-vapor-compression-cycle.html">← 이전: 9. 증기압축 냉동사이클</a><a href="learning-refrigeration-cycle-formulas.html">다음: 11. 사이클 핵심 공식 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>표준 냉동사이클에서 h₁=410, h₂=460, h₃=h₄=260 kJ/kg이고 냉매 질량유량이 0.08 kg/s라고 하겠습니다.</p>
+<p><strong>① 냉동효과</strong><br>qₑ=h₁-h₄=410-260=<strong>150 kJ/kg</strong></p>
+<p><strong>② 냉동능력</strong><br>Q̇ₑ=ṁ(h₁-h₄)=0.08×150=<strong>12 kW</strong></p>
+<p><strong>③ 압축일량</strong><br>w=h₂-h₁=460-410=<strong>50 kJ/kg</strong></p>
+<p><strong>④ 압축동력</strong><br>Ẇ=ṁ(h₂-h₁)=0.08×50=<strong>4 kW</strong></p>
+<p><strong>⑤ 응축기 방열량</strong><br>Q̇c=ṁ(h₂-h₃)=0.08×(460-260)=0.08×200=<strong>16 kW</strong></p>
+<p><strong>⑥ 냉동기 COP</strong><br>COP=냉동능력÷압축동력=12÷4=<strong>3.0</strong></p>
+<p>에너지수지로 검산하면 <strong>냉동능력 + 압축동력 = 응축기 방열량</strong>이므로 12+4=16 kW가 되어 일치합니다.</p>
+<p>실기에서는 상태점 번호가 다르게 주어질 수 있으므로 번호 자체를 외우기보다 각 상태점이 <strong>어느 기기의 입구와 출구인지</strong> 먼저 확인한 뒤 엔탈피 차를 적용하는 것이 안전합니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 표준 냉동사이클은 실제 운전상태를 그대로 나타낸 것이 아닙니다.</strong><br>실제 압축기에는 효율손실이 있고 배관·열교환기에도 압력손실이 발생합니다. 표준사이클은 이러한 요소를 단순화한 계산모델입니다.</p>
+<p><strong>② 팽창밸브에서 엔탈피가 줄어든다고 계산하면 안 됩니다.</strong><br>표준사이클의 교축과정에서는 <strong>h₃=h₄</strong>로 봅니다. 압력과 온도는 낮아지지만 엔탈피는 일정하게 취급합니다.</p>
+<p><strong>③ 증발기와 응축기의 열량식을 반대로 적용하지 마세요.</strong><br>증발기 냉동효과는 일반적으로 <strong>h₁-h₄</strong>, 응축기 방열량은 <strong>h₂-h₃</strong>입니다.</p>
+<p><strong>④ 냉동효과와 냉동능력을 구분하세요.</strong><br>냉동효과는 냉매 1 kg당 흡열량(kJ/kg)이고, 냉동능력은 여기에 질량유량을 곱한 단위시간당 열량(kW)입니다.</p>
+<p><strong>⑤ 상태번호는 문제마다 달라질 수 있습니다.</strong><br>공식만 번호와 함께 외우기보다 압축기·응축기·팽창밸브·증발기의 입출구 관계를 먼저 확인해야 합니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-refrigeration-vapor-compression-cycle.html">← 이전: 9. 증기압축 냉동사이클</a><a href="learning-refrigeration-cycle-formulas.html">다음: 11. 사이클 핵심 공식 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

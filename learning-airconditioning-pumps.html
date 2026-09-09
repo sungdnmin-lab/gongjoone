@@ -68,7 +68,13 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>펌프</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>펌프는 유체에 양정을 부여합니다. 수동력은 ρgQ̇H이고 축동력은 이를 펌프효율로 나눕니다. 밀폐 순환계는 올라가는 정수두와 내려오는 정수두가 상쇄되므로 건물 높이를 그대로 전양정에 더하지 않습니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>펌프</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>펌프</strong>는 냉수·온수·냉각수 등의 유체에 에너지를 공급하여 배관과 장비의 저항을 이기고 필요한 유량을 순환시키는 장치입니다.</p>
+<p>펌프의 기본 계산에서는 유량 Q, 양정 H, 유체밀도 ρ, 중력가속도 g, 효율 η의 관계를 사용합니다. SI 단위에서 축동력은 <strong>P = ρgQH/η</strong>로 구할 수 있습니다.</p>
+<p>여기서 Q는 m³/s, H는 m, ρ는 kg/m³를 사용하면 결과는 W가 됩니다.</p>
+<p>폐회로 순환배관에서는 단순히 건물 높이를 전양정으로 더하는 것이 아니라 마찰손실과 장비손실 등을 중심으로 펌프양정을 결정합니다. 개방계와 폐회로의 정수두 해석은 구분해야 합니다.</p>
+<p>동일한 펌프의 회전수를 변경할 때는 상사법칙상 유량은 회전수에 비례하고 양정은 제곱, 동력은 세제곱에 비례합니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <h3>펌프 동력</h3>
           <div class="learn-formula">수동력 L = γQH</div>
           <div class="learn-formula">축동력 L = γQH/η</div>
@@ -86,7 +92,18 @@
           <p>실양정, 배관 마찰손실, 토출측 속도수두 등을 합해 계산한다.</p>
           <div class="mistake-note"><strong>단위 주의</strong><br>γ는 비중량, Q는 유량, H는 전양정이며 주어진 단위계에 맞춰 계산한다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>물 0.01 m³/s, 양정 20 m, ρ=1,000, g=9.81, 효율 0.70이면 수동력은 1.962 kW, 축동력은 약 2.803 kW입니다. 모터효율이 별도로 주어지면 전기입력 계산에서 추가로 나눕니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>개방 수조 사이 이송과 밀폐 순환계의 전양정 계산을 구분합니다. 유효흡입수두 NPSH는 전양정과 다른 개념이며 캐비테이션 검토에 사용합니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-ventilation-rate.html">← 이전: 19. 환기량 산출</a><a href="learning-airconditioning-boilers.html">다음: 21. 보일러 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>물의 유량이 0.020 m³/s, 필요한 전양정이 18 m, 펌프효율이 72%라고 하겠습니다. 물의 밀도를 1000 kg/m³, 중력가속도를 9.81 m/s²로 하면:</p>
+<p>P = ρgQH/η</p>
+<p>P = 1000×9.81×0.020×18÷0.72</p>
+<p>P = <strong>4,905 W ≈ 4.91 kW</strong></p>
+<p>따라서 이 조건에서 필요한 펌프 축동력은 약 4.91 kW입니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① L/s를 m³/s로 환산하세요.</strong><br>20 L/s는 0.020 m³/s입니다.</p>
+<p><strong>② 효율을 % 그대로 넣지 마세요.</strong><br>72%는 0.72입니다.</p>
+<p><strong>③ 폐회로에서 건물 높이를 무조건 전양정에 더하지 마세요.</strong><br>순환배관에서는 상승측과 하강측 정수두가 서로 상쇄될 수 있습니다.</p>
+<p><strong>④ 펌프동력과 모터 정격출력을 같은 값으로 단정하지 마세요.</strong><br>모터효율과 여유율 조건이 추가될 수 있습니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-ventilation-rate.html">← 이전: 19. 환기량 산출</a><a href="learning-airconditioning-boilers.html">다음: 21. 보일러 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

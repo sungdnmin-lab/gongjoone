@@ -68,21 +68,37 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-equipment.html">냉동장치</a></nav><article class="article-paper"><h1>증발기</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>증발기는 냉각 대상의 열을 냉매에 전달합니다. 물 측 유량·온도차로 계산한 열량과 냉매 측 엔탈피 증가율은 열손실을 무시하면 같습니다. 전열면적을 구할 때는 주어진 열관류율의 면적 기준을 맞춰야 합니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-equipment.html">냉동장치</a></nav><article class="article-paper"><h1>증발기</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>증발기</strong>는 저압의 냉매가 증발하면서 냉각대상으로부터 열을 흡수하는 열교환기입니다. 냉동사이클의 저압측에 위치하며 실제 냉동효과가 발생하는 부분입니다.</p>
+<p>팽창장치를 지난 저온·저압의 냉매는 액체와 증기가 섞인 상태로 증발기에 들어갈 수 있으며, 증발하면서 주위의 열을 흡수합니다. 건식 직접팽창식에서는 일반적으로 증발기 출구 과열도를 관리합니다. 만액식·액순환식에서는 증발기 출구에 액냉매가 포함될 수 있으며, 기액분리기 등의 설비로 액을 분리하여 압축기 흡입측으로 액냉매가 유입되지 않도록 합니다.</p>
+<p>냉매 1 kg당 냉동효과는 <strong>q<sub>e</sub>=h₁-h₄</strong>이고, 냉매 질량유량이 ṁ이면 냉동능력은 <strong>Q<sub>e</sub>=ṁ(h₁-h₄)</strong>로 구합니다.</p>
+<p>증발온도가 지나치게 낮아지면 냉각대상과의 온도차는 커질 수 있지만 압축비가 증가하여 압축기 일이 커지고 COP가 저하될 수 있습니다.</p>
+<p>증발기는 냉각대상에 따라 공기냉각용, 액체냉각용 등으로 사용되며 구조와 냉매 공급방식에 따라 여러 형태로 나뉩니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <p>증발기는 저압 냉매가 증발하면서 공기·물·브라인 등의 열을 흡수하는 열교환기이다.</p>
-          <div class="learn-formula">Q = KAΔtₘ = K(mπDᵢL)Δtₘ</div>
+          <div class="learn-formula">Q = KᵢAᵢΔtₘ = Kᵢ(mπDᵢL)Δtₘ</div>
           <table class="learn-table">
             <tr><th>기호</th><th>뜻</th></tr>
-            <tr><td>K</td><td>열관류율</td></tr>
-            <tr><td>A</td><td>전열면적</td></tr>
-            <tr><td>m</td><td>관의 개수 또는 표면적 배수</td></tr>
-            <tr><td>Dᵢ</td><td>관의 내경</td></tr>
-            <tr><td>L</td><td>관의 길이</td></tr>
+            <tr><td>Kᵢ</td><td>관 내면적 기준 열관류율[W/(m²·K)]</td></tr>
+            <tr><td>Aᵢ</td><td>관 전체 내면적[m²]. 외면적 기준 계수와 혼용하지 않음</td></tr>
+            <tr><td>m</td><td>동일한 내경·길이를 가진 관의 개수</td></tr>
+            <tr><td>Dᵢ</td><td>관의 내경[m]</td></tr>
+            <tr><td>L</td><td>관 1개당 유효 전열길이[m]</td></tr>
             <tr><td>Δtₘ</td><td>냉매와 피냉각물의 평균온도차</td></tr>
           </table>
-          <div class="exam-tip"><strong>핵심</strong><br>증발기에서는 냉매가 열을 흡수하며, 냉동부하는 냉매가 단위시간당 제거하는 열량이다.</div>
+          <p>위 단위에서 Q는 W입니다. 피냉각물과 냉매의 온도변화를 반영한 평균온도차를 사용하며, 유동배치에 따른 보정이 필요한 경우 반영합니다.</p><div class="exam-tip"><strong>핵심</strong><br>증발기에서는 냉매가 열을 흡수하며, 냉동부하는 냉매가 단위시간당 제거하는 열량이다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>열량 20 kW, K=500 W/(m²·K), 평균온도차 8 K이면 A=<span class="solution-frac"><span class="solution-num">20,000</span><span class="solution-den">500×8</span></span>=5 m²입니다. K 단위가 W이므로 분자의 kW를 W로 바꿨습니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>내면 기준 열관류율에는 내면적을, 외면 기준에는 외면적을 사용합니다. 핀 면적이나 유효면적이 주어지면 맨관 면적으로 임의 변경하지 않습니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-equipment-pressure-regulators.html">← 이전: 4. 증발압력·흡입압력·응축압력 조정밸브</a><a href="learning-equipment-condensers.html">다음: 6. 응축기 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>증발기 입구 냉매 엔탈피가 250 kJ/kg, 출구 엔탈피가 400 kJ/kg이고 냉매 질량유량이 0.12 kg/s라면:</p>
+<p>q<sub>e</sub> = 400-250 = <strong>150 kJ/kg</strong></p>
+<p>Q<sub>e</sub> = 0.12×150 = <strong>18 kW</strong></p>
+<p>즉 냉매 1 kg은 증발기에서 150 kJ의 열을 흡수하며, 해당 유량에서 냉동능력은 18 kW입니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 증발기 입구와 출구의 엔탈피 차 방향을 반대로 하지 마세요.</strong><br>냉매가 열을 흡수하므로 출구 엔탈피가 입구보다 커집니다.</p>
+<p><strong>② 증발기 출구에 액냉매가 남는 상황을 정상 과열증기 상태와 혼동하지 마세요.</strong><br>건식 직접팽창식에서 출구 과열도가 부족하거나 기액분리 기능이 불충분하면 압축기 액압축 위험과 연결될 수 있습니다. 만액식·액순환식의 증발기 출구 액·증기 혼합상태 자체를 모두 이상으로 판단하지 않습니다.</p>
+<p><strong>③ 증발온도를 무조건 낮출수록 좋은 것은 아닙니다.</strong><br>압축비 증가와 COP 저하를 함께 고려해야 합니다.</p>
+<p><strong>④ 냉동효과와 냉동능력을 구분하세요.</strong><br>냉동효과는 보통 kJ/kg, 냉동능력은 kW와 같은 열량률 단위를 사용합니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-equipment-pressure-regulators.html">← 이전: 4. 증발압력·흡입압력·응축압력 조정밸브</a><a href="learning-equipment-condensers.html">다음: 6. 응축기 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

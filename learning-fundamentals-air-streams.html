@@ -68,7 +68,14 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>공조에서 외기·환기·급기·배기란?</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>OA는 외기, RA는 실내에서 돌아오는 환기, SA는 실내에 공급하는 급기, EA는 실외로 내보내는 배기입니다. 여기서 환기(RA)는 실내로 돌아오는 공기 흐름의 명칭으로, 일상어의 환기 즉 외기와 실내공기 교환과 구분합니다. 계통도를 볼 때는 각 선이 어디에서 출발해 어디에 도착하는지 먼저 따라갑니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>공조에서 외기·환기·급기·배기란?</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p>공조계통의 공기 흐름은 보통 <strong>외기(OA)·환기 또는 환류공기(RA)·급기(SA)·배기(EA)</strong>로 구분합니다. 기호를 정확히 이해하면 공조기 계통도와 혼합공기 문제를 훨씬 쉽게 해석할 수 있습니다.</p>
+<p><strong>외기(OA, Outdoor Air)</strong>는 실외에서 공조기로 도입되는 공기입니다. 실내의 오염물질과 이산화탄소 농도를 낮추기 위해 필요한 환기용 공기이며, 여름이나 겨울에는 실내공기와 상태가 크게 달라 외기부하를 발생시킵니다.</p>
+<p><strong>환기·환류공기(RA, Return Air)</strong>는 실내에서 공조기로 되돌아오는 공기입니다. 이 중 일부는 다시 공조기로 보내 재사용하고, 일부는 실외로 배출할 수 있습니다. 여기서 RA의 ‘환기’는 일상적인 의미의 환기(ventilation)와 혼동하기 쉬우므로 <strong>되돌아오는 공기</strong>라고 이해하면 편합니다.</p>
+<p><strong>급기(SA, Supply Air)</strong>는 공조기에서 냉각·가열·가습·감습·여과 등의 처리를 마친 뒤 실내로 공급되는 공기입니다.</p>
+<p><strong>배기(EA, Exhaust Air)</strong>는 실내 또는 환류계통에서 실외로 버려지는 공기입니다. 정상상태에서 건물의 압력과 질량수지를 유지하려면 도입 외기량과 배기량의 관계도 함께 고려해야 합니다.</p>
+<p>재순환 공조계통에서는 보통 <strong>OA + 재순환 RA → 혼합공기 → 공조기 → SA → 실내 → RA</strong>의 흐름을 가집니다. 실기에서는 공기량 수지와 혼합공기 상태를 계산할 때 이 흐름을 먼저 정리하는 것이 중요합니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <p><strong>외기(OA)</strong>는 실외에서 공기조화기로 들어오는 공기, <strong>급기(SA)</strong>는 공기조화기에서 처리되어 실내로 공급되는 공기입니다. <strong>환기(RA)</strong>는 실내에서 공기조화기로 돌아오는 공기이며, 그중 일부를 실외로 내보내는 공기가 <strong>배기(EA)</strong>입니다.</p>
 
           <div class="air-terms-concept" id="airTermsConcept" data-cue="static" aria-label="실외의 외기가 공기조화기로 들어와 처리된 뒤 급기로 실내에 공급되고, 실내 공기는 환기로 돌아와 일부는 재순환되고 일부는 배기로 나가는 공조 공기 흐름">
@@ -95,7 +102,19 @@
           <div class="air-terms-ai-launch-wrap"></div>
           <div class="fundamental-keyline"><strong>한 줄 정리</strong> 외기는 실외에서 도입하는 공기, 급기는 실내로 공급하는 공기, 환기는 공조기로 돌아오는 흐름, 배기는 실외로 내보내는 흐름입니다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>외기 1,000 m³/h와 재순환 환기 3,000 m³/h가 같은 밀도로 혼합되면 급기량은 4,000 m³/h입니다. 실내와 덕트의 누설을 무시하고 중성압을 유지한다면 실외로 내보내는 총량은 도입외기량과 균형을 이룹니다. 단, 혼합에 쓰인 환기량과 실내에서 회수된 전체 환기량은 구분합니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>실내에서 돌아온 공기를 전부 배기라고 부르지 않습니다. 일부는 외부로 배출되고 일부는 재순환할 수 있습니다. 체적유량 합산은 밀도가 같다는 근사이며 정확한 보존량은 질량유량입니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-cycle-flow.html">← 이전: 15. 냉동사이클의 흐름</a><a href="learning.html">학습자료 전체 목차 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>공조기의 전체 급기량이 10,000 m³/h이고, 그중 외기 도입률이 20%라고 하겠습니다. 누설이 없고 급기량과 혼합공기량이 같다고 가정합니다.</p>
+<p><strong>외기량(OA)</strong><br>10,000 × 0.20 = <strong>2,000 m³/h</strong></p>
+<p><strong>재순환되는 환류공기량</strong><br>10,000 - 2,000 = <strong>8,000 m³/h</strong></p>
+<p>즉 공조기로 들어가는 혼합공기는 외기 2,000 m³/h와 재순환공기 8,000 m³/h로 구성됩니다.</p>
+<p>만약 정상상태에서 건물 내부에 공기가 축적되지 않고 별도의 가압·누설 조건이 없다면, 도입한 외기량에 대응하는 양의 공기가 배기 또는 누설로 외부에 나가야 질량수지가 유지됩니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① OA와 SA를 혼동하지 마세요.</strong><br>OA는 실외에서 들어오는 공기이고, SA는 공조기에서 처리되어 실내로 공급되는 공기입니다.</p>
+<p><strong>② RA를 ‘외부로 버리는 공기’라고 생각하지 마세요.</strong><br>RA는 실내에서 되돌아오는 공기이며, 그중 일부가 EA로 배출되고 일부는 재순환될 수 있습니다.</p>
+<p><strong>③ 외기비율의 기준을 확인하세요.</strong><br>‘급기량의 20%가 외기’인지 ‘환류공기량의 20%를 외기로 도입’하는지에 따라 계산이 달라집니다.</p>
+<p><strong>④ 체적유량을 섞을 때는 조건을 확인하세요.</strong><br>온도와 밀도가 크게 다른 공기를 정밀하게 계산할 때는 질량수지를 기준으로 계산하는 것이 원칙입니다.</p>
+<p><strong>⑤ 환기(ventilation)와 RA 표기의 환기·환류 개념을 구분하세요.</strong><br>문제의 기호와 공기 흐름을 보고 의미를 판단해야 합니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-cycle-flow.html">← 이전: 15. 냉동사이클의 흐름</a><a href="learning.html">학습자료 전체 목차 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

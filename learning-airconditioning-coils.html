@@ -68,13 +68,19 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>공기냉각코일과 가열코일</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>코일 열량은 공기 측 엔탈피차 또는 물 측 유량·온도차로 구할 수 있습니다. 열손실과 축열을 무시하면 양쪽 열량률이 일치해야 합니다. 대수평균온도차는 열교환기 양 끝의 온도차로 계산하며 평행류·대향류에 따라 온도 조합이 달라집니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>공기냉각코일과 가열코일</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>공기냉각코일</strong>은 공기로부터 열을 제거하고, <strong>가열코일</strong>은 공기에 열을 공급하는 열교환기입니다. 공조기에서 공기의 온도와 습도를 조절하는 핵심 구성요소입니다.</p>
+<p>냉각코일에서 코일 표면온도가 공기의 이슬점보다 높으면 주로 <strong>현열냉각</strong>이 일어납니다. 반대로 코일 표면온도가 이슬점보다 낮아지면 공기 중 수증기가 응축되므로 <strong>냉각과 감습</strong>이 동시에 일어납니다.</p>
+<p>냉각·감습 과정의 전체 열량은 건공기 질량유량과 엔탈피 차를 이용해 <strong>Q ≈ ṁ(h₁−h₂)</strong>로 구할 수 있습니다. 여기서는 배출 응축수의 엔탈피를 무시합니다.</p>
+<p>가열코일에서 수분의 출입이 없다면 절대습도는 거의 일정하고 건구온도만 상승합니다. 이 경우 현열량은 <strong>Q = ṁc<sub>p</sub>(t₂-t₁)</strong>로 계산할 수 있습니다.</p>
+<p>냉각코일 문제에서는 <strong>코일 표면온도 또는 ADP, 바이패스 팩터(BF), 입출구 공기상태</strong>가 함께 주어질 수 있습니다. 이때 출구공기는 실제 코일 표면온도까지 완전히 내려가지 않고 일부가 코일을 우회한 것처럼 나타날 수 있습니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <h3>코일의 전열량</h3>
           <div class="learn-formula">q = G(i₁ − i₂)</div>
           <div class="learn-formula">q = G<sub>w</sub>C<sub>w</sub>Δt</div>
-          <div class="learn-formula">q = KFΔt<sub>m</sub> × N × C<sub>m</sub></div>
+          <div class="learn-formula">q = K A Δt<sub>lm</sub> C<sub>m</sub></div>
 
-          <h3>대수평균온도차</h3>
+          <p>위 전열식은 현열교환용 기본식입니다. K: 면적 A 기준 열관류율[W/(m²·K)], A: 전체 전열면적[m²], C<sub>m</sub>: 유동배치에 따른 온도차 보정계수(무차원), q: W입니다. 1열당 면적 F₁과 열수 N이 주어지면 A=F₁N으로 계산하며, 전체 면적에 열수를 다시 곱하지 않습니다. 냉각·감습하는 습코일은 공기 엔탈피차와 해당 코일의 성능자료를 사용합니다.</p><h3>대수평균온도차</h3>
           <div class="learn-formula">LMTD = (Δ₁ − Δ₂) / ln(Δ₁/Δ₂)</div>
 
           <h3>코일 배관방식</h3>
@@ -85,17 +91,28 @@
             <tr><td>하프 서킷 코일</td><td>유량이 적어 코일 내 유속이 느릴 때</td></tr>
           </table>
 
-          <h3>설계 시 주의사항</h3>
+          <h3>설계 시 주의사항</h3><p>아래 유속·열수는 대표적인 학습용 예시이며 고정 기준이 아닙니다. 문제 조건과 제조사 선정자료를 우선합니다.</p>
           <div class="memory-grid">
             <div>코일 내 물의 유속은 약 1 m/s 전후</div>
             <div>코일 외 공기유속은 약 2~3 m/s</div>
-            <div>공기와 물은 대향류로 구성</div>
+            <div>공기·물의 유동배치와 온도차 보정계수 확인</div>
             <div>코일 열수는 보통 4~8열</div>
             <div>냉수코일의 동결·결로·응축수 비산 방지를 검토</div>
-            <div>냉온수 겸용은 냉수코일 기준 선정</div>
+            <div>냉온수 겸용은 냉방·난방 양쪽 성능 확인</div>
           </div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>냉수 2 kg/s가 7℃에서 12℃로 상승하고 c=4.19이면 흡수열은 41.9 kW입니다. 별도의 열교환기에서 끝 온도차가 20 K와 10 K이면 LMTD=<span class="solution-frac"><span class="solution-num">20−10</span><span class="solution-den">ln(20÷10)</span></span>≈14.43 K입니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>가열·냉각코일 전체에 하나의 유속이나 열수를 고정 적용하지 않습니다. K가 내면·외면 중 어느 면적 기준인지 확인하고, 두 끝 온도차가 같으면 LMTD는 그 온도차입니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-filters.html">← 이전: 16. 공기여과기</a><a href="learning-airconditioning-air-washer.html">다음: 18. 에어와셔 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>건공기 질량유량이 1.8 kg/s이고, 냉각코일 입구와 출구 엔탈피가 각각 68, 35 kJ/kg(DA)라면:</p>
+<p>Q<sub>cool</sub>=ṁ(h₁−h₂)=1.8×(68−35)=<strong>59.4 kW</strong></p>
+<p>표준대기압 101.325 kPa에서 출구 온도를 13℃로 두면 h₂=35 kJ/kg(DA)는 포화선 아래의 가능한 상태입니다. 이후 19℃까지 재가열하며, 수증기의 현열을 생략하고 건공기 비열 1.006 kJ/(kg·℃)로 근사하면:</p>
+<p>Q<sub>heat</sub>≈ṁc<sub>p,da</sub>(t₃−t₂)=1.8×1.006×(19−13)=<strong>약 10.86 kW</strong></p>
+<p>첫 번째 식은 엔탈피 차를 사용하므로 현열과 잠열의 변화를 함께 포함할 수 있고, 두 번째 식은 수분량이 일정한 단순 가열 과정에 적합합니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 냉각코일에서 항상 절대습도가 감소하는 것은 아닙니다.</strong><br>코일 표면온도가 이슬점보다 낮아야 응축·감습이 발생합니다.</p>
+<p><strong>② 단순 가열에서는 절대습도가 거의 일정합니다.</strong><br>상대습도는 변하지만 수분을 추가하지 않는 한 절대습도는 그대로입니다.</p>
+<p><strong>③ 냉각·감습에서 건구온도 차만 사용하면 잠열을 놓칠 수 있습니다.</strong><br>엔탈피가 주어졌다면 엔탈피 차를 이용하는 것이 안전합니다.</p>
+<p><strong>④ ADP와 실제 출구온도를 같다고 보지 마세요.</strong><br>BF가 0이 아닌 실제 코일에서는 출구공기가 ADP보다 높은 온도로 나올 수 있습니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-filters.html">← 이전: 16. 공기여과기</a><a href="learning-airconditioning-air-washer.html">다음: 18. 에어와셔 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

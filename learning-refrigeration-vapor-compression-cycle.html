@@ -68,7 +68,14 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-refrigeration.html">냉동공학</a></nav><article class="article-paper"><h1>증기압축 냉동사이클</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>압축·응축·팽창·증발을 해석할 때 열과 일의 출입을 각각 표시하면 식이 연결됩니다. 응축 과정은 과열증기 냉각, 두 상 응축, 필요 시 과냉을 포함할 수 있으므로 전 구간 온도가 항상 일정한 것은 아닙니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-refrigeration.html">냉동공학</a></nav><article class="article-paper"><h1>증기압축 냉동사이클</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>증기압축 냉동사이클</strong>은 압축기·응축기·팽창장치·증발기를 기본 구성으로 하는 가장 대표적인 냉동사이클입니다.</p>
+<p><strong>1→2 압축</strong>: 저압 냉매증기를 압축하여 고압·고온 상태로 만듭니다. 이상적인 표준사이클에서는 등엔트로피 압축을 가정합니다.</p>
+<p><strong>2→3 응축</strong>: 냉매가 고압에서 열을 방출하여 액체로 응축합니다.</p>
+<p><strong>3→4 팽창</strong>: 팽창밸브에서 압력이 낮아지며 일반적으로 <strong>등엔탈피 과정(h₃=h₄)</strong>으로 취급합니다.</p>
+<p><strong>4→1 증발</strong>: 저압 냉매가 냉각대상에서 열을 흡수하면서 증발합니다.</p>
+<p>냉동효과는 h₁-h₄, 압축일은 h₂-h₁, 응축기 방열량은 h₂-h₃이며 에너지수지상 <strong>q<sub>c</sub>=q<sub>e</sub>+w</strong>가 성립합니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <p>냉매는 압축기 → 응축기 → 팽창장치 → 증발기를 순환하면서 저온부의 열을 고온부로 이동시킨다.</p>
           <div class="cycle-step-grid">
             <div class="cycle-step"><strong>① 압축</strong>저압의 냉매증기를 고압·고온의 과열증기로 만든다.</div>
@@ -102,7 +109,19 @@
             <tr><td>4→1 증발</td><td>일정</td><td>거의 일정</td><td>증가</td><td>열 흡수</td></tr>
           </table>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>h₁=410, h₂=455, h₃=h₄=260 kJ/kg이면 qₑ=150, w=45, q꜀=195 kJ/kg입니다. 냉매유량 0.12 kg/s이면 냉동능력 18 kW, 압축동력 5.4 kW, 방열량 23.4 kW입니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>증발기 출구가 과열이면 증발기 전체에서도 온도가 일정하지 않을 수 있습니다. 등압·등온·등엔탈피는 서로 다른 조건입니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-refrigeration-ph-lines.html">← 이전: 8. P-h 선도의 6가지 선</a><a href="learning-refrigeration-standard-cycle.html">다음: 10. 표준 냉동사이클 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>h₁=395, h₂=445, h₃=h₄=245 kJ/kg인 사이클을 가정하겠습니다.</p>
+<p>냉동효과 q<sub>e</sub>=395-245=<strong>150 kJ/kg</strong></p>
+<p>압축일 w=445-395=<strong>50 kJ/kg</strong></p>
+<p>응축기 방열량 q<sub>c</sub>=445-245=<strong>200 kJ/kg</strong></p>
+<p>COP=150÷50=<strong>3.0</strong></p>
+<p>검산하면 150+50=200 kJ/kg으로 에너지수지가 일치합니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 팽창과정을 등압 또는 등온으로 보지 마세요.</strong><br>일반적인 팽창밸브는 등엔탈피로 취급합니다.</p>
+<p><strong>② 냉동효과와 압축일의 엔탈피 차를 바꾸지 마세요.</strong></p>
+<p><strong>③ 응축기 방열량은 냉동효과보다 압축일만큼 큽니다.</strong></p>
+<p><strong>④ 실제 사이클은 압력손실·비가역 압축 등으로 표준사이클과 차이가 있습니다.</strong></p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-refrigeration-ph-lines.html">← 이전: 8. P-h 선도의 6가지 선</a><a href="learning-refrigeration-standard-cycle.html">다음: 10. 표준 냉동사이클 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

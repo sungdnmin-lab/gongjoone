@@ -68,7 +68,11 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>냉동기의 기본 원리</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>냉동사이클은 증발기에서 열을 받는 과정과 응축기에서 열을 내보내는 과정을 연결합니다. 압축기는 저압 증기를 고압으로 올려 주고, 팽창밸브는 고압 액체를 저압으로 낮춥니다. 두 기기는 압력 차이를 유지하지만 에너지 교환 방식은 다릅니다. 압축기에는 일이 공급되고 팽창밸브의 교축은 보통 등엔탈피로 모델링합니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-fundamentals.html">공조냉동 기초</a></nav><article class="article-paper"><h1>냉동기의 기본 원리</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p>냉동은 단순히 ‘차가움을 만드는 것’이 아니라, 낮은 온도의 공간에서 열을 빼앗아 더 높은 온도의 외부로 이동시키는 과정입니다. 냉장고 내부가 차가워지는 것도 열이 사라지는 것이 아니라 냉매가 내부의 열을 흡수한 뒤 응축기를 통해 외부로 방출하기 때문입니다.</p>
+<p>이때 냉매는 <strong>증발기 → 압축기 → 응축기 → 팽창장치 → 증발기</strong>의 순서로 계속 순환하며 열을 운반합니다. 증발기에서는 저온·저압 냉매가 증발하면서 주변의 열을 흡수하고, 압축기에서는 냉매의 압력과 온도를 높입니다. 응축기에서는 고온·고압 냉매가 응축하면서 열을 외부로 방출하고, 팽창장치에서는 냉매의 압력을 낮춰 다시 낮은 온도에서 증발할 수 있는 조건을 만듭니다.</p>
+<p>압축기와 팽창장치가 필요한 이유는 냉매가 열을 흡수하는 쪽과 방출하는 쪽에 서로 다른 압력·온도 조건을 만들어야 하기 때문입니다. 냉각 대상보다 낮은 온도에서 증발해야 열을 흡수할 수 있고, 외기나 냉각수보다 높은 온도에서 응축해야 열을 외부로 방출할 수 있습니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <p>냉동기는 냉매의 압력과 상태를 변화시키면서 냉각 대상의 열을 실외로 이동시킵니다. 냉매가 증발할 때 열을 흡수하고, 응축할 때 열을 방출하는 성질을 이용합니다.</p>
 
           <div class="principle-concept" id="principleConcept" data-cue="intro" aria-label="냉매가 증발기, 압축기, 응축기, 팽창밸브를 순환하며 열을 실내에서 실외로 이동시키는 과정">
@@ -98,7 +102,15 @@
           <div class="principle-ai-launch-wrap"></div>
           <div class="fundamental-keyline"><strong>한 줄 정리</strong> 냉동기는 냉매가 증발·압축·응축·팽창을 반복하며 열을 냉각 대상에서 실외로 이동시키는 장치입니다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>상태 1은 압축기 입구, 2는 출구, 3은 응축기 출구, 4는 팽창밸브 출구로 정합니다. h₁=400, h₂=440, h₃=h₄=250 kJ/kg이면 냉동효과는 150 kJ/kg, 압축일은 40 kJ/kg, 응축열은 190 kJ/kg입니다. 150+40=190으로 열수지를 확인할 수 있습니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>상태번호는 교재마다 다릅니다. 숫자를 외워 빼기보다 증발기 출구−입구, 압축기 출구−입구처럼 기기별 에너지 변화를 먼저 확인하세요.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-refrigeration-ton.html">← 이전: 4. 냉동톤(RT)이란?</a><a href="learning-fundamentals-components.html">다음: 6. 압축기·응축기·팽창밸브·증발기의 역할 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p><strong>생활 속 예:</strong> 냉장고 안의 식품에서 나온 열은 증발기의 냉매가 흡수하고, 이 열은 냉매를 따라 이동하여 냉장고 뒤쪽의 응축기에서 실내로 방출됩니다. 따라서 냉장고 문을 계속 열어 둔다고 방 전체가 시원해지지는 않습니다. 냉장고 내부에서 흡수한 열뿐 아니라 압축기에 공급된 전기에너지까지 결국 실내로 방출되기 때문입니다.</p>
+<p><strong>실기 계산과의 연결:</strong> 상태 1은 압축기 입구, 2는 출구, 3은 응축기 출구, 4는 팽창밸브 출구로 정합니다. h₁=400, h₂=440, h₃=h₄=250 kJ/kg이면 냉동효과는 150 kJ/kg, 압축일은 40 kJ/kg, 응축열은 190 kJ/kg입니다.</p>
+<p><strong>응축기 방열량 = 냉동효과 + 압축일량</strong>이므로 150 + 40 = 190 kJ/kg으로 열수지를 확인할 수 있습니다. 이 관계는 이후 냉동효과, 압축일량, 성적계수(COP), P-h 선도 문제를 이해하는 기본이 됩니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 냉동기는 냉기를 만들어낸다?</strong><br>냉동기는 냉기를 새로 만드는 장치라기보다 냉각 대상의 열을 흡수하여 외부로 이동시키는 장치로 이해하는 것이 정확합니다.</p>
+<p><strong>② 응축기는 증발기에서 흡수한 열만 방출한다?</strong><br>응축기에서는 증발기에서 흡수한 열에 압축기에서 공급된 일이 더해진 만큼의 열을 방출합니다.</p>
+<p><strong>③ 상태번호만 외우면 된다?</strong><br>상태번호는 교재나 문제에 따라 달라질 수 있습니다. 숫자 자체보다 증발기 출구−입구, 압축기 출구−입구처럼 각 기기에서 냉매의 상태와 엔탈피가 어떻게 변하는지 확인하는 것이 중요합니다.</p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-fundamentals-refrigeration-ton.html">← 이전: 4. 냉동톤(RT)이란?</a><a href="learning-fundamentals-components.html">다음: 6. 압축기·응축기·팽창밸브·증발기의 역할 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

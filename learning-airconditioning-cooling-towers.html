@@ -68,16 +68,23 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>냉각탑</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>냉각탑은 응축기에서 따뜻해진 물의 열을 외기로 내보냅니다. 증발식 냉각탑의 접근 가능한 냉각 한계는 입구공기의 습구온도와 관련됩니다. 쿨링레인지는 물이 실제로 식은 온도차이고 쿨링어프로치는 출구수가 습구온도보다 얼마나 높은지 나타냅니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-airconditioning.html">공기조화</a></nav><article class="article-paper"><h1>냉각탑</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2>
+<p><strong>냉각탑</strong>은 응축기 등에서 가열된 냉각수를 공기와 접촉시켜 다시 냉각하는 장치입니다. 물의 일부가 증발하면서 주변 물에서 증발잠열을 가져가기 때문에, 단순한 공랭식 열교환보다 낮은 수온까지 냉각할 수 있습니다.</p>
+<p>냉각탑에서 자주 사용하는 온도차는 <strong>쿨링레인지</strong>와 <strong>어프로치</strong>입니다. 쿨링레인지는 냉각탑 입구수온과 출구수온의 차이이고, 어프로치는 냉각탑 출구수온과 입구공기 습구온도의 차이입니다.</p>
+<p><strong>쿨링레인지 = 입구수온 - 출구수온</strong></p>
+<p><strong>어프로치 = 출구수온 - 입구공기 습구온도</strong></p>
+<p>냉각탑 효율은 문제에서 지정한 정의를 따라야 하며, 대표적으로 <strong>효율 = 쿨링레인지 ÷ (입구수온 - 입구공기 습구온도)</strong> 형태로 계산합니다.</p>
+<p>습구온도는 증발냉각의 한계를 나타내므로 냉각탑 출구수온은 이상적으로 습구온도에 가까워질 수 있지만 실제 운전에서는 어프로치가 남습니다.</p>
+</section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <p>냉동기의 응축기를 냉각한 냉각수를 공기와 접촉시켜 다시 냉각하고 재사용하는 장치이다.</p>
 
-          <h3>표준조건</h3>
+          <h3>이 자료에서 사용하는 CRT 기준조건</h3><p>아래 값은 1 CRT의 용량을 설명하기 위한 관용 기준입니다. 모든 냉각탑의 고정 운전조건은 아니며, 문제에서 지정한 조건과 환산값을 우선합니다.</p>
           <table class="learn-table">
             <tr><th>항목</th><th>표준값</th></tr>
             <tr><td>입구수온</td><td>37℃</td></tr>
             <tr><td>출구수온</td><td>32℃</td></tr>
             <tr><td>입구공기 습구온도</td><td>27℃</td></tr>
-            <tr><td>순환수량</td><td>13 L/min</td></tr>
+            <tr><td>1 CRT당 순환수량</td><td>13 L/min</td></tr>
           </table>
 
           <div class="learn-formula">1 CRT = 4.54 kW = 3900 kcal/h</div>
@@ -99,7 +106,18 @@
             <div>옥상 설치 시 구조하중 반영</div>
           </div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>입구수 37℃, 출구수 32℃, 외기 습구 27℃이면 쿨링레인지 5 K, 쿨링어프로치 5 K입니다. 이 조건에서 냉각효율을 <span class="solution-frac"><span class="solution-num">입구수−출구수</span><span class="solution-den">입구수−습구</span></span>로 정의하면 50%입니다. 물 10 kg/s, 비열 4.19이면 방열량은 209.5 kW입니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>냉각탑은 냉동능력만이 아니라 압축기 입력을 포함한 응축열을 처리합니다. 어프로치 비교는 부하·유량·외기 등 조건을 맞춰야 하며 1 CRT의 환산과 표준조건은 문제의 정의를 우선합니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-boilers.html">← 이전: 21. 보일러</a><a href="learning-airconditioning-review.html">다음: 23. 공기조화 시험 직전 암기 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
+<p>냉각탑 입구수온이 37℃, 출구수온이 31℃, 입구공기 습구온도가 27℃라고 하겠습니다.</p>
+<p><strong>쿨링레인지</strong> = 37-31 = <strong>6℃</strong></p>
+<p><strong>어프로치</strong> = 31-27 = <strong>4℃</strong></p>
+<p><strong>냉각탑 효율</strong> = 6 ÷ (37-27) ×100 = <strong>60%</strong></p>
+<p>또 냉각수 유량이 15 kg/s이고 물의 비열이 4.19 kJ/(kg·℃)라면 제거열량은 15×4.19×6 = <strong>377.1 kW</strong>입니다.</p>
+</div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
+<p><strong>① 쿨링레인지와 어프로치를 바꾸지 마세요.</strong><br>쿨링레인지는 물의 입출구 온도차, 어프로치는 출구수온과 습구온도의 차이입니다.</p>
+<p><strong>② 건구온도 대신 습구온도를 사용하는 이유를 기억하세요.</strong><br>냉각탑은 증발냉각을 이용하므로 성능 한계가 습구온도와 밀접합니다.</p>
+<p><strong>③ 출구수온이 습구온도보다 낮아진다고 단정하지 마세요.</strong><br>일반적인 냉각탑에서는 실제 출구수온이 습구온도보다 높게 형성됩니다.</p>
+<p><strong>④ 효율식은 문제에서 제시한 정의를 우선하세요.</strong></p>
+</section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-airconditioning-boilers.html">← 이전: 21. 보일러</a><a href="learning-airconditioning-review.html">다음: 23. 공기조화 시험 직전 암기 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>
