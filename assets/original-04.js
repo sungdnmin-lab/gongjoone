@@ -4074,7 +4074,7 @@ const mock7Questions=[
  {
   id:1,sourceId:'mock7-office-cooling-load-01',type:'calc',points:14,title:'사무실의 냉방부하와 취출풍량',
   promptHtml:`<div class="variant-sheet">
-    <span class="variant-kicker">제7회 모의고사 · 자체 제작 변형문제</span>
+    
     <h2>중간층 사무실(B)의 냉방부하를 계산하고, 실내 현열부하를 제거하는 데 필요한 취출풍량을 구하시오.</h2>
     <div class="conditions"><h3>조건</h3><ol>
       <li>외기온도 34℃, 실내온도 26℃이며 취출공기 온도는 16℃이다.</li>
@@ -4139,7 +4139,7 @@ const mock7Questions=[
  {
   id:2,sourceId:'mock7-dual-duct-air-process-01',type:'annot_drawing',points:7,drawPoints:7,title:'2중 덕트 공조장치의 공기상태 변화',
   promptHtml:`<div class="variant-sheet">
-    <span class="variant-kicker">제7회 모의고사 · 자체 제작 변형문제</span>
+    
     <h2>다음 2중 덕트 공조장치의 운전과정을 보고, 각 공기 상태점과 변화과정을 공기선도에 나타내시오.</h2>
     <div class="conditions"><h3>상태점</h3><ol>
       <li>① 외기</li>
@@ -4169,7 +4169,7 @@ const mock7Questions=[
  {
   id:3,sourceId:'mock7-return-outdoor-air-mixing-01',type:'calc',points:8,title:'환기와 외기의 혼합공기 상태',
   promptHtml:`<div class="variant-sheet">
-    <span class="variant-kicker">제7회 모의고사 · 자체 제작 변형문제</span>
+    
     <h2>공기조화장치에서 환기와 외기가 단열 혼합된다. 다음 조건을 이용하여 혼합공기의 상태를 구하시오.</h2>
     <table class="mock2-table">
       <caption>공기 상태 및 질량유량</caption>
@@ -4212,7 +4212,7 @@ const mock7Questions=[
  {
   id:4,sourceId:'mock7-reciprocating-compressor-speed-01',type:'calc',points:8,title:'왕복동 압축기의 피스톤 압출량과 회전수',
   promptHtml:`<div class="variant-sheet">
-    <span class="variant-kicker">제7회 모의고사 · 자체 제작 변형문제</span>
+    
     <h2>건조포화 증기를 흡입하는 왕복동 압축기가 다음 조건으로 운전될 때, 피스톤 압출량과 압축기 회전수를 구하시오.</h2>
     <div class="conditions"><h3>조건</h3><ol>
       <li>냉동능력: 14 RT</li>
@@ -4251,7 +4251,7 @@ const mock7Questions=[
  {
   id:5,sourceId:'mock7-cooling-water-piping-pump-01',type:'calc',points:12,title:'냉각수 배관의 관경·압력손실·펌프양정·수동력',
   promptHtml:`<div class="variant-sheet">
-    <span class="variant-kicker">제7회 모의고사 · 자체 제작 변형문제</span>
+    
     <h2>다음 냉동기의 냉각수 배관 시스템에 대하여 관경표와 국부저항 상당직관표를 이용하여 각 물음에 답하시오.</h2>
     <div class="conditions"><h3>조건</h3><ol>
       <li>냉동기 냉동능력: 140 RT</li>
@@ -4295,7 +4295,7 @@ const mock7Questions=[
  {
   id:6,sourceId:'mock7-motor-forward-reverse-control-01',type:'choice',points:8,title:'삼상 유도전동기 정·역전 운전회로',
   promptHtml:`<div class="variant-sheet">
-    <span class="variant-kicker">제7회 모의고사 · 자체 제작 변형문제</span>
+    
     <h2>다음 회로는 삼상 유도전동기의 정·역전 운전회로이다. 회로의 동작에 관한 설명 중 옳은 것을 모두 고르시오.</h2>
     <div style="margin:16px 0;text-align:center"><img src="assets/media-809e3f94847b6d5caaf2.png" alt="삼상 유도전동기 정역전 운전회로" style="max-width:100%;height:auto"></div>
     <ol class="asks" style="list-style:none;padding-left:0">
@@ -4323,7 +4323,7 @@ const mock7Questions=[
  {
   id:7,sourceId:'mock7-parallel-evaporator-compressor-power-01',type:'calc',points:10,title:'병렬 증발기 냉동장치의 압축기 축동력',
   promptHtml:`<div class="variant-sheet">
-    <span class="variant-kicker">제7회 모의고사 · 자체 제작 변형문제</span>
+    
     <h2>서로 다른 부하로 운전되는 3대의 증발기가 하나의 압축기에 병렬로 연결되어 있다. 다음 조건에서 압축기의 축동력을 구하시오.</h2>
     <div class="conditions"><h3>조건</h3>
       <table class="mock2-table"><tr><th>증발기</th><th>Ⅰ</th><th>Ⅱ</th><th>Ⅲ</th></tr><tr><td>냉동능력 (RT)</td><td>2</td><td>3</td><td>4</td></tr></table>
@@ -4360,7 +4360,7 @@ const mock7Questions=[
  {
   id:8,sourceId:'mock7-dual-duct-load-calculation-01',type:'calc',points:14,title:'이중덕트 방식의 혼합공기와 코일부하',
   promptHtml:`<div class="variant-sheet">
-    <span class="variant-kicker">제7회 모의고사 · 자체 제작 변형문제</span>
+    
     <h2>다음 이중덕트 공조방식의 계통도와 조건을 이용하여 각 물음에 답하시오.</h2>
     <div style="margin:16px 0;text-align:center"><img src="assets/media-d5af8651a14c8f0df5e6.png" alt="외기와 환기의 혼합부, 냉각코일, 가열코일, 냉풍 및 온풍 덕트와 혼합상자로 구성된 이중덕트 공조 계통도" style="display:block;width:100%;height:auto;max-height:560px;object-fit:contain"></div>
     <div class="conditions"><h3>조건</h3><ol>
@@ -4411,7 +4411,7 @@ const mock7Questions=[
 },
  {
   id:9,sourceId:'mock7-hot-gas-defrost-piping-01',type:'annot_drawing_desc',points:7,drawPoints:3,title:'핫가스 제상 배관과 밸브 조작',
-  promptHtml:`<div class="variant-sheet"><span class="variant-kicker">제7회 모의고사 · 제9번</span><h2>두 개의 증발기를 병렬로 운전하는 냉동장치에서 냉각코일 A를 핫가스로 제상하려고 한다. 다음 물음에 답하시오.</h2><ol class="asks"><li>미완성 배관도에 흡입관·핫가스관·액관을 그려 완성하시오.</li><li>냉각코일 A를 제상할 때 밸브 조작 방법을 설명하시오.</li></ol></div>`,
+  promptHtml:`<div class="variant-sheet"><h2>두 개의 증발기를 병렬로 운전하는 냉동장치에서 냉각코일 A를 핫가스로 제상하려고 한다. 다음 물음에 답하시오.</h2><ol class="asks"><li>미완성 배관도에 흡입관·핫가스관·액관을 그려 완성하시오.</li><li>냉각코일 A를 제상할 때 밸브 조작 방법을 설명하시오.</li></ol></div>`,
   images:['mock2q10'],
   desc:[
     {label:'(2)-1 제상 시작 시 밸브 조작',p:2,need:3,groups:[['a를닫','a밸브를닫','밸브a를닫','a폐쇄','a close'],['c를닫','c밸브를닫','밸브c를닫','c폐쇄','c close'],['d를열','d밸브를열','밸브d를열','d개방','d open']],ref:'밸브 A·C를 닫고 D를 연다.'},
@@ -4427,7 +4427,7 @@ const mock7Questions=[
  {
   id:10,sourceId:'mock7-two-stage-compression-expansion-comparison-01',type:'calc',points:12,title:'2단 압축 냉동사이클의 팽창방식별 성적계수 비교',
   promptHtml:`<div class="variant-sheet">
-    <span class="variant-kicker">제7회 모의고사 · 자체 제작 변형문제</span>
+    
     <h2>암모니아를 냉매로 사용하는 2단 압축 냉동장치가 동일한 증발온도와 응축온도에서 운전된다. 아래 두 냉동사이클은 각각 1단 팽창방식과 2단 팽창방식이다. 주어진 조건을 이용하여 각 방식의 압축기 축동력과 성적계수를 구하고 성능을 비교하시오.</h2>
     <div class="conditions"><h3>조건</h3><ol>
       <li>저단 압축기 흡입증기 비엔탈피: h₁ = 1500 kJ/kg</li>
@@ -4542,7 +4542,7 @@ const mock7Questions=[
  {
   id:12,sourceId:'mock7-water-cooling-load-01',type:'calc',points:6,title:'물 냉각에 필요한 냉각능력',
   promptHtml:`<div class="variant-sheet">
-    <span class="variant-kicker">제7회 모의고사 · 자체 제작 변형문제</span>
+    
     <h2>질량 1.9 ton의 물을 2.5시간 동안 32℃에서 21℃까지 냉각하려고 한다. 이때 필요한 평균 냉각능력[kW]을 구하시오.</h2>
     <div class="conditions"><h3>조건</h3><ol>
       <li>물의 비열: 4.2 kJ/(kg·K)</li>
@@ -4564,7 +4564,7 @@ const mock7Questions=[
  {
   id:13,sourceId:'mock7-hvac-terms-matching-01',type:'matching',points:7,title:'공조설비 용어와 연관 내용의 연결',
   promptHtml:`<div class="variant-sheet">
-    <span class="variant-kicker">제7회 모의고사 · 자체 제작 변형문제</span>
+    
     <h2>다음 공조설비 관련 용어와 가장 밀접한 내용을 보기에서 골라 각각 연결하시오.</h2>
     <div class="conditions"><h3>용어</h3><ol>
       <li>연돌효과</li>

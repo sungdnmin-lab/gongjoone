@@ -769,7 +769,7 @@ function render(){
      <img src="${IMGS[k]}" alt="${q.id}번 문제" onclick="openImgModal(this.src)">
      <svg class="problem-note-svg" data-img-index="${i}"></svg>
    </div>`).join(''));
- if(/^실전 모의고사\s*[1-6]$/.test(String(currentSessionTitle||''))){
+ if(/^실전 모의고사\s*[1-7]$/.test(String(currentSessionTitle||'')) || isQuickSessionTitle(currentSessionTitle)){
    problemEl.querySelectorAll('.variant-kicker').forEach(el=>el.remove());
  }
  problemEl.innerHTML=formatRootsInSolutionHtml(problemEl.innerHTML);
