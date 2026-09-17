@@ -68,17 +68,27 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-terms.html">용어 및 단위</a></nav><article class="article-paper"><h1>질량과 중량</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>질량은 물체의 물질량을 나타내고 중량은 중력에 의한 힘입니다. 물의 밀도 약 1,000 kg/m³와 비중량 약 9,810 N/m³는 서로 다른 값입니다. 비중량은 밀도에 중력가속도를 곱한 것입니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-terms.html">용어 및 단위</a></nav><article class="article-paper"><h1>질량과 중량</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>질량은 물체의 물질량을 나타내고 중량은 중력에 의한 힘입니다. 물의 밀도 약 1,000 kg/m³와 비중량 약 9,810 N/m³는 서로 다른 값입니다. 비중량은 밀도에 중력가속도를 곱한 것입니다.</p></section>
+<section class="content-card adsense-enhance">
+<h2>질량과 중량을 구분해야 하는 이유</h2>
+<p><strong>질량</strong>은 물체가 가진 물질의 양이며 단위는 kg입니다. <strong>중량</strong>은 중력에 의해 물체에 작용하는 힘이므로 단위는 N입니다. 두 값은 <strong>W=mg</strong> 관계로 연결됩니다.</p>
+<p>지구 표면 부근에서 중력가속도를 9.81 m/s²로 사용하면 질량 10 kg인 물체의 중량은 10×9.81=<strong>98.1 N</strong>입니다. 질량이 10 kg이라고 해서 중량도 10 N인 것은 아닙니다.</p>
+<p>공조냉동 계산에서는 kg, kg/s와 같은 질량 및 질량유량이 자주 사용됩니다. 반면 펌프양정이나 압력, 힘을 다루는 계산에서는 중력가속도가 포함되므로 질량과 힘의 차이를 이해해야 단위 오류를 줄일 수 있습니다.</p>
+<h3>밀도와 체적의 연결</h3>
+<p>밀도가 1,000 kg/m³인 물 0.025 m³의 질량은 ρV=1,000×0.025=<strong>25 kg</strong>이고, 중량은 25×9.81=<strong>245.25 N</strong>입니다.</p>
+<p><strong>실기 포인트:</strong> 문제에서 kg을 요구하는지 N을 요구하는지 확인합니다. 압력이나 펌프동력 계산에서는 밀도 ρ와 비중량 γ 중 무엇을 사용하는지 확인하고, γ=ρg 관계에 따라 중력가속도를 중복 적용하지 않습니다.</p>
+</section>
+<section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <table class="learn-table">
             <tr><th>구분</th><th>정의</th><th>대표 단위</th></tr>
-            <tr><td>질량</td><td>장소나 상태에 따라 달라지지 않는 물질의 고유한 양</td><td>kg, kgₘ</td></tr>
+            <tr><td>질량</td><td>장소나 상태에 따라 달라지지 않는 물질의 고유한 양</td><td>kg</td></tr>
             <tr><td>중량</td><td>중력이 물체를 끌어당기는 힘의 크기</td><td>N, kgf</td></tr>
           </table>
           <div class="learn-formula">F = ma    또는    W = mg</div>
-          <div class="learn-formula">1 kgf = 1 kg × 9.80665 m/s² = 9.80665 N ≈ 9.8 N</div>
-          <div class="exam-tip"><strong>핵심 암기</strong><br>질량은 kg, 중량은 힘이므로 N이다. 1 kgf는 약 9.8 N이다.</div>
+          <div class="learn-formula">1 kgf = 1 kg × 9.80665 m/s² = 9.80665 N ≈ 9.81 N</div>
+          <div class="exam-tip"><strong>핵심 암기</strong><br>질량은 kg, 중량은 힘이므로 N이다. 1 kgf는 약 9.81 N이다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>질량 20 kg, g=9.81 m/s²이면 중량은 196.2 N입니다. 같은 g에서 물 0.02 m³의 질량은 1,000×0.02=20 kg입니다. kgf는 힘의 단위로 1 kgf=9.80665 N으로 정의됩니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>펌프식에 비중량 γ를 쓰면서 g를 다시 곱하면 중력을 중복 반영합니다. 밀도 ρ를 쓰는 식인지 비중량 γ를 쓰는 식인지 확인하세요.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-terms-prefixes.html">← 이전: 2. 단위 접두어</a><a href="learning-terms-temperature.html">다음: 4. 온도의 개념과 단위 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>질량 20 kg, g=9.81 m/s²이면 중량은 196.2 N입니다. 물의 밀도를 1,000 kg/m³로 가정하면 물 0.02 m³의 질량은 1,000×0.02=20 kg입니다. kgf는 힘의 단위로 1 kgf=9.80665 N으로 정의됩니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>펌프식에 비중량 γ를 쓰면서 g를 다시 곱하면 중력을 중복 반영합니다. 밀도 ρ를 쓰는 식인지 비중량 γ를 쓰는 식인지 확인하세요.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-terms-prefixes.html">← 이전: 2. 단위 접두어</a><a href="learning-terms-temperature.html">다음: 4. 온도의 개념과 단위 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

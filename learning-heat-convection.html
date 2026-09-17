@@ -68,14 +68,24 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-heat.html">열전달</a></nav><article class="article-paper"><h1>대류</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>대류 열전달률은 유체 종류와 유속, 유동 상태, 표면 형상에 따라 달라집니다. 자연대류는 밀도 차이에 의해, 강제대류는 팬이나 펌프 등에 의해 유동이 생깁니다. 열전달률은 재료 자체의 열전도율과 달리 유동 조건의 영향을 크게 받습니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-heat.html">열전달</a></nav><article class="article-paper"><h1>대류</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>대류 열전달률은 유체 종류와 유속, 유동 상태, 표면 형상에 따라 달라집니다. 자연대류는 밀도 차이에 의해, 강제대류는 팬이나 펌프 등에 의해 유동이 생깁니다. 열전달률은 재료 자체의 열전도율과 달리 유동 조건의 영향을 크게 받습니다.</p></section>
+<section class="content-card adsense-enhance">
+<h2>대류 열전달을 계산에 연결하기</h2>
+<p><strong>대류</strong>는 고체 표면과 접촉한 공기나 물 같은 유체 사이에서 일어나는 열전달입니다. 유체의 이동이 자연적인 밀도차에 의해 생기면 자연대류, 팬이나 펌프로 강제로 흐르게 하면 강제대류라고 합니다.</p>
+<p>기본식은 <strong>Q=hAΔT</strong>이며 h(또는 α)는 대류 열전달계수, A는 열전달면적, ΔT는 표면과 유체 사이의 온도차입니다. Q는 열전달률(W)이며 Q̇로 표기하기도 합니다. 아래 공식의 α는 h와 같은 계수를 뜻합니다. h의 크기는 유체 종류, 속도, 표면 형상, 유동상태 등에 영향을 받습니다.</p>
+<p>공조기의 코일에서는 팬에 의해 공기가 흐르므로 공기측 강제대류가 발생하고, 냉수 또는 냉매측에서도 유체의 흐름에 따른 대류 열전달이 일어납니다.</p>
+<h3>간단한 계산 예</h3>
+<p>대류 열전달계수가 12 W/(m²·K), 면적이 8 m², 표면과 공기의 온도차가 7 K라면 Q=12×8×7=<strong>672 W</strong>입니다.</p>
+<p><strong>주의:</strong> h는 재료 자체의 열전도율 k와 다릅니다. 벽 내부 전도에는 k를 사용하고 표면과 유체 사이 대류에는 h를 사용합니다.</p>
+</section>
+<section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <h3>개념</h3>
           <p>액체나 기체가 이동하면서 물체의 표면과 열을 주고받는 현상이다. 코일 표면과 공기, 벽 표면과 실내외 공기 사이의 열전달에 적용한다.</p>
           <h3>뉴턴의 냉각법칙</h3>
           <div class="learn-formula">Q = αA(T<sub>s</sub>−T<sub>f</sub>)</div>
           <table class="learn-table">
             <tr><th>기호</th><th>의미</th><th>단위</th></tr>
-            <tr><td>α</td><td>표면 열전달률</td><td>W/(m²·K)</td></tr>
+            <tr><td>α(또는 h)</td><td>대류 열전달계수(표면 열전달률)</td><td>W/(m²·K)</td></tr>
             <tr><td>T<sub>s</sub></td><td>물체 표면온도</td><td>℃ 또는 K</td></tr>
             <tr><td>T<sub>f</sub></td><td>유체온도</td><td>℃ 또는 K</td></tr>
           </table>

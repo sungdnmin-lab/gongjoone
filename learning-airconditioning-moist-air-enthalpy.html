@@ -77,20 +77,20 @@
 <p>따라서 같은 건구온도라도 절대습도가 높으면 엔탈피가 커집니다. 냉각·감습 과정에서 코일 전후의 엔탈피 차를 이용하면 공기에서 제거된 전체 열량을 계산할 수 있습니다.</p>
 <p>습공기선도에서는 건구온도와 상대습도, 절대습도 등의 상태값을 이용해 엔탈피를 읽을 수 있으므로 계산식과 선도 해석을 함께 익혀두는 것이 좋습니다.</p>
 </section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
-          <p>이 페이지는 0℃의 건공기와 액체 물을 엔탈피 기준으로 두고 1.006, 2501, 1.86을 사용하는 근사식으로 통일합니다. 문제에서 다른 상수를 지정하면 그 값을 사용합니다.</p><h3>건공기 엔탈피</h3>
-          <div class="learn-formula">h<sub>a</sub> = C<sub>pa</sub>t ≒ 1.006t   [kJ/kg]</div>
+          <h3>건공기 엔탈피</h3>
+          <div class="learn-formula">h<sub>a</sub> = C<sub>pa</sub>t ≒ 1.01t   [kJ/kg]</div>
           <p class="learn-caption">C<sub>pa</sub>: 건공기 정압비열, t: 건구온도(℃)</p>
 
           <h3>수증기 엔탈피</h3>
           <p>0℃의 물이 수증기로 변하는 데 필요한 잠열과 수증기의 현열을 합한 값이다.</p>
-          <div class="learn-formula">h<sub>wa</sub> = 2501 + 1.86t   [kJ/kg]</div>
+          <div class="learn-formula">h<sub>wa</sub> = 2501 + 1.85t   [kJ/kg]</div>
 
           <h3>습공기 엔탈피</h3>
           <div class="learn-formula">h = h<sub>a</sub> + xh<sub>wa</sub></div>
-          <div class="learn-formula">h = 1.006t + x(2501 + 1.86t)   [kJ/kg(DA)]</div>
-          <p class="learn-caption">x: 절대습도(kg/kg(DA)), t: 건구온도(℃)</p>
+          <div class="learn-formula">h = 1.01t + x(2501 + 1.85t)   [kJ/kg′]</div>
+          <p class="learn-caption">x: 절대습도(kg/kg′), t: 건구온도(℃)</p>
 
-          <div class="learn-tip"><strong>시험 암기</strong><br>건공기 엔탈피: 1.006t<br>수증기 엔탈피: 2501 + 1.86t<br>습공기 엔탈피: 1.006t + x(2501 + 1.86t)</div>
+          <div class="learn-tip"><strong>시험 암기</strong><br>건공기 엔탈피: 1.01t<br>수증기 엔탈피: 2501 + 1.85t<br>습공기 엔탈피: 1.01t + x(2501 + 1.85t)</div>
         </div>
       </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
 <p>건구온도 25℃, 절대습도 0.010 kg/kg(DA)인 습공기의 엔탈피를 구해보겠습니다.</p>

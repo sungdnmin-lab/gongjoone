@@ -2,7 +2,7 @@
 <html lang="ko"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>복사 | 열전달 | GongjoOne</title>
-<meta name="description" content="복사는 매질 없이도 전달됩니다. εσAT⁴는 물체가 내보내는 복사 에너지율이며 주위로부터 받는 복사를 뺀 순열전달량과 다릅니다. 큰 등온 주위면에 둘러싸인 회색체를 단순화하면 순복사는 εσA(Tₛ⁴−T주위⁴)로 계산할 수 있습니다.">
+<meta name="description" content="복사는 매질 없이도 전달됩니다. εσAT⁴는 물체가 내보내는 복사 에너지율이며 주위로부터 받는 복사를 뺀 순열전달률과 다릅니다. 큰 등온 주위면에 둘러싸인 회색체를 단순화하면 순복사는 εσA(Tₛ⁴−T주위⁴)로 계산할 수 있습니다.">
   <link rel="canonical" href="https://gongjoone.co.kr/learning-heat-radiation.html">
 <meta name="keywords" content="공조냉동기계기사, 공조냉동기사, 실기, 모의고사, 계산문제, 습공기선도, 냉동공학, 공기조화">
 <meta name="robots" content="index,follow">
@@ -68,20 +68,30 @@
     </nav>
   </div>
 </header>
-<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-heat.html">열전달</a></nav><article class="article-paper"><h1>복사</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>복사는 매질 없이도 전달됩니다. εσAT⁴는 물체가 내보내는 복사 에너지율이며 주위로부터 받는 복사를 뺀 순열전달량과 다릅니다. 큰 등온 주위면에 둘러싸인 회색체를 단순화하면 순복사는 εσA(Tₛ⁴−T주위⁴)로 계산할 수 있습니다.</p></section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
+<main class="learning-page"><div class="learning-inner"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a> / <a href="learning.html">학습자료</a> / <a href="learning-heat.html">열전달</a></nav><article class="article-paper"><h1>복사</h1><nav class="article-toc" aria-label="본문 목차"><a href="#concept">개념과 원리</a><a href="#reference">그림·공식 정리</a><a href="#example">풀이에 적용하기</a><a href="#pitfall">헷갈리는 부분</a></nav><div class="learn-body"><section id="concept"><h2>개념과 원리</h2><p>복사는 매질 없이도 전달됩니다. εσAT⁴는 물체가 내보내는 복사 에너지율이며 주위로부터 받는 복사를 뺀 순열전달률과 다릅니다. 큰 등온 주위면에 둘러싸인 회색체를 단순화하면 순복사는 εσA(Tₛ⁴−T주위⁴)로 계산할 수 있습니다.</p></section>
+<section class="content-card adsense-enhance">
+<h2>복사 열전달의 특징</h2>
+<p><strong>복사</strong>는 물체가 전자기파 형태로 에너지를 방출하고 흡수하면서 이루어지는 열전달입니다. 전도나 대류와 달리 전달을 위한 물질이 반드시 필요하지 않아 진공에서도 열이 이동할 수 있습니다.</p>
+<p>복사 열전달은 표면의 절대온도와 방사율에 크게 영향을 받습니다. 기본적인 복사 방출은 스테판-볼츠만 법칙과 연결되며 절대온도의 네제곱에 비례하는 특성이 있습니다.</p>
+<p>공조부하에서는 창을 통한 태양복사와 외벽·지붕이 받은 일사 영향이 냉방부하 증가로 이어질 수 있습니다. 따라서 단순한 실내외 건구온도차만으로 모든 열취득을 설명할 수 없습니다.</p>
+<h3>개념 적용</h3>
+<p>같은 면적과 방사율을 가진 두 표면이라면 절대온도가 높은 표면일수록 복사 방출량이 크게 증가합니다. 예를 들어 절대온도가 300 K에서 330 K로 10% 증가하면 온도의 네제곱 비는 (330÷300)⁴=<strong>약 1.464</strong>이므로 다른 조건이 같을 때 방출항은 약 46.4% 커집니다.</p>
+<p><strong>주의:</strong> 복사 계산에서는 섭씨온도를 그대로 네제곱하지 않고 절대온도 K를 사용해야 합니다.</p>
+</section>
+<section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
           <h3>개념</h3>
           <p>물질의 직접적인 접촉이나 유체의 이동 없이 전자기파 형태로 열이 전달되는 현상이다. 태양열과 화염에서 느껴지는 열이 대표적이다.</p>
-          <h3>기본식</h3>
-          <div class="learn-formula">Q = εσAT⁴</div>
+          <h3>복사 방출률과 순복사 열전달률</h3>
+          <div class="learn-formula">Q̇<sub>방출</sub> = εσAT<sub>s</sub>⁴</div><p>표면이 방출하는 복사 에너지율이며 단위는 W이다. 주위에서 흡수하는 복사를 아직 빼지 않은 값이다.</p><div class="learn-formula">Q̇<sub>순</sub> = εσA(T<sub>s</sub>⁴ − T<sub>주위</sub>⁴)</div><p>큰 등온 주위면에 둘러싸인 회색체에 적용하는 단순식이다. 표면에서 주위로 나가는 순열전달률을 양수로 정한다.</p>
           <table class="learn-table">
             <tr><th>기호</th><th>의미</th></tr>
             <tr><td>ε</td><td>방사율</td></tr>
             <tr><td>σ</td><td>스테판–볼츠만 상수</td></tr>
-            <tr><td>T</td><td>절대온도(K)</td></tr>
+            <tr><td>A</td><td>복사면의 면적(m²)</td></tr><tr><td>T<sub>s</sub>, T<sub>주위</sub></td><td>표면 및 주위면의 절대온도(K)</td></tr>
           </table>
           <div class="mistake-note"><strong>자주 하는 실수</strong><br>복사식의 온도는 섭씨가 아니라 절대온도 K를 사용한다.</div>
         </div>
-      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>ε=0.9, A=1 m², 표면 40℃, 주위 20℃, σ=5.67×10⁻⁸ W/(m²·K⁴)라고 가정합니다. Q̇=0.9×5.67×10⁻⁸×(313.15⁴−293.15⁴)≈113.86 W입니다. 온도는 반드시 K로 바꿉니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>서로 마주 보는 유한한 두 면에서는 형상계수와 양쪽 방사율을 고려해야 합니다. 단순식을 모든 복사 문제에 그대로 적용하지 않습니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-heat-convection.html">← 이전: 3. 대류</a><a href="learning-heat-overall-heat-transfer.html">다음: 5. 열관류율과 열저항 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
+      </section><section id="example"><h2>풀이에 적용하기</h2><div class="example"><p>큰 등온 주위면에 둘러싸인 회색체를 가정합니다. ε=0.9, A=1 m², 표면 40℃, 주위 20℃, σ=5.67×10⁻⁸ W/(m²·K⁴)라고 가정합니다. Q̇=0.9×5.67×10⁻⁸×(313.15⁴−293.15⁴)≈113.86 W입니다. 온도는 반드시 K로 바꿉니다.</p></div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2><p>서로 마주 보는 유한한 두 면에서는 형상계수와 양쪽 방사율을 고려해야 합니다. 단순식을 모든 복사 문제에 그대로 적용하지 않습니다.</p></section></div></article><nav class="article-next" aria-label="이전 다음 학습"><a href="learning-heat-convection.html">← 이전: 3. 대류</a><a href="learning-heat-overall-heat-transfer.html">다음: 5. 열관류율과 열저항 →</a></nav></div></main><footer class="site-footer" aria-label="사이트 안내">
   <div class="site-footer-inner">
     <nav class="site-footer-links" aria-label="하단 메뉴">
       <a href="index.html#privacy">개인정보처리방침</a>

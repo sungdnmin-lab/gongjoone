@@ -73,28 +73,28 @@
 <p><strong>현열</strong>은 공기의 건구온도를 변화시키는 열이고, <strong>잠열</strong>은 공기 중 수분량의 변화와 관련된 열입니다. 전체 열량은 현열과 잠열의 합으로 나타낼 수 있습니다.</p>
 <p><strong>전열부하 = 현열부하 + 잠열부하</strong></p>
 <p>따라서 현열비는 다음과 같습니다.</p>
-<p><strong>SHF = <span class="solution-frac"><span class="solution-num">현열부하</span><span class="solution-den">전열부하</span></span> = <span class="solution-frac"><span class="solution-num">현열부하</span><span class="solution-den">현열부하 + 잠열부하</span></span></strong></p>
+<p><strong>SHF = 현열부하 ÷ 전열부하 = 현열부하 ÷ (현열부하 + 잠열부하)</strong></p>
 <p>SHF는 비율이므로 단위가 없으며 일반적으로 0과 1 사이의 값으로 나타냅니다. SHF가 1에 가까울수록 전체부하에서 현열의 비중이 크고, 값이 작아질수록 상대적으로 잠열부하의 비중이 커집니다.</p>
 <p>습공기선도에서는 SHF를 이용하여 공기의 상태변화 방향을 판단할 수 있습니다. 현열만 제거한다면 절대습도 변화 없이 온도가 낮아지고, 현열과 잠열을 함께 제거하는 냉각·감습 과정에서는 온도와 절대습도가 동시에 낮아집니다.</p>
 <p>실기에서는 <strong>RSHF(실내현열비), GSHF(장치현열비)</strong>처럼 적용 범위가 구분될 수 있습니다. 어떤 부하를 분자와 분모에 포함해야 하는지는 문제에서 요구하는 현열비의 종류와 주어진 부하 조건을 먼저 확인해야 합니다.</p>
 </section><section id="reference" class="original-reference"><h2>그림·공식 정리</h2><div class="learn-body">
-          <p>전체 열부하 중 현열부하의 비율이며, 습공기선도에서 상태변화선의 방향을 정하는 데 사용한다. SHF만으로 급기 상태가 완전히 결정되지는 않는다.</p>
-          <div class="learn-formula">SHF = <span class="solution-frac"><span class="solution-num">현열량</span><span class="solution-den">전열량</span></span> = <span class="solution-frac"><span class="solution-num">qₛ</span><span class="solution-den">qₜ</span></span> = <span class="solution-frac"><span class="solution-num">qₛ</span><span class="solution-den">qₛ + qₗ</span></span></div>
+          <p>전체 공급 열량 중 온도를 올리거나 내리는 데 사용된 현열량의 비로, 실내로 송출되는 공기 상태를 나타낸다.</p>
+          <div class="learn-formula">SHF = 현열량 / 전열량 = qₛ / qₜ = qₛ / (qₛ + qₗ)</div>
           <p class="learn-caption">qₛ: 현열량, qₗ: 잠열량, qₜ: 전열량</p>
           <table class="learn-table">
             <tr><th>구분</th><th>의미</th></tr>
             <tr><td>SHF가 큰 경우</td><td>전체 부하 중 현열부하의 비율이 크다.</td></tr>
             <tr><td>SHF가 작은 경우</td><td>전체 부하 중 잠열부하의 비율이 크다.</td></tr>
           </table>
-          <div class="learn-tip"><strong>시험 암기</strong><br>전열량 = 현열량 + 잠열량<br>SHF = <span class="solution-frac"><span class="solution-num">qₛ</span><span class="solution-den">qₛ + qₗ</span></span><br>SHF ↑ → 현열 비중 증가<br>SHF ↓ → 잠열 비중 증가</div>
+          <div class="learn-tip"><strong>시험 암기</strong><br>전열량 = 현열량 + 잠열량<br>SHF = qₛ / (qₛ + qₗ)<br>SHF ↑ → 현열 비중 증가<br>SHF ↓ → 잠열 비중 증가</div>
         </div>
       </section><section id="example"><h2>풀이에 적용하기</h2><div class="example">
 <p>어떤 실내의 현열부하가 24 kW, 잠열부하가 6 kW라고 하겠습니다.</p>
 <p><strong>① 전열부하</strong><br>24+6=<strong>30 kW</strong></p>
-<p><strong>② 현열비</strong><br>SHF=<span class="solution-frac"><span class="solution-num">24</span><span class="solution-den">30</span></span>=<strong>0.80</strong></p>
+<p><strong>② 현열비</strong><br>SHF=24÷30=<strong>0.80</strong></p>
 <p>따라서 전체 열부하의 80%가 현열이고, 나머지 20%가 잠열에 해당합니다.</p>
 <p>반대로 전열부하가 45 kW이고 SHF가 0.70이라면 현열부하는 <strong>45×0.70=31.5 kW</strong>이고, 잠열부하는 <strong>45-31.5=13.5 kW</strong>입니다.</p>
-<p>검산하면 <strong>31.5+13.5=45 kW</strong>이고, <span class="solution-frac"><span class="solution-num">31.5</span><span class="solution-den">45</span></span>=0.70으로 처음 조건과 일치합니다.</p>
+<p>검산하면 <strong>31.5+13.5=45 kW</strong>이고, 31.5÷45=0.70으로 처음 조건과 일치합니다.</p>
 <p>실기시험에서는 SHF 자체를 계산하는 문제뿐 아니라 습공기선도에서 상태변화선을 작도하거나 급기상태를 결정하는 과정에도 사용됩니다. 이때는 문제에서 실내부하만 사용하는지, 외기부하 등을 포함한 장치부하를 사용하는지 구분해야 합니다.</p>
 </div></section><section id="pitfall" class="pitfall"><h2>헷갈리는 부분</h2>
 <p><strong>① SHF의 분모는 현열만이 아닙니다.</strong><br>분모에는 현열과 잠열을 합한 전열부하가 들어갑니다. 즉 SHF=현열÷(현열+잠열)입니다.</p>
