@@ -14,9 +14,15 @@
  function init(){
    const m=file.match(/^exam-([1-7])\.html$/);
    if(m){exams[Number(m[1])](null);history.replaceState(null,'',location.pathname+location.search);return;}
-   if(file==='practice.html'){
+   if(file==='practice.html'||file==='mock-exams.html'){
      showSiteView(null,'practice');
      history.replaceState(null,'',location.pathname+location.search);
+     if(file==='mock-exams.html'){
+       const practice=document.querySelector('[data-view-link="practice"]');
+       const exam=document.querySelector('[data-view-link="exam"]');
+       if(practice){practice.classList.remove('active');practice.removeAttribute('aria-current');}
+       if(exam){exam.classList.add('active');exam.setAttribute('aria-current','page');}
+     }
      return;
    }
    routeHash(initialHash);
