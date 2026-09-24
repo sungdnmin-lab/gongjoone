@@ -14,6 +14,11 @@
  function init(){
    const m=file.match(/^exam-([1-7])\.html$/);
    if(m){exams[Number(m[1])](null);history.replaceState(null,'',location.pathname+location.search);return;}
+   if(file==='practice.html'){
+     showSiteView(null,'practice');
+     history.replaceState(null,'',location.pathname+location.search);
+     return;
+   }
    routeHash(initialHash);
  }
  window.showLearningTopic=function(e,t){if(e)e.preventDefault();location.href='learning-'+t+'.html';};

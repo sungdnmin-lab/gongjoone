@@ -500,7 +500,7 @@ body.info-page-open{overflow:hidden}
 :root{--home-navy:#123b68;--home-blue:#287fd7;--home-soft:#eef6ff}
 body.view-home .wrap,body.view-home #questionNavigator,body.view-home #floatingAnnotTools,
 body.view-practice .wrap,body.view-practice #questionNavigator,body.view-practice #floatingAnnotTools{display:none!important}
-body.view-exam .home-page,body.view-exam .practice-page{display:none!important}
+body.view-exam .home-page,body.view-exam .practice-page,body.view-practice .home-page{display:none!important}
 body.view-home .practice-page{display:none!important}
 .site-header-inner{gap:22px}
 .site-menu{margin-left:auto;gap:28px}
